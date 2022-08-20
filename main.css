@@ -1,21 +1,43 @@
-
+/* Obviously, root is for naming colors I'm choosing.
+   I'm doing this before looking into color theory/design. Wooh! */
 :root {
     --steelgrey: #43464B;
     --azure: #edfffd;
 }
 
+/* Nice and structured, putting building blocks in place. */
 body {
     background: var(--bg);
     color: var(--fontColor);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* It's theme time!
+   - I don't have to tell you bg is background, right? You're bright, you get it.
+   - btn is button, specifically the button we'll use to switch between themes. */
+
 .light-theme {
     --bg: var(--azure);
     --fontColor: var(--steelgrey);
+    --btnBg: var(--steelgrey);
+    --btnFontColor: var(--azure);
 }
 
 .dark-theme {
     --bg: var(--steelgrey);
     --fontColor: var(--azure);
+    --btnBg: var(--azure);
+    --btnFontColor: var(--steelgrey);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
 }
