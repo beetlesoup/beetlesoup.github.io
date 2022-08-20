@@ -16,9 +16,9 @@ switcher.addEventListener('click', function() {
 
     const className = document.body.className;
     if(className == "light-theme") {
-        this.textContent = "Night";
+        this.textContent = "🌜";
     } else {
-        this.textContent = "Day";
+        this.textContent = "☀️";
     }
 
     /* Add the following message to be shown in Developer View, ya big nerd: */
