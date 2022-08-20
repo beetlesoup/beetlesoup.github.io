@@ -1,11 +1,21 @@
 
-
+:root {
+    --steelgrey: #43464B;
+    --azure: #edfffd;
+}
 
 body {
+    background: var(--bg);
+    color: var(--fontColor);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .light-theme {
-    color: #43464B;
-    background: #edfffd;
+    --bg: var(--azure);
+    --fontColor: var(--steelgrey);
+}
+
+.dark-theme {
+    --bg: var(--steelgrey);
+    --fontColor: var(--azure);
 }
