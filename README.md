@@ -4,6 +4,9 @@ Building a big fat personal website from scratch... this is going to be incredib
 
 ... Right? One way to find out.
 
-Learning materials:
+Log:
+
 1. Microsoft's Build a simple website using HTML, CSS, and JavaScript:
    https://docs.microsoft.com/en-us/learn/modules/build-simple-website/
+
+2. Ummmm... my page needs some بحبحة on the right. find out how to do that.
