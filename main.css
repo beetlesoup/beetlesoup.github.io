@@ -5,6 +5,7 @@
     --azure: #edfffd;
     --skyblue: #87CEEB;
     --midnightblue: #000080;
+    --offwhite: #FDFDFD;
 }
 
 
@@ -21,7 +22,7 @@ body {
    - btn is button, specifically the button we'll use to switch between themes. */
 
 .light-theme {
-    --bg: var(--azure);
+    --bg: var(--offwhite);
     --fontColor: var(--steelgrey);
     --btnBg: var(--midnightblue);
 }
