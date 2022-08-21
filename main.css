@@ -73,19 +73,24 @@ body {
 /* MAKE-A ME-A SOME BUTTONS */
 .button {
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: var(--steelgrey);
     border: none;
     color: var(--offwhite);
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
+    font-size:medium;
+    padding: 30px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
   }
   
+.button2 {background-color: #868993;}
+.button3 {background-color: #415575;}
+.button4 {background-color: #efb03b;}
+.button5 {background-color: #ba5e6e;}
+
   .button span {
     cursor: pointer;
     display: inline-block;
