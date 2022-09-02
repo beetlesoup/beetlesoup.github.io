@@ -16,3 +16,5 @@ Log:
 4. This is not the right order to do things in. what the fuck is a div container? Learn about selectors and properties and values and who knows what else https://html.com/css/
 
 5. Why is it SO HARD to cheatly find out how to make a button hoverable and clickable? ok ok I must _understand_ before application, _fine_
+
+... Yess!! I did it! "how to make a div container a link": just put the button inside the a href tag. hehehehe feels like cheating but also kind of feels like a nice solution.
