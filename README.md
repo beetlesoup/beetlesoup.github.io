@@ -14,3 +14,5 @@ Log:
 3. Goddamn buttons. How do I differentiate between my theme-changing button and the rest of my buttons?! : https://getbootstrap.com/docs/4.0/components/buttons/
 
 4. This is not the right order to do things in. what the fuck is a div container? Learn about selectors and properties and values and who knows what else https://html.com/css/
+
+5. Why is it SO HARD to cheatly find out how to make a button hoverable and clickable? ok ok I must _understand_ before application, _fine_
