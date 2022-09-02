@@ -1,0 +1,57 @@
+/* Obviously, root is for naming colors I'm choosing.
+   I'm doing this before looking into color theory/design. Wooh! */
+   :root {
+    --steelgrey: #43464B;
+    --azure: #edfffd;
+    --skyblue: #87CEEB;
+    --midnightblue: #000080;
+    --offwhite: #FDFDFD;
+}
+
+
+/* Nice and structured, putting building blocks in place. */
+body {
+    margin: 70px;
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* It's theme time!
+   - I don't have to tell you bg is background, right? You're bright, you get it.
+   - btn is button, specifically the button we'll use to switch between themes. */
+
+.light-theme {
+    --bg: var(--offwhite);
+    --fontColor: var(--steelgrey);
+    --btnBg: var(--midnightblue);
+    --divBg: #F2F2F2;
+    --highlightColor: #fff2cc;
+}
+
+.dark-theme {
+    --bg: var(--steelgrey);
+    --fontColor: var(--azure);
+    --btnBg: var(--skyblue);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 10px 10px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+div {
+    background-color: var(--divBg);
+    padding: 10px 20px 20px 15px; /*top right bottom left*/
+  }
+
+highlight {
+    background-color: var(--highlightColor);
+  }
