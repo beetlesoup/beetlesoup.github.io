@@ -20,3 +20,7 @@ Log:
 ... Yess!! I did it! "how to make a div container a link": just put the button inside the a href tag. hehehehe feels like cheating but also kind of feels like a nice solution.
 
 6. Yallaaah make an expandible (collapsable) div inside a lil background-color div https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+I made a delightful one but... I'd rather have my article notes be more concise. The collapsible part is.... unneccessary at this time. Pain.
+
+Oh, well. Kill your darlings. It also looked a little better before- I mean, now. The collapsible never happened.
