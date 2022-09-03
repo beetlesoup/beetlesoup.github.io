@@ -45,6 +45,7 @@ body {
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    cursor: pointer;
 }
 
 div {
