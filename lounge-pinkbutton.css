@@ -17,6 +17,12 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+@media screen and (max-width: 800px) {
+    body {
+      margin: 30px 20px /*top right bottom left*/
+    }
+  }
+
 /* It's theme time!
    - I don't have to tell you bg is background, right? You're bright, you get it.
    - btn is button, specifically the button we'll use to switch between themes. */
