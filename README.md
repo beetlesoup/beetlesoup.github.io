@@ -30,3 +30,5 @@ Oh no. Oh, noooooo. Why is there an extra space in my div that doesn't appear wh
 Wish I could put a quote in my div. will I change my lounge-pink button page divs eventually?
 
 Yes! Figured out how to do the dot thing to make a class :)
+
+Still using <br><br> every which where like a BARBARIAN. just brute forcing this shit. Hulk Smash.
