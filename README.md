@@ -26,3 +26,5 @@ I made a delightful one but... I'd rather have my article notes be more concise.
 Oh, well. Kill your darlings. It also looked a little better before- I mean, now. The collapsible never happened.
 
 Oh no. Oh, noooooo. Why is there an extra space in my div that doesn't appear when I'm looking at the local HTML file? Ooooooh noooooooo......
+
+Wish I could put a quote in my div. will I change my lounge-pink button page divs eventually?
