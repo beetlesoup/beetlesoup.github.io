@@ -27,6 +27,7 @@ body {
     --btnBg: var(--midnightblue);
     --divBg: #F2F2F2;
     --highlightColor: #fff2cc;
+    --unvisitedlink: #0070C0;
 }
 
 .dark-theme {
@@ -56,3 +57,23 @@ div {
 highlight {
     background-color: var(--highlightColor);
   }
+
+/* unvisited link */
+a:link {
+    color: var(--unvisitedlink);
+}
+  
+/* visited link */
+/* a:visited {
+    color: green;
+} */
+  
+/* mouse over link */
+/* a:hover {
+   color: hotpink;
+} */
+  
+/* selected link */
+/* a:active {
+    color: blue;
+} */
