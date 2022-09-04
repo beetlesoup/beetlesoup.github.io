@@ -4,6 +4,8 @@
 /* | Setup: margins and font family */
 body {
     margin: 70px;
+    background: var(--bg);
+    color: var(--fontColor);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
