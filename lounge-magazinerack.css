@@ -249,19 +249,13 @@ ul li:before {
   .hr1 {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  
+    background-image: linear-gradient(to right, transparent, black, transparent);  
   }
 
 
   .hr2 {
     border: 0;
-    border-top: 1px dashed #CCC;
-  }
-
-  .hr3 {
-    margin: 12px 0;
-    border: 0;
-    background-image: linear-gradient(to right, transparent, #F94848, #F9A148, #F5F948, #48F95A, #488EF9, transparent); 
+    border-top: 1px dashed #d9d9d9;
   }
 
 
