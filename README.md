@@ -32,3 +32,5 @@ Wish I could put a quote in my div. will I change my lounge-pink button page div
 Yes! Figured out how to do the dot thing to make a class :)
 
 Still using <br><br> every which where like a BARBARIAN. just brute forcing this shit. Hulk Smash.
+
+Made a navbar. Put my day/night button in it. Can't edit navbar link color without... creating classes for everything? Will I have to start over? Now we're getting somewhere!
