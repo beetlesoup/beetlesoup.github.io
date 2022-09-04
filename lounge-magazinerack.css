@@ -1,5 +1,5 @@
 
-/* hello!!!! */
+/* hello!!!! ✭ */
 
 /* | Setup: margins and font family */
 body {
@@ -14,6 +14,17 @@ body {
       margin: 30px 20px /*top right bottom left*/
     }
   }
+
+/* turning bullet points into stars */
+ul {
+  list-style: none;
+  margin-left: -20px;
+}
+
+ul li:before {
+  content: "✭ \0000a0";
+  font-size: small;
+}
 
 /* || It's theme time! (btn is specifically the theme-switching button). */
 
