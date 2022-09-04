@@ -2,10 +2,12 @@
 /* hello!!!! ✭ */
 
 :root {  /*when you add a new one here, add it under both .articlebox and taggies too */
+  --activism: #663300;
   --biology: #7030A0;
   --bookreviews: #FFC300;
   --environment: #00B050;
   --international: #C00000;
+  --nothing: #d9d9d9;
 }
 
 /* | Setup: margins and font family */
@@ -181,6 +183,10 @@ ul li:before {
     padding: 10px 20px 10px 15px; /*top right bottom left*/
   }
 
+  .articlebox.activism {
+    border-color: var(--activism);
+  }
+
   .articlebox.biology {
     border-color: var(--biology);
   }
@@ -195,6 +201,10 @@ ul li:before {
 
   .articlebox.international {
     border-color: var(--international);
+  }
+
+  .articlebox.nothing {
+    border-color: var(--nothing);
   }
   
   .highlight {
@@ -223,6 +233,10 @@ ul li:before {
     padding: 5px 10px 5px 10px;
   }
 
+  .activismtag {
+    background-color: var(--activism);
+  }
+
   .biologytag {
     background-color: var(--biology);
   }
@@ -237,6 +251,11 @@ ul li:before {
 
   .internationaltag {
     background-color: var(--international);
+  }
+
+  .nothingtag {
+    background-color: var(--nothing);
+    color: #43464B;
   }
 
   /* separator lines */
@@ -254,6 +273,7 @@ ul li:before {
 
 
   .hr2 {
+    margin: 30px;
     border: 0;
     border-top: 1px dashed #d9d9d9;
   }
