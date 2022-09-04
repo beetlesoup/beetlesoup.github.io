@@ -27,12 +27,7 @@ body {
     --articleheadlink: #0070C0;
     --articlebodylink: #0070C0;
     --highlightColor: #fff2cc;
-    --highlightTextColor: #43464B;
-    /* magazine rack tag time */
-    --biology: #7030A0;
-    --bookreviews: #FFC300;
-    --envrionment: #00B050;
-    --international: #C00000;
+    --highlightTextColor: #43464B; 
 }
 
 .dark-theme {
@@ -157,6 +152,8 @@ body {
 
   .articlebox {
     background-color: var(--articleboxBg);
+    color: var(--fontColor);
+    text-align: left;
     padding: 10px 20px 10px 15px; /*top right bottom left*/
   }
   
@@ -176,43 +173,30 @@ body {
 
   /* gonna use these for tags: */
 
-  .biology {
-    background-color: var(--biology);
+  taggies {
     color: white;
+    text-align: right;
     border: none;
     float: right;
-    border-radius: 25px;
+    border-radius: 10px;
     border-style: solid;
     padding: 5px 10px 5px 10px;
+  }
+
+
+  .biology {
+    background-color: #7030A0;
   }
 
   .bookreviews {
-    background-color: var(--bookreviews);
-    color: white;
-    border: none;
-    float: right;
-    border-radius: 25px;
-    border-style: solid;
-    padding: 5px 10px 5px 10px;
+    background-color: #FFC300;
   }
 
   .environment {
-    background-color: var(--envrionment);
-    color: white;
-    border: none;
-    float: right;
-    border-radius: 25px;
-    border-style: solid;
-    padding: 5px 10px 5px 10px;
+    background-color: #00B050;
   }
 
   .international {
-    background-color: var(--international);
-    color: white;
-    border: none;
-    float: right;
-    border-radius: 25px;
-    border-style: solid;
-    padding: 5px 10px 5px 10px;
+    background-color: #C00000;
   }
 
