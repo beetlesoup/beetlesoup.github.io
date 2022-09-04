@@ -1,6 +1,13 @@
 
 /* hello!!!! ✭ */
 
+:root {
+  --biology: #7030A0;
+  --bookreviews: #FFC300;
+  --environment: #00B050;
+  --international: #C00000;
+}
+
 /* | Setup: margins and font family */
 body {
     margin: 70px;
@@ -165,6 +172,8 @@ ul li:before {
     background-color: var(--articleboxBg);
     color: var(--fontColor);
     text-align: left;
+    border-style: dashed;
+    border-color: #d9d9d9;
     padding: 10px 20px 10px 15px; /*top right bottom left*/
   }
   
@@ -189,24 +198,24 @@ ul li:before {
     text-align: right;
     border: none;
     float: right;
-    border-radius: 10px;
+    border-radius: 25px;
     border-style: solid;
     padding: 5px 10px 5px 10px;
   }
 
-  .biology {
+  .biologytag {
     background-color: #7030A0;
   }
 
-  .bookreviews {
+  .bookreviewstag {
     background-color: #FFC300;
   }
 
-  .environment {
+  .environmenttag {
     background-color: #00B050;
   }
 
-  .international {
+  .internationaltag {
     background-color: #C00000;
   }
 
@@ -219,7 +228,7 @@ ul li:before {
   .hr1 {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, transparent, #AFABAB);  
+    background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  
   }
 
   .hr2 {
