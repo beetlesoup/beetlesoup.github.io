@@ -1,7 +1,7 @@
 
 /* hello!!!! ✭ */
 
-:root {
+:root {  /*when you add a new one here, add it under both .articlebox and taggies too */
   --biology: #7030A0;
   --bookreviews: #FFC300;
   --environment: #00B050;
@@ -130,8 +130,8 @@ ul li:before {
     display: block;
   }
   
-  /* NAAAVBAAAAR 
-  ENNNNNDDDDDDDDD*/
+    /* NAAAVBAAAAR 
+    ENNNNNDDDDDDDDD*/
 
   /* || Header Image */
 
@@ -168,6 +168,10 @@ ul li:before {
   ** SPECIFIC TO: MAGAZINE RACK **
   ****************************** */
 
+  genres {
+
+  }
+
   .articlebox {
     background-color: var(--articleboxBg);
     color: var(--fontColor);
@@ -175,6 +179,22 @@ ul li:before {
     border-style: dashed;
     border-color: #d9d9d9;
     padding: 10px 20px 10px 15px; /*top right bottom left*/
+  }
+
+  .articlebox.biology {
+    border-color: var(--biology);
+  }
+
+  .articlebox.bookreviews {
+    border-color: var(--bookreviews);
+  }
+
+  .articlebox.environment {
+    border-color: var(--environment);
+  }
+
+  .articlebox.international {
+    border-color: var(--international);
   }
   
   .highlight {
@@ -204,19 +224,19 @@ ul li:before {
   }
 
   .biologytag {
-    background-color: #7030A0;
+    background-color: var(--biology);
   }
 
   .bookreviewstag {
-    background-color: #FFC300;
+    background-color: var(--bookreviews);
   }
 
   .environmenttag {
-    background-color: #00B050;
+    background-color: var(--environment);
   }
 
   .internationaltag {
-    background-color: #C00000;
+    background-color: var(--international);
   }
 
   /* separator lines */
@@ -225,15 +245,23 @@ ul li:before {
     margin: 40px 0;
   }
 
+  /* background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  */
   .hr1 {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  
   }
 
+
   .hr2 {
     border: 0;
     border-top: 1px dashed #CCC;
+  }
+
+  .hr3 {
+    margin: 12px 0;
+    border: 0;
+    background-image: linear-gradient(to right, transparent, #F94848, #F9A148, #F5F948, #48F95A, #488EF9, transparent); 
   }
 
 
