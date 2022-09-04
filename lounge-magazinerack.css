@@ -183,7 +183,6 @@ body {
     padding: 5px 10px 5px 10px;
   }
 
-
   .biology {
     background-color: #7030A0;
   }
@@ -199,4 +198,22 @@ body {
   .international {
     background-color: #C00000;
   }
+
+  /* separator lines */
+
+  hr {
+    margin: 40px 0;
+  }
+
+  .hr1 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #AFABAB);  
+  }
+
+  .hr2 {
+    border: 0;
+    border-top: 1px dashed #CCC;
+  }
+
 
