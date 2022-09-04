@@ -174,24 +174,43 @@ body {
 
   /* gonna use these for tags: */
 
-  
   .biology {
-    color: var(--biology);
+    background-color: var(--biology);
+    color: white;
+    border: none;
     float: right;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
   }
 
   .bookreviews {
-    color: var(--bookreviews);
+    background-color: var(--bookreviews);
+    color: white;
+    border: none;
     float: right;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
   }
 
   .environment {
-    color: var(--envrionment);
+    background-color: var(--envrionment);
+    color: white;
+    border: none;
     float: right;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
   }
 
   .international {
-    color: var(--international);
+    background-color: var(--international);
+    color: white;
+    border: none;
     float: right;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
   }
 
