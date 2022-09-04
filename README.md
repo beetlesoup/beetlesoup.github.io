@@ -34,3 +34,5 @@ Yes! Figured out how to do the dot thing to make a class :)
 Still using <br><br> every which where like a BARBARIAN. just brute forcing this shit. Hulk Smash.
 
 Made a navbar. Put my day/night button in it. Can't edit navbar link color without... creating classes for everything? Will I have to start over? Now we're getting somewhere!
+
+span! span is like div but inline! what a wonderful discovery! it doesn't seem ubiquitous so there might be a better way! but span for now!

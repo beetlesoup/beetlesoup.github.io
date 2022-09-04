@@ -50,11 +50,9 @@ body {
 
 .btn {
   float: right;
-  border-radius: 8px;
   font-size: larger;
   padding: 10px 10px;
   border: none;
-  color: var(--btnFontColor);
   background-color: var(--btnBg);
   cursor: pointer;
 }
@@ -64,7 +62,6 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  color: white;
 }
 
 .navbar a {
@@ -155,6 +152,13 @@ highlight {
     background-color: var(--highlightColor);
     color: var(--highlightTextColor);
   }
+
+.quotered {
+  display: block;
+  padding-left: 20px;
+  border-left-style: solid;
+  border-left: 2px solid #C00000;
+}
 
 /* unvisited link */
 a:link {

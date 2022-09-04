@@ -1,0 +1,197 @@
+
+/* hello!!!! */
+
+/* | Setup: margins and font family */
+body {
+    margin: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+      margin: 30px 20px /*top right bottom left*/
+    }
+  }
+
+/* || It's theme time! (btn is specifically the theme-switching button). */
+
+.light-theme {
+    --bg: #FDFDFD;
+    --fontColor: #43464B;
+    --btnBg: #000080;
+    /* for magazine rack */
+    --imagelabelBg: #F2F2F2;
+    --articleboxBg: #F2F2F2;
+    --articleheadlink: #0070C0;
+    --articlebodylink: #0070C0;
+    --highlightColor: #fff2cc;
+    --highlightTextColor: #43464B;
+    /* magazine rack tag time */
+    --biology: #7030A0;
+    --bookreviews: #FFC300;
+    --envrionment: #00B050;
+    --international: #C00000;
+}
+
+.dark-theme {
+    --bg: #43464B;
+    --fontColor: #edfffd;
+    --btnBg: #87CEEB;
+    --imagelabelBg: #3B3838;
+    --highlightColor: #fff2cc;
+    --articleheadlink: #00B0F0;
+    --highlightTextColor: #43464B;
+}
+
+.btn {
+    float: right;
+    font-size: larger;
+    padding: 10px 10px;
+    border: none;
+    background-color: var(--btnBg);
+    cursor: pointer;
+}
+
+/* || Navigation Bar */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #fff2cc;
+    color: var(--steelgrey);
+}
+  
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* NAAAVBAAAAR 
+  ENNNNNDDDDDDDDD*/
+
+  /* || Header Image */
+
+  .container {
+    position: relative;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    background-color: var(--imagelabelBg);
+    padding: 0px 5px 0px 5px; /*top right bottom left*/
+  }
+  
+  img { 
+    width: 100%;
+    height: auto;
+  }
+
+  /* link styles (so it doesn't affect the header */
+  
+  a.one:link {color: var(--articleheadlink); font-weight: bold;}
+  a.one:visited {color: var(--articleheadlink);}
+
+  a.two:link {color: var(--articleheadlink);}
+  a.two:visited {color: var(--articleheadlink);}
+
+  /* yn3ml kida:
+  <a class="one" href="maw8i3">text</a>/*
+
+  /* *****************************
+  ** SPECIFIC TO: MAGAZINE RACK **
+  ****************************** */
+
+  .articlebox {
+    background-color: var(--articleboxBg);
+    padding: 10px 20px 10px 15px; /*top right bottom left*/
+  }
+  
+  .highlight {
+    background-color: var(--highlightColor);
+    color: var(--highlightTextColor);
+  }
+
+  /* span! span is like div but inline! what a wonderful discovery! */
+  
+  .quotered {
+    display: block;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left: 2px solid #C00000;
+  }
+
+  /* gonna use these for tags: */
+
+  
+  .biology {
+    color: var(--biology);
+    float: right;
+  }
+
+  .bookreviews {
+    color: var(--bookreviews);
+    float: right;
+  }
+
+  .environment {
+    color: var(--envrionment);
+    float: right;
+  }
+
+  .international {
+    color: var(--international);
+    float: right;
+  }
+
