@@ -146,6 +146,7 @@ ul li:before {
   .iconimg {
     width: 25px;
     float: left;
+    vertical-align: baseline;
     padding: 10px 10px 10px 10px; /*top right bottom left*/
   }
 
@@ -164,24 +165,9 @@ ul li:before {
   }
   /* -----------------end words on images */
  
-  /* columns for icon in front of text: */
-  .column {
-    float: left;
-    padding: 10px;
-  }
-
-  .iconcolumn {
-    width: fit-content;
-  }
-
-  .textcolumn {
-    width: fit-content;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  /* words next to icons: */
+  .iconandtextbox { 
+    overflow: hidden;
   }
 
 
