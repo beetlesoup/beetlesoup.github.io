@@ -137,8 +137,19 @@ ul li:before {
     /* NAAAVBAAAAR 
     ENNNNNDDDDDDDDD*/
 
-  /* || Header Image */
+  /* || IMAGES */
 
+  .headerimg {
+    width: 100%;
+    height: auto;
+  }
+  .iconimg {
+    width: 25px;
+    float: left;
+    padding: 10px 10px 10px 10px; /*top right bottom left*/
+  }
+
+  /* WORDS ON IMAGES: */
   .container {
     position: relative;
   }
@@ -151,11 +162,28 @@ ul li:before {
     background-color: var(--imagelabelBg);
     padding: 0px 5px 0px 5px; /*top right bottom left*/
   }
-  
-  img { 
-    width: 100%;
-    height: auto;
+  /* -----------------end words on images */
+ 
+  /* columns for icon in front of text: */
+  .column {
+    float: left;
+    padding: 10px;
   }
+
+  .iconcolumn {
+    width: fit-content;
+  }
+
+  .textcolumn {
+    width: fit-content;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
   /* link styles (so it doesn't affect the header */
   
@@ -171,6 +199,7 @@ ul li:before {
   /* *****************************
   ** SPECIFIC TO: MAGAZINE RACK **
   ****************************** */
+
 
   genres {
 
