@@ -6,6 +6,7 @@
   --biology: #7030A0;
   --bookreviews: #FFC300;
   --environment: #00B050;
+  --history: #C55A11;
   --international: #C00000;
   --space: #001279;
   --nothing: #d9d9d9;
@@ -200,6 +201,10 @@ ul li:before {
     border-color: var(--environment);
   }
 
+  .articlebox.history {
+    border-color: var(--history);
+  }
+
   .articlebox.international {
     border-color: var(--international);
   }
@@ -252,6 +257,10 @@ ul li:before {
 
   .environmenttag {
     background-color: var(--environment);
+  }
+
+  .historytag {
+    background-color: var(--history);
   }
 
   .internationaltag {
