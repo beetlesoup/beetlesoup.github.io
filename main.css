@@ -7,7 +7,15 @@
     --midnightblue: #000080;
     --offwhite: #FDFDFD;
     --sealbrown: #321414;
+    /* eeeeeee */
+    --loungebookshelf: #868993;
+    --loungetv: #415575;
+    --loungemusic: #efb03b;
+    --loungemagz: #ba5e6e;
     --desk: #6e3f37;
+    --officebookshelf: #321414;
+    --officecv: #e3cbb1;
+    --officemagz: #124104;
 }
 
 
@@ -26,13 +34,13 @@ body {
 .light-theme {
     --bg: var(--offwhite);
     --fontColor: var(--steelgrey);
-    --btnBg: var(--midnightblue);
+    --btnBg: var(--skyblue);
 }
 
 .dark-theme {
     --bg: var(--steelgrey);
     --fontColor: var(--azure);
-    --btnBg: var(--skyblue);
+    --btnBg: var(--midnightblue);
 }
 
 .btn {
@@ -96,6 +104,7 @@ body {
 .button6 {background-color: #6e3f37;}
 .button7 {background-color: #321414;}
 .button8 {background-color: #e3cbb1; color: #321414;}
+.button9 {background-color: var(--officemagz);}
 
   .button span {
     cursor: pointer;
