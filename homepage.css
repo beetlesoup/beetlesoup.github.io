@@ -1,0 +1,101 @@
+:root {
+    --steelgrey: #43464B;
+    --azure: #edfffd;
+    --skyblue: #87CEEB;
+    --midnightblue: #000080;
+    --offwhite: #FDFDFD;
+    --sealbrown: #321414;
+    /* eeeeeee */
+    --loungebookshelf: #868993;
+    --loungetv: #415575;
+    --loungemusic: #efb03b;
+    --loungemagz: #EA4C89; /*old color: #ba5e6e;*/
+    --officedesk: #6e3f37;
+    --officebookshelf: #321414;
+    --officecv: #e3cbb1;
+    --officemagz: #124104;
+}
+/* ------------------------------------ THEMES */
+.light-theme {
+    --bg: var(--offwhite);
+    --fontColor: var(--steelgrey);
+    --btnBg: var(--skyblue);
+}
+
+.dark-theme {
+    --bg: var(--steelgrey);
+    --fontColor: var(--azure);
+    --btnBg: var(--midnightblue);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 10px 10px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    cursor: pointer;
+}
+/* ------------------------------------------- */
+
+/* ====================================== BODY */
+body {
+    margin: 70px 20px 20px 20px; /* top right bottom left?*/
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        margin: 70px;
+    }
+  }
+
+/* ------------------------------------ IMAGES */
+.roomimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+/* ----------------------------------- BUTTONS */
+
+.button {
+    border-radius: 10px;
+    border: none;
+    color: var(--offwhite);
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+    width: 125px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.loungebookshelf {background-color: var(--loungebookshelf);}
+.loungetv {background-color: var(--loungetv);}
+.loungemusic {background-color: var(--loungemusic);}
+.loungemagz {background-color: var(--loungemagz);}
+.officedesk {background-color: var(--officedesk);}
+.officebookshelf {background-color: var(--officebookshelf);}
+.officecv {background-color: var(--officecv); color: #321414;}
+.officemagz {background-color: var(--officemagz);}
+
+/* --------------------------- SEPARATOR LINE! */
+hr {
+    margin: 40px 0;
+}
+
+.hr1 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, black, transparent);  
+}
+

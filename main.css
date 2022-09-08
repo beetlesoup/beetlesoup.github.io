@@ -1,101 +1,135 @@
+/* Obviously, root is for naming colors I'm choosing.
+   I'm doing this before looking into color theory/design. Wooh! */
 :root {
-  --steelgrey: #43464B;
-  --azure: #edfffd;
-  --skyblue: #87CEEB;
-  --midnightblue: #000080;
-  --offwhite: #FDFDFD;
-  --sealbrown: #321414;
-  /* eeeeeee */
-  --loungebookshelf: #868993;
-  --loungetv: #415575;
-  --loungemusic: #efb03b;
-  --loungemagz: #EA4C89; /*old color: #ba5e6e;*/
-  --officedesk: #6e3f37;
-  --officebookshelf: #321414;
-  --officecv: #e3cbb1;
-  --officemagz: #124104;
+    --steelgrey: #43464B;
+    --azure: #edfffd;
+    --skyblue: #87CEEB;
+    --midnightblue: #000080;
+    --offwhite: #FDFDFD;
+    --sealbrown: #321414;
+    /* eeeeeee */
+    --loungebookshelf: #868993;
+    --loungetv: #415575;
+    --loungemusic: #efb03b;
+    --loungemagz: #ba5e6e;
+    --desk: #6e3f37;
+    --officebookshelf: #321414;
+    --officecv: #e3cbb1;
+    --officemagz: #124104;
 }
-/* ------------------------------------ THEMES */
+
+
+/* Nice and structured, putting building blocks in place. */
+body {
+    margin: 70px;
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* It's theme time!
+   - I don't have to tell you bg is background, right? You're bright, you get it.
+   - btn is button, specifically the button we'll use to switch between themes. */
+
 .light-theme {
-  --bg: var(--offwhite);
-  --fontColor: var(--steelgrey);
-  --btnBg: var(--skyblue);
+    --bg: var(--offwhite);
+    --fontColor: var(--steelgrey);
+    --btnBg: var(--skyblue);
 }
 
 .dark-theme {
-  --bg: var(--steelgrey);
-  --fontColor: var(--azure);
-  --btnBg: var(--midnightblue);
+    --bg: var(--steelgrey);
+    --fontColor: var(--azure);
+    --btnBg: var(--midnightblue);
 }
 
 .btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border-radius: 8px;
-  font-size: larger;
-  padding: 10px 10px;
-  border: none;
-  color: var(--btnFontColor);
-  background-color: var(--btnBg);
-  cursor: pointer;
-}
-/* ------------------------------------------- */
-
-/* ====================================== BODY */
-body {
-  margin: 70px 20px 20px 20px; /* top right bottom left?*/
-  background: var(--bg);
-  color: var(--fontColor);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 10px 10px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-      margin: 70px;
+/* TO MAKE THE TWO COLUMN THING */
+* {
+    box-sizing: border-box;
   }
-}
 
-/* ------------------------------------ IMAGES */
-.roomimg {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-}
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
 
-/* ----------------------------------- BUTTONS */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+/*  END OF TWO COLUMN THING */
+
+/* MAKE-A ME-A SOME BUTTONS */
 .button {
-  border-radius: 10px;
-  border: none;
-  color: var(--offwhite);
-  text-align: center;
-  font-size: small;
-  padding: 10px;
-  width: 125px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+    display: inline-block;
+    border-radius: 12px;
+    background-color: var(--steelgrey);
+    border: none;
+    color: var(--offwhite);
+    text-align: center;
+    font-size:medium;
+    padding: 30px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
 
-.loungebookshelf {background-color: var(--loungebookshelf);}
-.loungetv {background-color: var(--loungetv);}
-.loungemusic {background-color: var(--loungemusic);}
-.loungemagz {background-color: var(--loungemagz);}
-.officedesk {background-color: var(--officedesk);}
-.officebookshelf {background-color: var(--officebookshelf);}
-.officecv {background-color: var(--officecv); color: #321414;}
-.officemagz {background-color: var(--officemagz);}
+.button2 {background-color: #868993;}
+.button3 {background-color: #415575;}
+.button4 {background-color: #efb03b;}
+.button5 {background-color: #ba5e6e;}
+.button6 {background-color: #6e3f37;}
+.button7 {background-color: #321414;}
+.button8 {background-color: #e3cbb1; color: #321414;}
+.button9 {background-color: var(--officemagz);}
 
-/* --------------------------- SEPARATOR LINE! */
-hr {
-  margin: 40px 0;
-}
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
 
-.hr1 {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, transparent, black, transparent);  
-}
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* time for text? */
 
