@@ -17,7 +17,7 @@ body {
     margin: 70px;
     background: var(--bg);
     color: var(--fontColor);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
 @media screen and (max-width: 900px) {
@@ -45,7 +45,7 @@ ul li:before {
     --btnBg: #000080;
     /* for magazine rack */
     --imagelabelBg: #F2F2F2;
-    --articleboxBg: #F2F2F2;
+    --articleboxBg: #f5f5f5;
     --articleheadlink: #0070C0;
     --articlebodylink: #0070C0;
     --highlightColor: #fff2cc;
@@ -173,7 +173,10 @@ ul li:before {
 
   /* link styles (so it doesn't affect the header */
   
-  a.one:link {color: var(--articleheadlink); font-weight: bold;}
+  a.one:link {
+    color: var(--articleheadlink)
+    /*font-weight: bold; */
+  }
   a.one:visited {color: var(--articleheadlink);}
 
   a.two:link {color: var(--articleheadlink);}
@@ -195,9 +198,13 @@ ul li:before {
     background-color: var(--articleboxBg);
     color: var(--fontColor);
     text-align: left;
+    font-size: small;
     border-style: dashed;
     border-color: #d9d9d9;
-    padding: 10px 20px 10px 15px; /*top right bottom left*/
+    border-top: none;
+    border-left: none;
+    margin-left: 20px;
+    padding: 10px 20px 10px 10px; /*top right bottom left*/
   }
 
   .articlebox.activism {
