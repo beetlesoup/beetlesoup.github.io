@@ -41,3 +41,5 @@ thanks, ricardo, this is gorgeous:
 https://ricardometring.com/horizontal-separator-html-css
 
 too bad i can't use separators between my article cards [angry face]
+
+7. oooooh yeeeeahhhhhhh https://scastiel.dev/posts/2020-07-23-animated-3d-book-css/
