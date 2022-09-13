@@ -144,7 +144,9 @@ ul li:before {
     height: auto;
   }
   .iconimg {
-    width: 25px;
+    width:fit-content;
+    max-width: 50px;
+    min-width: 20px;
     float: left;
     vertical-align: baseline;
     padding: 10px 10px 10px 10px; /*top right bottom left*/

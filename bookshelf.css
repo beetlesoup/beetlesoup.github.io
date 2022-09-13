@@ -1,3 +1,35 @@
+
+@font-face {
+  font-family: 'cabinsketchregular';
+  src: url('fonts/cabinsketch-regular-webfont.woff2') format('woff2'),
+       url('fonts/cabinsketch-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.spoiler {
+  font-family: 'cabinsketchregular';
+  color: #c70039;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* ---------------------------------- make three columns for spoiler tag */
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* -------------------------------------------------------------------- */
+
 .book-container {
     display: flex;
     align-items: center;

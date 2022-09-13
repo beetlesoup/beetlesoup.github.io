@@ -96,6 +96,6 @@ hr {
 .hr1 {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, transparent, black, transparent);  
+  background-image: linear-gradient(to right, transparent, black);  
 }
 

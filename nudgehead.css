@@ -1,0 +1,54 @@
+:root {  
+    --activism: #663300;
+    --cambridge-bpp: #0d2a4a;
+  }
+  
+
+
+body {
+    margin: 70px;
+    background: #D6DCE5;
+    color: #43464B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+/* ------------------------------------ IMAGES */
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.journal {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+/* --------------------------------- SEPARATOR */
+hr {
+    margin: 40px 0;
+  }
+
+  /* background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  */
+  .hr1 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, black, transparent);  
+  }
+/* =============================== TEXT STYLES */
+
+.articlebox {
+    background-color: aquamarine;
+}
+
+.title {
+    background-color: white;
+    color: black;
+}
+
+.quotered {
+    display: block;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left: 2px solid #C00000;
+  }
