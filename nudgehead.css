@@ -1,10 +1,29 @@
-:root {  
-    --activism: #663300;
-    --cambridge-bpp: #0d2a4a;
-  }
-  
+/* ================================================ FONTS */
+@font-face {
+    font-family: 'charmonmanregular';
+    src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
+         url('fonts/charmonman-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'quicksanddash';
+    src: url('fonts/quicksand_dash-webfont.woff2') format('woff2'),
+         url('fonts/quicksand_dash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ===================================================== */
 body {
     margin: 70px;
     background: #D6DCE5;
@@ -12,16 +31,29 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
+
+@media screen and (max-width: 700px) {
+    body {
+      margin: 30px 20px /*top right bottom left*/
+    }
+  }
+
+
 /* ------------------------------------ IMAGES */
 .banner {
     width: 100%;
     height: auto;
     display: block;
+    border: white;
+    border-width: 50px;
   }
 
 .journal {
-    width: 150px;
+    width: 20%;
+    max-width: 140px;
+    min-width: 90px;
     height: auto;
+    margin: 5px 15px 2px 5px;
     float: left;
 }
 /* --------------------------------- SEPARATOR */
@@ -37,18 +69,43 @@ hr {
   }
 /* =============================== TEXT STYLES */
 
-.articlebox {
-    background-color: aquamarine;
+.note {
+    font-family: 'charmonmanregular';
 }
 
+.sig {
+    font-style: italic;
+    float: right;
+}
+.articlebox {
+    background-color: #f2f2f2;
+    border: 3px solid;
+}
+
+
 .title {
+    font-size: large;
+    font-weight: bold;
     background-color: white;
     color: black;
+    margin-left: 100px;
+}
+.subtitle {
+    font-weight: lighter;
+    background-color: white;
+    color: black;
+    margin-left: 100px;
+}
+
+p {
+    margin: 15px;
 }
 
 .quotered {
+    font-size: small;
     display: block;
     padding-left: 20px;
     border-left-style: solid;
     border-left: 2px solid #C00000;
+    margin: 10px;
   }
