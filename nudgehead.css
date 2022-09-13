@@ -69,7 +69,7 @@ hr {
   }
 /* =============================== TEXT STYLES */
 
-.note {
+.note1 {
     font-family: 'charmonmanregular';
 }
 
@@ -103,9 +103,40 @@ p {
 
 .quotered {
     font-size: small;
+    color: #7f7f7f;
+    background-color: white;
     display: block;
     padding-left: 20px;
     border-left-style: solid;
     border-left: 2px solid #C00000;
-    margin: 10px;
+    margin: 10px 25px 10px 25px;
   }
+
+  .note {
+    color: #7030A0;
+    font-family: 'charmonmanregular';
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .notescrap {
+    color: #7030A0;
+    font-family: 'charmonmanregular';
+    font-weight: bold;
+  }
+
+  .alzebdah {
+    background-color: beige;
+    display: block;
+  }
+
+  ul li { padding: 5px 0px; }
+
+  .hr2 {
+    margin: 5px;
+    border: 0;
+    border-top: 1px dashed #d9d9d9;
+  }
+
