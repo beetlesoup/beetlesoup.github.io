@@ -82,19 +82,25 @@ hr {
     border: 3px solid;
 }
 
-
-.title {
-    font-size: large;
-    font-weight: bold;
+.headerbox {
     background-color: white;
     color: black;
     margin-left: 100px;
 }
+
+.title {
+    font-size: large;
+    font-weight: bold;
+    margin-right: 5px;
+    
+}
 .subtitle {
     font-weight: lighter;
-    background-color: white;
-    color: black;
-    margin-left: 100px;
+}
+
+.date {
+    float: right;
+    margin-right: 5px;
 }
 
 p {
