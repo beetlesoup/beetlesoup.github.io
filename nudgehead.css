@@ -25,18 +25,10 @@
 }
 /* ===================================================== */
 body {
-    margin: 70px;
     background: #D6DCE5;
     color: #43464B;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
-
-
-@media screen and (max-width: 700px) {
-    body {
-      margin: 30px 20px /*top right bottom left*/
-    }
-  }
 
 /* =================================================== */
 
