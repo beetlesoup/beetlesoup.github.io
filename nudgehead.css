@@ -50,8 +50,8 @@ iframe {
 
 .journal {
     width: 20%;
-    max-width: 140px;
-    min-width: 90px;
+    max-width: 90px;
+    min-width: 10px;
     height: auto;
     margin: 5px 15px 2px 5px;
     float: left;
@@ -149,6 +149,9 @@ p {
     margin-right: 5px;
   }
 
+  u {
+    text-decoration-style: dashed;
+  }
   
 
   /* ================================== */
