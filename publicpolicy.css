@@ -126,6 +126,8 @@ body {
   background-color: #666;
   color: white;
 }
+
+
 /* ===================================================== */
 
 iframe {
@@ -205,11 +207,6 @@ hr {
 .date {
     float: right;
     margin-right: 5px;
-}
-
-.doi {
-  float: right;
-  margin-right: 5px;
 }
 
 p {
