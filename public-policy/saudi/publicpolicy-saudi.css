@@ -1,0 +1,131 @@
+/* ================================================ FONTS */
+@font-face {
+    font-family: 'charmonmanregular';
+    src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
+         url('fonts/charmonman-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'quicksanddash';
+    src: url('fonts/quicksand_dash-webfont.woff2') format('woff2'),
+         url('fonts/quicksand_dash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* =====================================================
+======================================================== */
+/* ------------------------------------ IMAGES */
+.articleimg {
+    width: 20%;
+    max-width: 90px;
+    min-width: 10px;
+    height: auto;
+    margin: 5px 15px 2px 5px;
+    float: left;
+}
+/* =====================================================
+======================================================== */
+body {
+    background: #D6DCE5;
+    color: #43464B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+
+.note1 {
+    font-family: 'charmonmanregular';
+}
+
+.sig {
+    font-style: italic;
+    float: right;
+}
+.articlebox {
+    background-color: #f2f2f2;
+    border: 3px solid;
+}
+
+.headerbox {
+    background-color: white;
+    color: black;
+    margin-left: 100px;
+}
+
+a:link {
+    color: #00AE58;
+    /*font-weight: bold; */
+  }
+  a:visited {color: #00AE58;}
+
+
+.title {
+    color: #0F3325;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 5px;
+    
+}
+.subtitle {
+    font-weight: lighter;
+}
+
+.date {
+    float: right;
+    margin-right: 5px;
+}
+
+p {
+    margin: 15px;
+}
+
+.quotered {
+    font-size: small;
+    color: #7f7f7f;
+    background-color: white;
+    display: block;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left: 2px solid #C00000;
+    margin: 10px 25px 10px 25px;
+  }
+
+  .note {
+    color: #7030A0;
+    font-family: 'charmonmanregular';
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .notescrap {
+    color: #7030A0;
+    font-family: 'charmonmanregular';
+    font-weight: bold;
+  }
+
+  .alzebdah {
+    background-color: #F0FEE7;
+    display: block;
+  }
+
+  ul li {
+    padding: 5px 0px;
+    margin-right: 5px;
+  }
+
+  u {
+    text-decoration-style: dashed;
+  }
+  
