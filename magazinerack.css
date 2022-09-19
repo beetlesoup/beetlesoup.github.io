@@ -147,9 +147,9 @@ ul li:before {
     width:fit-content;
     max-width: 50px;
     min-width: 20px;
-    float: left;
+    float: right;
     vertical-align: baseline;
-    padding: 10px 10px 10px 10px; /*top right bottom left*/
+    padding: 10px 0px 10px 10px; /*top right bottom left*/
   }
 
   /* WORDS ON IMAGES: */
@@ -186,8 +186,20 @@ ul li:before {
   ** SPECIFIC TO: MAGAZINE RACK **
   ****************************** */
 
+  .articlepreview {
+    padding: 0px 15px 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
 
-  genres {
+  .articleimage{
+    max-height: 40px;
+    float: right;
+  }
+  .author {
+    clear: right;
+
+  }
+  .preview {
 
   }
 
@@ -298,12 +310,9 @@ ul li:before {
 
   /* separator lines */
 
-  hr {
-    margin: 40px 0;
-  }
-
   /* background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  */
   .hr1 {
+    margin: 40px 0;
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, black, transparent);  
@@ -311,7 +320,7 @@ ul li:before {
 
 
   .hr2 {
-    margin: 30px;
+    margin: 30px 0;
     border: 0;
     border-top: 1px dashed #d9d9d9;
   }
