@@ -7,7 +7,7 @@
    How are we going to make it turn the theme dark? */
 
 /* First use a query selector to get the button reference and call it 'switcher' */
-const switcher = document.querySelector('.btn');
+const switcher = document.querySelector('.themebtn');
 
 /* Next add the event handler for the click event */
 switcher.addEventListener('click', function() {
@@ -24,3 +24,4 @@ switcher.addEventListener('click', function() {
     /* Add the following message to be shown in Developer View, ya big nerd: */
     console.log('current class name: ' + className);
 });
+

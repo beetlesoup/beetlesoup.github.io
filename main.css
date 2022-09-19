@@ -28,7 +28,7 @@
   --btnBg: var(--midnightblue);
 }
 
-.btn {
+.themebtn {
   position: absolute;
   top: 20px;
   right: 20px;

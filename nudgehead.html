@@ -11,14 +11,33 @@
 <!--    opening quote: &#8220;
         closing quote: &#8221; -->
 <body style="margin: 30px;">
-    <p>
-        <span class="note1">I will be using &#8220;BS&#8221; to refer to behavioral science and its derivatives, but if you read it as a derogative you are being disrespectful to me (as those are my intials) and to my younger self's favorite fantasy author, Brandon Sanderson. Read his books choronologically for extremely creative worldbuilding and fantastic twists that slowly evolve into just another Marvel superhero story. <span class="sig">- BS</span></span>
+    <p><span class="note1">I will be using &#8220;BS&#8221; to refer to behavioral science and its derivatives, but if you read it as a derogative you are being disrespectful to me (as those are my intials) and to my younger self's favorite fantasy author, Brandon Sanderson. Read his books choronologically for extremely creative worldbuilding and fantastic twists that slowly evolve into just another Marvel superhero story. <span class="sig">- BS</span></span></p>
 
-        <p>If this is useful to you, all I ask is that you put me in your acknowledgments!</p>
-    </p>
+    <p>If this is useful to you, all I ask is that you put me in your acknowledgments!</p>
+    
     <hr class="hr1">
-        <iframe src="nudgepages/2019/no-welfare-theory.html"></iframe>
-    <br><br><br><hr class="hr2">
-        <iframe src="nudgepages/2019/bounded-interdisciplinarity.html"></iframe>
+    <!-- ================================== MAKING FILTER -->
+    <!-- Control Buttons -->
 
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('general')">Methodology and Interpretation</button>
+        <button class="btn" onclick="filterSelection('defaults')"> Defaults</button>
+    </div>
+    
+    <!-- Filterable Elements: do this if it belongs to more than one:
+         <div class="filterDiv colors fruits">Orange</div>
+    -->
+
+    <div class="container">
+        <div class="filterDiv general"><iframe src="nudgepages/2019/no-welfare-theory.html"></iframe></div>
+        
+        <div class="filterDiv general"><iframe src="nudgepages/2019/bounded-interdisciplinarity.html"></iframe></div>
+    </div>
+
+      
+      <!-- FINAL THING IN YOUR BODY -->
+      <script src="nudgehead.js"></script>
+      <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo!
+          Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
 </body>
