@@ -37,8 +37,10 @@
 
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('notable')">Landmark and Awarded</button>
         <button class="btn" onclick="filterSelection('general')">Recommendations</button>
         <button class="btn" onclick="filterSelection('nudge')">Nudge Studies</button>
+        <button class="btn" onclick="filterSelection('saudi')">Saudi</button>
     </div>
     
     <!-- Filterable Elements: do this if it belongs to more than one:
@@ -46,7 +48,7 @@
     -->
 
     <div class="container">
-        <div class="filterDiv general"><iframe src="public-policy/saudi/2022-climate-change-saghir.html"></iframe></div>
+        <div class="filterDiv general saudi"><iframe src="public-policy/saudi/2022-climate-change-saghir.html"></iframe></div>
 
         <div class="filterDiv nudge"><iframe src="public-policy/nudgepages/2022-choice-architecture.html"></iframe></div>
 
