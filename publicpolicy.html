@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <p><span class="note1">I will be using &#8220;BS&#8221; to refer to behavioral science and its derivatives, but if you read it as a derogative you are being disrespectful to me (as those are my intials) and to my younger self's favorite fantasy author, Brandon Sanderson. Read his books choronologically for extremely creative worldbuilding and fantastic twists that slowly evolve into just another Marvel superhero story. [ ... This made sense on the original page, which was going to be nudge-focused and titled BS.]<span class="sig">- BS</span></span></p>
+    <p><span class="note1">I will be using &#8220;BS&#8221; to refer to behavioral science and its derivatives, but if you read it as a derogative you are being disrespectful to me (as those are my intials) and to my younger self's favorite fantasy author, Brandon Sanderson. Read his books choronologically for extremely creative worldbuilding and fantastic twists that slowly evolve into just another Marvel superhero story. [ ... This made sense on the original page, which was going to be nudge-focused and titled BS, or BS by BS.]<span class="sig">- BS</span></span></p>
 
     <p>Dear public policy analyst,<br>
     If this is useful to you, all I ask is that you somehow put me in your acknowledgments!</p>
@@ -37,10 +37,11 @@
 
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('notable')">Landmark and Awarded</button>
-        <button class="btn" onclick="filterSelection('general')">Recommendations</button>
+        <button class="btn" onclick="filterSelection('saudi')">All Saudi</button>
+        <button class="btn" onclick="filterSelection('recs')">Recommendations</button>
+        <button class="btn" onclick="filterSelection('cors')">Correlations</button>
         <button class="btn" onclick="filterSelection('nudge')">Nudge Studies</button>
-        <button class="btn" onclick="filterSelection('saudi')">Saudi</button>
+        
     </div>
     
     <!-- Filterable Elements: do this if it belongs to more than one:
@@ -48,17 +49,19 @@
     -->
 
     <div class="container">
-        <div class="filterDiv general saudi"><iframe src="public-policy/saudi/2022-climate-change-saghir.html"></iframe></div>
+      <div class="filterDiv cors"><iframe src="public-policy/general/2021-internet-covid.html"></iframe></div>
 
-        <div class="filterDiv nudge"><iframe src="public-policy/nudgepages/2022-choice-architecture.html"></iframe></div>
+      <div class="filterDiv recs saudi"><iframe src="public-policy/saudi/2022-climate-change-saghir.html"></iframe></div>
 
-        <div class="filterDiv general nudge"><iframe src="public-policy/nudgepages/2019-no-welfare-theory.html"></iframe></div>
+      <div class="filterDiv nudge"><iframe src="public-policy/nudgepages/2022-choice-architecture.html"></iframe></div>
+
+      <div class="filterDiv recs nudge"><iframe src="public-policy/nudgepages/2019-no-welfare-theory.html"></iframe></div>
         
-        <div class="filterDiv general nudge"><iframe src="public-policy/nudgepages/2019-bounded-interdisciplinarity.html"></iframe></div>
+      <div class="filterDiv recs nudge"><iframe src="public-policy/nudgepages/2019-bounded-interdisciplinarity.html"></iframe></div>
 
-        <div class="filterDiv nudge"><iframe src="public-policy/nudgepages/2019-default-path.html"></iframe></div>
+      <div class="filterDiv nudge"><iframe src="public-policy/nudgepages/2019-default-path.html"></iframe></div>
 
-        <div class="filterDiv general saudi"><iframe src="public-policy/saudi/2010-jeddah-flood-policy.html"></iframe></div>
+      <div class="filterDiv recs saudi"><iframe src="public-policy/saudi/2010-jeddah-flood-policy.html"></iframe></div>
     </div>
 
       
