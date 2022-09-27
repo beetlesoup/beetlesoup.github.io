@@ -67,6 +67,14 @@ body {
   align-items: center;
 }
 
+.officebox {
+  border: solid 2px #124104;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 5px 5px #124104;
+  justify-content: center;
+  align-items: center;
+}
 /* ------------------------------------ IMAGES */
 .roomimg {
   width: 20%;
@@ -78,6 +86,7 @@ body {
   max-width: 500px;
   height: auto;
   display: block;
+  text-align: center;
 }
 
 /* ----------------------------------- BUTTONS */
