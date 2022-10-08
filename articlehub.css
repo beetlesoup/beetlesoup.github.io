@@ -1,4 +1,26 @@
 /* ================================================ FONTS */
+:root {  /*when you add a new one here, add it under both .articlebox and taggies too */
+  --activism: #663300;
+  --biology: #7030A0;
+  --bookreviews: #FFC300;
+  --environment: #00B050;
+  --history: #C55A11;
+  --international: #C00000;
+  --space: #001279;
+  --nothing: #d9d9d9;
+
+  --bg: #FDFDFD;
+  --fontColor: #43464B;
+  --btnBg: #000080;
+    /* for magazine rack */
+  --imagelabelBg: #F2F2F2;
+  --articleboxBg: #f5f5f5;
+  --articleheadlink: #0070C0;
+  --articlebodylink: #0070C0;
+  --highlightColor: #fff2cc;
+  --highlightTextColor: #43464B; 
+}
+
 @font-face {
     font-family: 'charmonmanregular';
     src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
@@ -188,6 +210,10 @@ hr {
     border: 3px solid;
 }
 
+.locked {
+  border-right: 3px dashed darkred;
+}
+
 .headerbox {
     background-color: white;
     color: black;
@@ -255,3 +281,108 @@ p {
   
 
   /* ================================== */
+
+  .articlebox {
+    background-color: var(--articleboxBg);
+    color: var(--fontColor);
+    text-align: left;
+    font-size: small;
+    border-style: dashed;
+    border-color: #d9d9d9;
+    border-top: none;
+    border-left: none;
+    margin-left: 20px;
+    padding: 10px 20px 10px 10px; /*top right bottom left*/
+  }
+
+  .articlebox.activism {
+    border-color: var(--activism);
+  }
+
+  .articlebox.biology {
+    border-color: var(--biology);
+  }
+
+  .articlebox.bookreviews {
+    border-color: var(--bookreviews);
+  }
+
+  .articlebox.environment {
+    border-color: var(--environment);
+  }
+
+  .articlebox.history {
+    border-color: var(--history);
+  }
+
+  .articlebox.international {
+    border-color: var(--international);
+  }
+  
+  .articlebox.space {
+    border-color: var(--space);
+  }
+
+  .articlebox.nothing {
+    border-color: var(--nothing);
+  }
+  
+  .highlight {
+    background-color: var(--highlightColor);
+    color: var(--highlightTextColor);
+  }
+
+  /* span! span is like div but inline! what a wonderful discovery! */
+  
+  .quotered {
+    display: block;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left: 2px solid #C00000;
+  }
+
+  /* gonna use these for tags: */
+
+  taggies {
+    color: white;
+    text-align: right;
+    border: none;
+    float: right;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .activismtag {
+    background-color: var(--activism);
+  }
+
+  .biologytag {
+    background-color: var(--biology);
+  }
+
+  .bookreviewstag {
+    background-color: var(--bookreviews);
+  }
+
+  .environmenttag {
+    background-color: var(--environment);
+  }
+
+  .historytag {
+    background-color: var(--history);
+  }
+
+  .internationaltag {
+    background-color: var(--international);
+  }
+
+  .spacetag {
+    background-color: var(--space);
+  }
+
+
+  .nothingtag {
+    background-color: var(--nothing);
+    color: #43464B;
+  }
