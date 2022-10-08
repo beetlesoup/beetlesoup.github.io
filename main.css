@@ -1,3 +1,13 @@
+
+@font-face {
+  font-family: 'dosis';
+  src: url('fonts/dosis-variablefont_wght-webfont.woff2') format('woff2'),
+       url('fonts/dosis-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 :root {
   --steelgrey: #43464B;
   --azure: #edfffd;
@@ -47,7 +57,7 @@ body {
   margin: 70px 20px 20px 20px; /* top right bottom left?*/
   background: var(--bg);
   color: var(--fontColor);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'dosis';
 }
 
 @media screen and (min-width: 600px) {
