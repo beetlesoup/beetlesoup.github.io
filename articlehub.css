@@ -268,26 +268,11 @@
     border-right: 3px dashed darkred;
   }
   
-  .headerbox {
-      background-color: white;
-      color: black;
-      margin-left: 100px;
-  }
-  
-  .title {
-      font-size: large;
-      font-weight: bold;
-      margin-right: 5px;
-      
-  }
-  .subtitle {
-      font-weight: lighter;
-  }
-  
 
   .date {
     color: #8E8F92;
-    float: right;
+    font-size: small;
+    text-align: right;
     margin-right: 5px;
   }
 
@@ -331,11 +316,7 @@
       font-family: 'charmonmanregular';
       font-weight: bold;
     }
-  
-    .alzebdah {
-      background-color: beige;
-      display: block;
-    }
+
   
     ul li {
       padding: 5px 0px;
@@ -358,7 +339,6 @@
       border-color: #d9d9d9;
       border-top: none;
       border-left: none;
-      margin-left: 20px;
       padding: 10px 20px 10px 10px; /*top right bottom left*/
     }
 
