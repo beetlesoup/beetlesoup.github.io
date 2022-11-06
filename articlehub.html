@@ -28,6 +28,12 @@
         </div>
     </div>
     
+<!-- <table>
+        <tr>
+            <td width="35%"></td>
+            <td></td>
+        </tr>
+    </table> -->
 
     <table cellspacing="10">
       <tr>
@@ -35,95 +41,127 @@
         <td><p><span class="note1">Well, hello there. This is where I collect articles. The dashed red border on the right side of <strong>journal articles</strong> indicates that Sci-Hub couldn't access that one.<span class="sig">- BS</span></span></p></td>
       </tr>
     </table>
-
-    
-    
+    <span class="articlecount">Article Count: 3</span>
     <hr class="hr1">
-    <!-- ================================== MAKING FILTER -->
-    <!-- Control Buttons -->
+<!-- ================================== MAKING FILTER -->
+<!-- why did I make categoryBoxes again? -->
+<div id="categoryBoxes">
 
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('saudi')">All Saudi</button>
-        <button class="btn" onclick="filterSelection('recs')">Recommendations</button>
-        <button class="btn" onclick="filterSelection('econ')">Economics</button>
-        <button class="btn" onclick="filterSelection('microscope')">Literal Microscope</button>
-        <button class="btn" onclick="filterSelection('nudge')">BS</button>
+<br><span class="fh">Areas</span><br>
+<div class="filterbox1">
+    <button class="btn1"><input type="checkbox" data-category="econ" name="category" unchecked>Economics</button>
+    <button class="btn1"><input type="checkbox" data-category="microscope" name="category" unchecked>Microscope</button>
+    <button class="btn1"><input type="checkbox" data-category="nudge" name="category" unchecked>Nudge</button>
+</div>
+<br><span class="fh">Types</span><br>
+<div class="filterbox2">
+    <button class="btn2"><input type="checkbox" data-category="news" name="category" unchecked>News and Discoveries</button>
+    <button class="btn2"><input type="checkbox" data-category="recs" name="category" unchecked>Attacks and Recommendations</button>
+    <button class="btn2"><input type="checkbox" data-category="review" name="category" unchecked>Reviews and Meta-Analyses</button>
+    <button class="btn2"><input type="checkbox" data-category="survey" name="category" unchecked>Surveys</button>
+    <button class="btn2"><input type="checkbox" data-category="experiment" name="category" unchecked>Experiments</button>
+</div>
+<br><span class="fh">Tags</span><br>
+<div class="filterbox3">
+    <button class="btn3"><input type="checkbox" data-category="saudi" name="category" unchecked>Saudi</button>
+</div>
+<br><span class="fh">Judgment</span><br>
+<div class="filterbox3">
+    <button class="btn3"><input type="checkbox" data-category="nothanks" name="category" unchecked>Supreme Timewasters</button>
+    <button class="btn3"><input type="checkbox" data-category="thanks" name="category" unchecked>Thanks for Telling Me</button>
+    <button class="btn3"><input type="checkbox" data-category="packed" name="category" unchecked>More Info Inside!</button>
+</div>
+</div><br>
+  <!-- =========================================== THE ARTICLES!!!!!! -->
+  <div class="container">
+
+    <!-- 2022 sep 24 why foreign banks come to saudi-->
+    <div data-category="econ saudi nothanks" class="filterDiv">
+        <table style="width:100%">
+            <tr>
+                <td class="first"><img class="journal" src="images/journals/sjef.jpeg"></td>
+                <td><strong>The Determinants Influencing Foreign Banks' Entry into Saudi Arabia</strong><br>
+                by Najla Alomar, Milind Sathye, Peter Graham<br>
+                in Saudi Journal of Economics and Finance (SJEF, Scholars)
+                <a class="date" href="https://saudijournals.com/journal/sjef/home">2020 Sep 03</a>
+                    <div class="jarticlebox">A Likert survey was sent to 92 senior managers of all 14 foreign banks operating in Saudi Arabia in December 2019, with a 77% [overall(?)] response rate. The DFAA analysis found that <span class="shighlight">11 determinants emerged as very important factors, chief of which was "following corporate customers"</span> - this finding doesn't support the literature that shows that following corporate customers is important only in developed countries - followed by the size of the market, economic and political stability, economic growth, building a new customer base, and others.
+
+                
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
-    
-    <!-- ADD CATEGORY TO JAN 23 ARTICLE
-      winter: dec jan feb
-      mar apr may
-      summer: jun jul aug
-      sep oct nov
-    -->
+    <!-- 2022 sep 8 what immigration visas tell us -->   
+    <!-- 2022 summer economics of intangible capital -->
 
-    <div class="container">
-      <!-- 2022 sep 24 -->
-      <div class="filterDiv econ saudi"><iframe src="journal-articles/saudi/2022-foreign-banks.html"></iframe></div>
-      <!-- 2022 sep 8-->
-      <div class="filterDiv econ"><iframe src="journal-articles/economics/2022-immigration-visas.html"></iframe></div>
-      
-      <!-- 2022 summer -->
-      <div class="filterDiv econ"><iframe src="journal-articles/economics/2022-intangible-capital.html"></iframe></div>
-      
-      <!-- 2022 aug 25 -->
-      <div class="filterDiv microscope"><br>
-        🦠 <a class="one" href = "https://www.npr.org/sections/goatsandsoda/2022/08/25/1119228689/why-stinky-sweat-is-good-for-you">Why stinky sweat is good for you</a> - MICHEALEEN DOUCLEFF on NPR's All Things Considered
+    <!-- 2022 aug 25 why stinky sweat is good for you -->
+    <div data-category="microscope news thanks" class="filterDiv"><br>
+        🦠 <strong>Why stinky sweat is good for you</strong> - Michealeen Doucleff on NPR's All Things Considered
           <taggies class="biologytag">#Biology</taggies>
-          <div class="articlebox biology"><i>Staphylococcus hominins</i>, one of the 200 or so bacteria on some people's skin, <a class="two" href="https://www.nature.com/articles/s41598-020-68860-z">produces an onion smell</a> after <a class="two" href="https://youtu.be/dNBotNm7PUc">eating the sweat</a> it finds on the body. It also kills MRSA(!!!) by punching holes in its cell membrane. As the water evaporates, sweat antibiotics increase in concentration. So it kind of leaves a little coating on your skin. <span class="highlight">Onion-smelling sweat is antibiotic juice. Don't worry about washing it off; the good stuff is deep in your pores.</span><span class="date">2022 Aug 25</span></div>
+          <div class="articlebox biology"><i>Staphylococcus hominins</i>, one of the 200 or so bacteria on some people's skin, <a class="two" href="https://www.nature.com/articles/s41598-020-68860-z">produces an onion smell</a> after <a class="two" href="https://youtu.be/dNBotNm7PUc">eating the sweat</a> it finds on the body. It also kills MRSA(!!!) by punching holes in its cell membrane. As the water evaporates, sweat antibiotics increase in concentration. So it kind of leaves a little coating on your skin. <span class="highlight">Onion-smelling sweat is antibiotic juice. Don't worry about washing it off; the good stuff is deep in your pores.</span><a class="date" href = "https://www.npr.org/sections/goatsandsoda/2022/08/25/1119228689/why-stinky-sweat-is-good-for-you">2022 Aug 25</a></div>
       <br></div>
-      <!-- 2022 aug 17 -->
-      <div class="filterDiv microscope"><br>
-        🔬 <a class="one" href="https://www.wired.com/story/new-evidence-points-to-the-moon-once-being-part-of-earth/">New Evidence <s>Points to</s> Supports Theory of the Moon Once Being Part of Earth</a> - JONATHAN O'CALLAGHAN on Wired Science
+    <!-- 2022 aug 17 found neon and helium on moon rocks -->
+    <div data-category="microscope news thanks" class="filterDiv"><br>
+        🔬 <strong>New Evidence <s>Points to</s> Supports Theory of the Moon Once Being Part of Earth</strong> - Jonathan O'Callaghan on Wired Science
         <taggies class="spacetag">#Space</taggies>
-        <div class="articlebox space">The <a class="two" href="https://www.lpi.usra.edu/education/explore/marvelMoon/background/moon-formation/">current moon formation theory</a> is called giant impact hypothesis: our planet was hit, with giant impact, by Theia, who was blown to pieces and sent a huge chunk of Earth careening into space. That material continued to swirl around the planet and some of it stuck together to form the moon.<br><br>The <a class="two" href="https://www.science.org/doi/10.1126/sciadv.abl4920">new evidence</a>: six <span class="highlight">lunar meteorites</span> recovered by NASA from Antarctica in the early 2000s <span class="highlight">were found to contain helium and neon</span> trapped in tiny glass beads, which were formed in volcanic eruptions on the lunar surface as magma was pulled up from the moon's interior. These noble (unreactive) gases appear to have originated on Earth, and were likely inherited by the moon during its formation.<br><br>Lunar rocks show a striking similarity to Earth rocks, albeit with some differences. One difference is a lighter version of chlorine, pointing to a dramatic event early in the history of our two worlds that separated some material. Most scientists now agree this event was a gigantic collision.<br><br><span class="highlight">Had these gases instead been transported across space into the moon by solar winds, we'd expect there to be much much lower quantities present in the meteorites analyzed.</span><br><br>The next step is to understand how Earth got its noble gases.<span class="date">2022 Aug 17</span></div>
-      <br></div>
-      <!-- 2022 aug 11 -->
-      <div class="filterDiv saudi econ"><iframe src="journal-articles/saudi/2022-islamic-fund-growth.html"></iframe></div>
-      <!-- 2022 june 7 -->
-      <div class="filterDiv econ"><iframe src="journal-articles/economics/2022-welfare-prevents-crime.html"></iframe></div>
+        <div class="articlebox space">The <a class="two" href="https://www.lpi.usra.edu/education/explore/marvelMoon/background/moon-formation/">current moon formation theory</a> is called giant impact hypothesis: our planet was hit, with giant impact, by Theia, who was blown to pieces and sent a huge chunk of Earth careening into space. That material continued to swirl around the planet and some of it stuck together to form the moon.<br><br>The <a class="two" href="https://www.science.org/doi/10.1126/sciadv.abl4920">new evidence</a>: six <span class="highlight">lunar meteorites</span> recovered by NASA from Antarctica in the early 2000s <span class="highlight">were found to contain helium and neon</span> trapped in tiny glass beads, which were formed in volcanic eruptions on the lunar surface as magma was pulled up from the moon's interior. These noble (unreactive) gases appear to have originated on Earth, and were likely inherited by the moon during its formation.<br><br>Lunar rocks show a striking similarity to Earth rocks, albeit with some differences. One difference is a lighter version of chlorine, pointing to a dramatic event early in the history of our two worlds that separated some material. Most scientists now agree this event was a gigantic collision.<br><br><span class="highlight">Had these gases instead been transported across space into the moon by solar winds, we'd expect there to be much much lower quantities present in the meteorites analyzed.</span><br><br>The next step is to understand how Earth got its noble gases.<a class="date" href="https://www.wired.com/story/new-evidence-points-to-the-moon-once-being-part-of-earth/">2022 Aug 17</a></div>
+    <br></div>
 
-      <div class="filterDiv nudge"><iframe src="journal-articles/nudgepages/2022-choice-architecture.html"></iframe></div>
-
-      <!-- jan 23 2020 -->
-      <div class="filterDiv econ"><iframe src="journal-articles/economics/2020-market-power-implications.html"></iframe></div>
-
-
-      <div class="filterDiv recs nudge"><iframe src="journal-articles/nudgepages/2019-no-welfare-theory.html"></iframe></div>
-        
-      <div class="filterDiv recs nudge"><iframe src="journal-articles/nudgepages/2019-bounded-interdisciplinarity.html"></iframe></div>
-
-      <div class="filterDiv nudge"><iframe src="journal-articles/nudgepages/2019-default-path.html"></iframe></div>
-
-      <!-- june 10 2019 nudge corporate culture -->
-      <div class="filterDiv nudge"><br>
-        🐘 <a class="one" href="https://www.tlnt.com/123814-2/">Changing Culture a &#8220;Nudge&#8221; at a Time</a> - KNOWLEDGE@WHARTON on TLNT
-        <div class="articlebox">
-          <p>Part I of this article is about Stephanie Lampkin's <a href="https://blendoor.com">Blendoor</a>.</p><hr class="hr2">
-          <p>Humu was co-founded in 2017 by Google's former SVP of people operations, Laszlo Bock, who is now the startup's CEO. Bock's original vision for Humu was “to make software that helps managers and co-workers act more human,” according to The Washington Post. (Bock is also connected with Blendoor as an angel investor, Lampkin noted during her talk.)</p>
-          <p>Humu offers its clients a diagnostic survey. It's very important for managers to discuss the survey results with their team, something they may be reluctant to do.<br></p>
-          <p><strong>The Nudge:</strong>
-          <ul>
-            <li>Manager side: The software nudges the manager with suggestions about sharing the results, makes it easier to follow through by providing a link with a pre-populated calendar invitation, and supports with a guide to holding an effective conversation is provided.</li>
-            <li>Employee side: Another nudge goes to employees, asking if the manager had the conversation with them</li>
-          </ul></p>
-          <p><strong>Results:</strong>
-            <ul>
-              <li>Employees of managers who received this nudge are two and a half times more likely to have the conversation.</li>
-              <li>If the manager-directed nudges were personalized — expressing not just organizational results but specific team results — managers were 20% more likely to share the information with their people.</li>
-              <li>When this single conversation about survey results is held, employees have 64% greater agreement that their manager was committed to change and 27% more agreement that their organizations as more committed to change.</li>
-            </ul>
-          </p>
-          <p><span class="quotered">If 27% of the [firm] just looks at these nudges … that's enough critical mass to start a cultural change throughout the organization. - Stefanie Tignor</span></p>
+    <!-- 2022 aug 11 growth of islamic funds saudi-->
+    <!-- 2022 june 7 welfare found to prevent crime -->
+    <!-- choice architecture -->
+    <!-- sep 3 2020 global south -->
+    <div data-category="econ recs thanks packed" class="filterDiv">
+        <table style="width:100%">
+            <tr>
+                <td width="70px"><img class="journal" src="images/journals/ijpee.jpeg"></td>
+                <td><strong>Economic perspectives from the global south and   why they matter for economics worldwide</strong><br>
+                by Irene van Staveren<br>
+                from International Journal of Pluralism and Economics Education (IJPEE, InderScience)
+                    <div class="jarticlebox">seilgjl
+                    <a class="date" href="https://www.inderscience.com/info/inarticle.php?artid=109491">2020 Sep 03</a></div>
+                </td>
+            </tr>
+        </table>
+        <div>
         </div>
-      <br></div>
+    <br></div>
 
-      <!-- is this 2017? -->
-      <div class="filterDiv recs saudi"><iframe src="journal-articles/saudi/climate-change-saghir.html"></iframe></div>
+    <!-- jan 23 2020 market power implications-->
+    <!-- 2019 no welfare theory -->
+    <!-- 2019 bounded interdisciplinarity -->
+    <!-- 2019 default path -->
+    <!-- 2019 jun 10 nudge corporate culture -->
 
-      <div class="filterDiv recs saudi"><iframe src="journal-articles/saudi/2010-jeddah-flood-policy.html"></iframe></div>
-    </div>
+    <!-- june 10 2019 nudge corporate culture -->
+    <div data-category="nudge experiment" class="filterDiv"><br>
+        🐘 <strong>Changing Culture a &#8220;Nudge&#8221; at a Time</strong> - KNOWLEDGE@WHARTON on TLNT
+          <taggies>#Corporate</taggies>
+          <div class="articlebox">Part I of this article is about Stephanie Lampkin's <a class="two" href="https://blendoor.com">Blendoor</a> Part II is about a nudge at a different company, <a class="two" href="https://humu.com">Humu</a>:<br><br>
+            <table>
+                <tr>
+                  <td width="35%"><strong>The Nudge:</strong>
+                    <ul>
+                      <li>Manager side: The software gives a suggestion to share the results and discuss with their employee, provides a link with a pre-populated calendar invitation, and supports with a guide to holding an effective conversation.</li>
+                      <li>Employee side: Another nudge goes to employees, asking if the manager had the conversation with them</li>
+                    </ul></td>
+                  <td><strong>Results:</strong>
+                    <ul>
+                      <li>Employees of managers who received this nudge are two and a half times more likely to have the conversation.</li>
+                      <li>If the manager-directed nudges were personalized — expressing not just organizational results but specific team results — managers were 20% more likely to share the information with their people.</li>
+                      <li>When this single conversation about survey results is held, employees have 64% greater agreement that their manager was committed to change and 27% more agreement that their organizations as more committed to change.</li>
+                    </ul></td>
+                </tr>
+              </table><a class="date" href="https://www.tlnt.com/123814-2/">2019 Jun 10</a><br></div>
+    <br></div>
+
+    <!-- is this 2017? climate change saghir-->
+    <!-- 2010 jeddah flood policy -->
+
+
+</div>
+   
 
     <hr class="hr2">
       <!-- FINAL THING IN YOUR BODY -->

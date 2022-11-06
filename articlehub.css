@@ -1,434 +1,502 @@
 /* ================================================ FONTS */
 :root {  /*when you add a new one here, add it under both .articlebox and taggies too */
-  --activism: #663300;
-  --biology: #7030A0;
-  --bookreviews: #FFC300;
-  --environment: #00B050;
-  --history: #C55A11;
-  --international: #C00000;
-  --space: #001279;
-  --nothing: #d9d9d9;
-
-  --bg: #FDFDFD;
-  --fontColor: #43464B;
-  --btnBg: #000080;
-    /* for magazine rack */
-  --imagelabelBg: #F2F2F2;
-  --articleboxBg: #f5f5f5;
-  --articleheadlink: #0070C0;
-  --articlebodylink: #0070C0;
-  --highlightColor: #fff2cc;
-  --highlightTextColor: #43464B; 
-}
-
-@font-face {
-    font-family: 'charmonmanregular';
-    src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
-         url('fonts/charmonman-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'quicksandregular';
-    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
-         url('fonts/quicksand-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'quicksanddash';
-    src: url('fonts/quicksand_dash-webfont.woff2') format('woff2'),
-         url('fonts/quicksand_dash-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-/* =====================================================
-======================================================== */
-body {
-    background: #D6DCE5;
-    color: #43464B;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-}
-
-/* ------------------------------------------- NAVBAR!!! */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #fff2cc;
-  color: var(--steelgrey);
-}
-
-.dropdown-content {
- display: none;
- position: absolute;
- background-color: #f9f9f9;
- min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* ---------------------------------------- NAVBAR END!!!*/
-
-.iconimg {
-  width:fit-content;
-  max-width: 50px;
-  min-width: 20px;
-  float: left;
-  vertical-align: baseline;
-  padding: 10px 0px 10px 10px; /*top right bottom left*/
-}
-
-/* ================================ CATEGORY FILTERS!!!! */
-.filterDiv {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-
-/* ===================================================== */
-
-iframe {
-  width: 100%;
-  height: 250px;
+    --activism: #663300;
+    --biology: #7030A0;
+    --bookreviews: #FFC300;
+    --environment: #00B050;
+    --history: #C55A11;
+    --international: #C00000;
+    --space: #001279;
+    --nothing: #d9d9d9;
   
-}
-
-/* =================================================== */
-
-/* ============================================== */
-
-/* ------------------------------------ IMAGES */
-.banner {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: white;
-    border-width: 50px;
+    --bg: #FDFDFD;
+    --fontColor: #43464B;
+    --btnBg: #000080;
+      /* for magazine rack */
+    --imagelabelBg: #F2F2F2;
+    --articleboxBg: #f5f5f5;
+    --articleheadlink: #0070C0;
+    --articlebodylink: #0070C0;
+    --highlightColor: #fff2cc;
+    --highlightTextColor: #43464B; 
   }
-
-.journal {
-    width: 20%;
-    max-width: 90px;
-    min-width: 10px;
-    height: auto;
-    margin: 5px 15px 2px 5px;
+  
+  @font-face {
+      font-family: 'charmonmanregular';
+      src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
+           url('fonts/charmonman-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  
+  }
+  @font-face {
+      font-family: 'quicksandregular';
+      src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+           url('fonts/quicksand-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  
+  }
+  @font-face {
+      font-family: 'quicksanddash';
+      src: url('fonts/quicksand_dash-webfont.woff2') format('woff2'),
+           url('fonts/quicksand_dash-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  
+  }
+  /* =====================================================
+  ======================================================== */
+  body {
+      background: #D6DCE5;
+      color: #43464B;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  }
+  
+  /* ------------------------------------------- NAVBAR!!! */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
     float: left;
-}
-/* --------------------------------- SEPARATOR */
-hr {
-    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
-
-  /* background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  */
-  .hr1 {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, transparent, black, rgb(103, 2, 2), rgb(103, 2, 2), rgb(189, 6, 6));  
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
   }
-
-  .hr2 {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to left, transparent, black, rgb(103, 2, 2), rgb(103, 2, 2), rgb(189, 6, 6)); 
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
   }
-/* =============================== TEXT STYLES */
-
-.note1 {
-    font-family: 'charmonmanregular';
-    line-height: 0.5;
-}
-
-.sig {
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #fff2cc;
+    color: var(--steelgrey);
+  }
+  
+  .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* ---------------------------------------- NAVBAR END!!!*/
+  
+  .iconimg {
+    width:fit-content;
+    max-width: 50px;
+    min-width: 20px;
+    float: left;
+    vertical-align: baseline;
+    padding: 10px 0px 10px 10px; /*top right bottom left*/
+  }
+  
+  .sig {
     font-style: italic;
     font-weight: bold;
     float: right;
 }
-.jarticlebox {
-    background-color: #f2f2f2;
-    border: 3px solid;
-}
 
-.locked {
-  border-right: 3px dashed darkred;
-}
-
-.headerbox {
-    background-color: white;
-    color: black;
-    margin-left: 100px;
-}
-
-.title {
-    font-size: large;
-    font-weight: bold;
-    margin-right: 5px;
-    
-}
-.subtitle {
-    font-weight: lighter;
-}
-
-.date {
-    float: right;
-    margin-right: 5px;
-}
-
-p {
-    margin: 15px;
-}
-
-.quotered {
-    font-size: small;
-    color: #7f7f7f;
-    background-color: white;
-    display: block;
-    padding-left: 20px;
-    border-left-style: solid;
-    border-left: 2px solid #C00000;
-    margin: 10px 25px 10px 25px;
-  }
-
-  .note {
-    color: #7030A0;
-    font-family: 'charmonmanregular';
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .notescrap {
-    color: #7030A0;
-    font-family: 'charmonmanregular';
-    font-weight: bold;
-  }
-
-  .alzebdah {
-    background-color: beige;
-    display: block;
-  }
-
-  ul li {
-    padding: 5px 0px;
-    margin-right: 5px;
-  }
-
-  u {
-    text-decoration-style: dashed;
-  }
-  
-
-  /* ================================== */
-
-  .articlebox {
-    background-color: var(--articleboxBg);
-    color: var(--fontColor);
-    text-align: left;
-    font-size: small;
-    border-style: dashed;
-    border-color: #d9d9d9;
-    border-top: none;
-    border-left: none;
-    margin-left: 20px;
-    padding: 10px 20px 10px 10px; /*top right bottom left*/
-  }
-
-  .articlebox.activism {
-    border-color: var(--activism);
-  }
-
-  .articlebox.biology {
-    border-color: var(--biology);
-  }
-
-  .articlebox.bookreviews {
-    border-color: var(--bookreviews);
-  }
-
-  .articlebox.environment {
-    border-color: var(--environment);
-  }
-
-  .articlebox.history {
-    border-color: var(--history);
-  }
-
-  .articlebox.international {
-    border-color: var(--international);
-  }
-  
-  .articlebox.space {
-    border-color: var(--space);
-  }
-
-  .articlebox.nothing {
-    border-color: var(--nothing);
-  }
-  
-  .highlight {
-    background-color: var(--highlightColor);
-    color: var(--highlightTextColor);
-  }
-
-  /* span! span is like div but inline! what a wonderful discovery! */
-  
-  .quotered {
-    display: block;
-    padding-left: 20px;
-    border-left-style: solid;
-    border-left: 2px solid #C00000;
-  }
-
-  /* gonna use these for tags: */
-
-  taggies {
-    color: white;
+.articlecount {
     text-align: right;
+}
+  /* ================================ CATEGORY FILTERS!!!! */
+
+  .filterbox1 {
+    border: dashed 1px #f1f1f1;
+  }
+
+  .filterbox2 {
+    border: dashed 1px #f1f1f1;
+  }
+
+  .filterbox3 {
+    border: dashed 1px #f1f1f1;
+  }
+  /* .show {
+    display: block;
+  } */
+
+  .hidden {
+    display:none
+  }
+  
+.fh {
+    margin: 0px;
+    text-align: right;
+}
+  /* Style the buttons */
+  .btn1 {
     border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 6px 6px 3px;
+    background-color: #f1f1f1;
+  }
+  
+  /* .btn1:hover {
+    background-color: #ddd;
+  } */
+  
+  /* .btn1.active {
+    background-color: #666;
+    color: white;
+  } */
+
+  .btn2 {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 6px 6px 3px;
+    background-color: #f1f1f1;
+  }
+
+  .btn3 {
+    border: none;
+    outline: none;
+    padding: 1px 5px 1px 1px;
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* ===================================================== */
+  
+  iframe {
+    width: 100%;
+    height: 250px;
+    
+  }
+  
+  /* =================================================== */
+  
+  /* ============================================== */
+  
+  /* ------------------------------------ IMAGES */
+  .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: white;
+      border-width: 50px;
+    }
+  
+  .journal {
+      width: 100%;
+  }
+  /* --------------------------------- SEPARATOR */
+  hr {
+      margin: 10px 0;
+    }
+  
+    /* background-image: linear-gradient(to right, transparent, #AFABAB, transparent);  */
+    .hr1 {
+      border: 0;
+      height: 2px;
+      background-image: linear-gradient(to right, transparent, black, rgb(103, 2, 2), rgb(103, 2, 2), rgb(189, 6, 6));  
+    }
+  
+    .hr2 {
+      border: 0;
+      height: 2px;
+      background-image: linear-gradient(to left, transparent, black, rgb(103, 2, 2), rgb(103, 2, 2), rgb(189, 6, 6)); 
+    }
+  /* =============================== TEXT STYLES */
+  
+  table {
+    width: 100%;
+  }
+  .first {
+    width: 70px;
+    vertical-align: top;    
+  }
+
+  a.one:link {
+    color: black;
+    font-weight: bold;
+  }
+
+  a.one:visited {color: black;}
+
+
+  .note1 {
+      font-family: 'charmonmanregular';
+      line-height: 0.5;
+  }
+  
+
+  .jarticlebox {
+      background-color: #f2f2f2;
+      border: 3px solid;
+  }
+  
+  .locked {
+    border-right: 3px dashed darkred;
+  }
+  
+  .headerbox {
+      background-color: white;
+      color: black;
+      margin-left: 100px;
+  }
+  
+  .title {
+      font-size: large;
+      font-weight: bold;
+      margin-right: 5px;
+      
+  }
+  .subtitle {
+      font-weight: lighter;
+  }
+  
+
+  .date {
+    color: #8E8F92;
     float: right;
-    border-radius: 25px;
-    border-style: solid;
-    padding: 5px 10px 5px 10px;
+    margin-right: 5px;
   }
 
-  .activismtag {
-    background-color: var(--activism);
+  a.date:link {    
+    color: #8E8F92;
+    float: right;
+    margin-right: 5px;
   }
 
-  .biologytag {
-    background-color: var(--biology);
-  }
-
-  .bookreviewstag {
-    background-color: var(--bookreviews);
-  }
-
-  .environmenttag {
-    background-color: var(--environment);
-  }
-
-  .historytag {
-    background-color: var(--history);
-  }
-
-  .internationaltag {
-    background-color: var(--international);
-  }
-
-  .spacetag {
-    background-color: var(--space);
-  }
-
-
-  .nothingtag {
-    background-color: var(--nothing);
+  .date:hover {
     color: #43464B;
   }
+  
+  
+  p {
+      margin: 15px;
+  }
+  
+  .quotered {
+      font-size: small;
+      color: #7f7f7f;
+      background-color: white;
+      display: block;
+      padding-left: 20px;
+      border-left-style: solid;
+      border-left: 2px solid #C00000;
+      margin: 10px 25px 10px 25px;
+    }
+  
+    .note {
+      color: #7030A0;
+      font-family: 'charmonmanregular';
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .notescrap {
+      color: #7030A0;
+      font-family: 'charmonmanregular';
+      font-weight: bold;
+    }
+  
+    .alzebdah {
+      background-color: beige;
+      display: block;
+    }
+  
+    ul li {
+      padding: 5px 0px;
+      margin-right: 5px;
+    }
+  
+    u {
+      text-decoration-style: dashed;
+    }
+    
+  
+    /* ================================== */
+  
+    .articlebox {
+      background-color: var(--articleboxBg);
+      color: var(--fontColor);
+      text-align: left;
+      font-size: small;
+      border-style: dashed;
+      border-color: #d9d9d9;
+      border-top: none;
+      border-left: none;
+      margin-left: 20px;
+      padding: 10px 20px 10px 10px; /*top right bottom left*/
+    }
 
-  .collapsible {
-    background-color: #3494BA;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
+    .jarticlebox {
+      background-color: var(--articleboxBg);
+      color: var(--fontColor);
+      text-align: left;
+      font-size: small;
+      border: none;
+      padding: 10px 20px 10px 10px; /*top right bottom left*/
+    }
+  
+    .articlebox.activism {
+      border-color: var(--activism);
+    }
+  
+    .articlebox.biology {
+      border-color: var(--biology);
+    }
+  
+    .articlebox.bookreviews {
+      border-color: var(--bookreviews);
+    }
+  
+    .articlebox.environment {
+      border-color: var(--environment);
+    }
+  
+    .articlebox.history {
+      border-color: var(--history);
+    }
+  
+    .articlebox.international {
+      border-color: var(--international);
+    }
+    
+    .articlebox.space {
+      border-color: var(--space);
+    }
+  
+    .articlebox.nothing {
+      border-color: var(--nothing);
+    }
+    
+    .highlight {
+      background-color: var(--highlightColor);
+      color: var(--highlightTextColor);
+    }
+
+    .shighlight {
+        background-color: #E2EFDA;
+    }
+  
+    /* span! span is like div but inline! what a wonderful discovery! */
+    
+    .quotered {
+      display: block;
+      padding-left: 20px;
+      border-left-style: solid;
+      border-left: 2px solid #C00000;
+    }
+  
+    /* gonna use these for tags: */
+  
+    taggies {
+      color: white;
+      text-align: right;
+      border: none;
+      float: right;
+      border-radius: 25px;
+      border-style: solid;
+      padding: 5px 10px 5px 10px;
+    }
+  
+    .activismtag {
+      background-color: var(--activism);
+    }
+  
+    .biologytag {
+      background-color: var(--biology);
+    }
+  
+    .bookreviewstag {
+      background-color: var(--bookreviews);
+    }
+  
+    .environmenttag {
+      background-color: var(--environment);
+    }
+  
+    .historytag {
+      background-color: var(--history);
+    }
+  
+    .internationaltag {
+      background-color: var(--international);
+    }
+  
+    .spacetag {
+      background-color: var(--space);
+    }
   
   
-  .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
+    .nothingtag {
+      background-color: var(--nothing);
+      color: #43464B;
+    }
   
-  .active:after {
-    content: "\2212";
-  }
-  
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #ffffff;
-    border: solid 1px #3494BA;
-  }
+    .collapsible {
+      background-color: #3494BA;
+      color: white;
+      cursor: pointer;
+      padding: 5px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #ffffff;
+      border: solid 1px #3494BA;
+    }

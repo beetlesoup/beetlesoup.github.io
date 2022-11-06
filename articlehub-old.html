@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Hub</title>
+    <meta name="description" content="Article Hub"/>
+    <link rel="stylesheet" href="articlehub-old.css">
+</head>
+<!--    opening quote: &#8220;
+        closing quote: &#8221; -->
+<body style="margin: 30px;">
+    <div class="navbar">
+        <a href="index.html">← Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Office ▾</button>
+            <div class="dropdown-content">
+              <a href="nudgehead.html">Article Hub</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Lounge ▾</button>
+            <div class="dropdown-content">
+              <a href="lounge-bookshelf.html">Bookshelf</a>
+              <a href="magazinerack.html">Magazine Rack</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <table cellspacing="10">
+      <tr>
+        <td><img class="iconimg" src="images/scihub_raven.png"></td>
+        <td><p><span class="note1">Well, hello there. This is where I collect articles. The dashed red border on the right side of <strong>journal articles</strong> indicates that Sci-Hub couldn't access that one.<span class="sig">- BS</span></span></p></td>
+      </tr>
+    </table>
+
+    
+    
+    <hr class="hr1">
+    <!-- ================================== MAKING FILTER -->
+    <!-- Control Buttons -->
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('saudi')">All Saudi</button>
+        <button class="btn" onclick="filterSelection('recs')">Recommendations</button>
+        <button class="btn" onclick="filterSelection('econ')">Economics</button>
+        <button class="btn" onclick="filterSelection('microscope')">Literal Microscope</button>
+        <button class="btn" onclick="filterSelection('nudge')">Nudge</button>      
+    </div>
+    
+    <!-- ADD CATEGORY TO JAN 23 ARTICLE
+      winter: dec jan feb
+      mar apr may
+      summer: jun jul aug
+      sep oct nov
+    -->
+
+    <div class="container">
+      <!-- 2022 sep 24 -->
+      <div class="filterDivdate"><iframe src="journal-articles/saudi/2022-foreign-banks.html"></iframe></div>
+      <!-- 2022 sep 8-->
+      <div class="filterDiv"><iframe src="journal-articles/economics/2022-immigration-visas.html"></iframe></div>
+      
+      <!-- 2022 summer -->
+      <div class="filterDiv econ"><iframe src="journal-articles/economics/2022-intangible-capital.html"></iframe></div>
+      
+      <!-- 2022 aug 25 -->
+      <div class="filterDiv microscope"><br>
+        🦠 <a class="one" href = "https://www.npr.org/sections/goatsandsoda/2022/08/25/1119228689/why-stinky-sweat-is-good-for-you">Why stinky sweat is good for you</a> - MICHEALEEN DOUCLEFF on NPR's All Things Considered
+          <taggies class="biologytag">#Biology</taggies>
+          <div class="articlebox biology"><i>Staphylococcus hominins</i>, one of the 200 or so bacteria on some people's skin, <a class="two" href="https://www.nature.com/articles/s41598-020-68860-z">produces an onion smell</a> after <a class="two" href="https://youtu.be/dNBotNm7PUc">eating the sweat</a> it finds on the body. It also kills MRSA(!!!) by punching holes in its cell membrane. As the water evaporates, sweat antibiotics increase in concentration. So it kind of leaves a little coating on your skin. <span class="highlight">Onion-smelling sweat is antibiotic juice. Don't worry about washing it off; the good stuff is deep in your pores.</span><span class="date">2022 Aug 25</span></div>
+      <br></div>
+      <!-- 2022 aug 17 -->
+      <div class="filterDiv microscope"><br>
+        🔬 <a class="one" href="https://www.wired.com/story/new-evidence-points-to-the-moon-once-being-part-of-earth/">New Evidence <s>Points to</s> Supports Theory of the Moon Once Being Part of Earth</a> - JONATHAN O'CALLAGHAN on Wired Science
+        <taggies class="spacetag">#Space</taggies>
+        <div class="articlebox space">The <a class="two" href="https://www.lpi.usra.edu/education/explore/marvelMoon/background/moon-formation/">current moon formation theory</a> is called giant impact hypothesis: our planet was hit, with giant impact, by Theia, who was blown to pieces and sent a huge chunk of Earth careening into space. That material continued to swirl around the planet and some of it stuck together to form the moon.<br><br>The <a class="two" href="https://www.science.org/doi/10.1126/sciadv.abl4920">new evidence</a>: six <span class="highlight">lunar meteorites</span> recovered by NASA from Antarctica in the early 2000s <span class="highlight">were found to contain helium and neon</span> trapped in tiny glass beads, which were formed in volcanic eruptions on the lunar surface as magma was pulled up from the moon's interior. These noble (unreactive) gases appear to have originated on Earth, and were likely inherited by the moon during its formation.<br><br>Lunar rocks show a striking similarity to Earth rocks, albeit with some differences. One difference is a lighter version of chlorine, pointing to a dramatic event early in the history of our two worlds that separated some material. Most scientists now agree this event was a gigantic collision.<br><br><span class="highlight">Had these gases instead been transported across space into the moon by solar winds, we'd expect there to be much much lower quantities present in the meteorites analyzed.</span><br><br>The next step is to understand how Earth got its noble gases.<span class="date">2022 Aug 17</span></div>
+      <br></div>
+      <!-- 2022 aug 11 -->
+      <div class="filterDiv saudi econ"><iframe src="journal-articles/saudi/2022-islamic-fund-growth.html"></iframe></div>
+      <!-- 2022 june 7 -->
+      <div class="filterDiv econ"><iframe src="journal-articles/economics/2022-welfare-prevents-crime.html"></iframe></div>
+
+      <div class="filterDiv nudge"><iframe src="journal-articles/nudgepages/2022-choice-architecture.html"></iframe></div>
+
+      <!-- sep 3 2020 -->
+      <div class="filterDiv econ"><iframe src="journal-articles/economics/2020-global-south.html"></iframe></div>
+
+      <!-- jan 23 2020 -->
+      <div class="filterDiv econ"><iframe src="journal-articles/economics/2020-market-power-implications.html"></iframe></div>
+
+
+      <div class="filterDiv recs nudge"><iframe src="journal-articles/nudgepages/2019-no-welfare-theory.html"></iframe></div>
+        
+      <div class="filterDiv recs nudge"><iframe src="journal-articles/nudgepages/2019-bounded-interdisciplinarity.html"></iframe></div>
+
+      <div class="filterDiv nudge"><iframe src="journal-articles/nudgepages/2019-default-path.html"></iframe></div>
+
+      <!-- june 10 2019 nudge corporate culture -->
+      <div class="filterDiv nudge"><br>
+        🐘 <a class="one" href="https://www.tlnt.com/123814-2/">Changing Culture a &#8220;Nudge&#8221; at a Time</a> - KNOWLEDGE@WHARTON on TLNT
+        <div class="articlebox">
+          <p>Part I of this article is about Stephanie Lampkin's <a href="https://blendoor.com">Blendoor</a>.</p><hr class="hr2">
+          <p>Humu was co-founded in 2017 by Google's former SVP of people operations, Laszlo Bock, who is now the startup's CEO. Bock's original vision for Humu was “to make software that helps managers and co-workers act more human,” according to The Washington Post. (Bock is also connected with Blendoor as an angel investor, Lampkin noted during her talk.)</p>
+          <p>Humu offers its clients a diagnostic survey. It's very important for managers to discuss the survey results with their team, something they may be reluctant to do.<br></p>
+          <p><strong>The Nudge:</strong>
+          <ul>
+            <li>Manager side: The software nudges the manager with suggestions about sharing the results, makes it easier to follow through by providing a link with a pre-populated calendar invitation, and supports with a guide to holding an effective conversation is provided.</li>
+            <li>Employee side: Another nudge goes to employees, asking if the manager had the conversation with them</li>
+          </ul></p>
+          <p><strong>Results:</strong>
+            <ul>
+              <li>Employees of managers who received this nudge are two and a half times more likely to have the conversation.</li>
+              <li>If the manager-directed nudges were personalized — expressing not just organizational results but specific team results — managers were 20% more likely to share the information with their people.</li>
+              <li>When this single conversation about survey results is held, employees have 64% greater agreement that their manager was committed to change and 27% more agreement that their organizations as more committed to change.</li>
+            </ul>
+          </p>
+          <p><span class="quotered">If 27% of the [firm] just looks at these nudges … that's enough critical mass to start a cultural change throughout the organization. - Stefanie Tignor</span></p>
+        </div>
+      <br></div>
+
+      <!-- is this 2017? -->
+      <div class="filterDiv recs saudi"><iframe src="journal-articles/saudi/climate-change-saghir.html"></iframe></div>
+
+      <div class="filterDiv recs saudi"><iframe src="journal-articles/saudi/2010-jeddah-flood-policy.html"></iframe></div>
+    </div>
+
+    <hr class="hr2">
+      <!-- FINAL THING IN YOUR BODY -->
+      <script src="articlehub-old.js"></script>
+      <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo!
+          Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
+</body>
