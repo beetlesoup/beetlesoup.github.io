@@ -239,6 +239,7 @@
   
   table {
     width: 100%;
+    vertical-align: top; 
   }
   .first {
     width: 70px;
