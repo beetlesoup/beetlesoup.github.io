@@ -389,22 +389,18 @@
     
     .quote {
       display: block;
-      font-size: small;
       padding-left: 20px;
       margin: 10px 25px 10px 25px;
       border-left-style: solid;
-      border-left: 2px dashed;
+      border-left: 2px solid;
       border-image:linear-gradient(to bottom,#c4e17f 0 5px, #f7fdca 0 10px,#fad071 0 15px,#f0766b 0 20px,#db9dbe 0 25px,#c49cdf 0 30px, #6599e2 0 35px,#61c2e4 0 400px) 10;
     }
 
-    .quotered {   
-      color: #7f7f7f;
-      background-color: white;
+    .quoteblue {   
       display: block;
       padding-left: 20px;
-      border-left-style: solid;
-      border-left: 2px solid #C00000;
-      
+      margin: 10px 25px 10px 25px;
+      border-left: 2px solid #61c2e4;
     }
     /* gonna use these for tags: */
   
