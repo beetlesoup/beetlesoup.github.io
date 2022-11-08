@@ -217,6 +217,7 @@
   
   .journal {
       width: 100%;
+      border-radius: 5px;
   }
   /* --------------------------------- SEPARATOR */
   hr {
@@ -263,6 +264,7 @@
   .jarticlebox {
       background-color: #f2f2f2;
       border: 3px solid;
+      border-radius: 5px;
   }
   
   .locked {
@@ -291,17 +293,7 @@
   p {
       margin: 15px;
   }
-  
-  .quotered {
-      font-size: small;
-      color: #7f7f7f;
-      background-color: white;
-      display: block;
-      padding-left: 20px;
-      border-left-style: solid;
-      border-left: 2px solid #C00000;
-      margin: 10px 25px 10px 25px;
-    }
+
   
     .note {
       color: #7030A0;
@@ -336,6 +328,7 @@
       text-align: left;
       font-size: small;
       border-style: dashed;
+      border-radius: 5px;
       border-color: #d9d9d9;
       border-top: none;
       border-left: none;
@@ -394,18 +387,24 @@
   
     /* span! span is like div but inline! what a wonderful discovery! */
     
-    .quotered {
+    .quote {
+      display: block;
+      font-size: small;
+      padding-left: 20px;
+      margin: 10px 25px 10px 25px;
+      border-left-style: solid;
+      border-left: 2px dashed;
+      border-image:linear-gradient(to bottom,#c4e17f 0 5px, #f7fdca 0 10px,#fad071 0 15px,#f0766b 0 20px,#db9dbe 0 25px,#c49cdf 0 30px, #6599e2 0 35px,#61c2e4 0 400px) 10;
+    }
+
+    .quotered {   
+      color: #7f7f7f;
+      background-color: white;
       display: block;
       padding-left: 20px;
       border-left-style: solid;
       border-left: 2px solid #C00000;
-    }
-  
-    .quoteblue {
-      display: block;
-      padding-left: 20px;
-      border-left-style: solid;
-      border-left: 2px solid #0d2a4a;
+      
     }
     /* gonna use these for tags: */
   
