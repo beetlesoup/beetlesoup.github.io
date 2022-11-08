@@ -401,6 +401,12 @@
       border-left: 2px solid #C00000;
     }
   
+    .quoteblue {
+      display: block;
+      padding-left: 20px;
+      border-left-style: solid;
+      border-left: 2px solid #0d2a4a;
+    }
     /* gonna use these for tags: */
   
     taggies {
