@@ -53,6 +53,12 @@
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   }
   
+  @media screen and (max-width: 1000px) {
+    body {
+      margin: 0px /*top right bottom left*/
+    }
+  }
+
   /* ------------------------------------------- NAVBAR!!! */
   .navbar {
     overflow: hidden;
