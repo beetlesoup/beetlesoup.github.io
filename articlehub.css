@@ -48,12 +48,13 @@
   /* =====================================================
   ======================================================== */
   body {
+      margin: 20px;
       background: #D6DCE5;
       color: #43464B;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   }
   
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 500px) {
     body {
       margin: 0px /*top right bottom left*/
     }
