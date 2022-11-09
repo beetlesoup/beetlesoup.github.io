@@ -53,12 +53,6 @@
       color: #43464B;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   }
-  
-  @media screen and (max-width: 500px) {
-    body {
-      margin: 0px /*top right bottom left*/
-    }
-  }
 
   /* ------------------------------------------- NAVBAR!!! */
   .navbar {
@@ -511,4 +505,22 @@
       overflow: hidden;
       transition: max-height 0.2s ease-out;
       margin: 5px 0px 5px 0px; /*top right bottom left*/
+    }
+
+    .humunudge {
+      width: 35%;
+    }
+
+    @media screen and (max-width: 500px) {
+      body {
+        margin: 0px /*top right bottom left*/
+      }
+  
+      .first {
+        width: 55px;
+      }
+
+      .humunudge {
+        width: 40%;
+      }
     }
