@@ -520,7 +520,20 @@
         width: 55px;
       }
 
+      .quote {
+        margin-right: 2px;
+      }
+  
+      .quoteblue {   
+        margin-right: 2px;
+      }
+  
+      .quotesaudi {
+        margin-right: 2px;
+      }
+
       .humunudge {
         width: 40%;
       }
+
     }
