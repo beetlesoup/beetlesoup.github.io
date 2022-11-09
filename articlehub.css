@@ -449,17 +449,22 @@
     }
   
     .collapsible {
-      background-color: #3494BA;
-      color: white;
+      border-radius: 5px;
       cursor: pointer;
-      padding: 5px;
+      padding: 10px;
       width: 100%;
       border: none;
       text-align: left;
       outline: none;
       font-size: 15px;
+      color: black;
     }
     
+    .active, .collapsible:hover {
+      background-color: #bfbfbf;
+      background-color: #3494BA;
+      color: white;
+    }
     
     .collapsible:after {
       content: '\002B';
@@ -474,10 +479,8 @@
     }
     
     .content {
-      padding: 0 18px;
+      padding: 0 10px;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      background-color: #ffffff;
-      border: solid 1px #3494BA;
     }
