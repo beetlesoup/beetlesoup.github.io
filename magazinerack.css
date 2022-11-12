@@ -1,6 +1,15 @@
 
 /* hello!!!! ✭ */
 
+@font-face {
+  font-family: 'charmonmanregular';
+  src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
+       url('fonts/charmonman-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 :root {  /*when you add a new one here, add it under both .articlebox and taggies too */
   --activism: #663300;
   --biology: #7030A0;
@@ -171,8 +180,7 @@ ul li:before {
   /* link styles (so it doesn't affect the header */
   
   a.one:link {
-    color: var(--articleheadlink)
-    /*font-weight: bold; */
+    color: black;
   }
   a.one:visited {color: var(--articleheadlink);}
 
@@ -319,6 +327,13 @@ ul li:before {
     margin: 30px 0;
     border: 0;
     border-top: 1px dashed #d9d9d9;
+  }
+
+  .note {
+    color: #7030A0;
+    font-family: 'charmonmanregular';
+    font-weight: bold;
+    display: block;
   }
 
 
