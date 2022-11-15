@@ -30,21 +30,20 @@
     <table cellspacing="10">
       <tr>
         <td><img class="iconimg" src="images/scihub_raven.png"></td>
-        <td><p><span class="note1">Well, hello there. This is where I collect articles. The dashed red border on the right side of <strong>journal articles</strong> indicates that Sci-Hub couldn't access that one.<span class="sig">- BS</span></span></p></td>
+        <td><p><span class="note1">PS: Double check checked boxes to make sure they're checked.<span class="sig">- BS</span></span></p></td>
       </tr>
     </table>
-    <div span class="articlecount">Article Count: 09</div>
+    <div span class="articlecount">Article Count: 10</div>
     <hr class="hr1">
 <!-- ================================== MAKING FILTER -->
 <!-- why did I make categoryBoxes again? -->
 <div id="categoryBoxes">
-
 <br><span class="fh">Areas</span><br>
-<div class="filterbox1">
-    <button class="btn1"><input type="checkbox" data-category="econ" name="category" unchecked>Economics</button>
-    <button class="btn1"><input type="checkbox" data-category="microscope" name="category" unchecked>Microscope</button>
-    <button class="btn1"><input type="checkbox" data-category="nudge" name="category" unchecked>Nudge</button>
-</div>
+<button class="filtercollapsible"><input type="checkbox" data-category="econ" name="category" unchecked> Economics</button>
+  <div class="subfilter"><input type="checkbox" data-category="healthecon" name="category" unchecked>Health Economics</div>
+<button class="filtercollapsible"><input type="checkbox" data-category="microscope" name="category" unchecked>Microscope Discoveries</button>
+<button class="filtercollapsible"><input type="checkbox" data-category="nudge" name="category" unchecked>Nudge Content</button>
+
 <br><span class="fh">Types</span><br>
 <div class="filterbox2">
     <button class="btn2"><input type="checkbox" data-category="news" name="category" unchecked>News and Discoveries</button>
@@ -79,7 +78,11 @@
           </td>
         </tr>
     </table>
-  <br></div> -->
+  <br></div>
+
+    <button class="collapsible">Click to Show</button>
+    <div class="content">
+-->
 
 
   <div class="container">    
@@ -144,7 +147,7 @@
     <!-- 2022 aug 11 growth of islamic funds saudi-->
     <!-- 2022 june 7 welfare found to prevent crime -->
     <!-- 2022 may 4 choice architecture -->
-    <!-- 2022 feb 14 Adam Smith didn't mean it-->
+    <!-- 2022 feb 14 Adam Smith didn't mean it:-->
     <div data-category="econ" class="filterDiv">
       <table>
           <tr>
@@ -153,9 +156,8 @@
               by Maria Pia Paganelli<br>
               from Journal of the History of Economic Thought (Cambridge Core)<a class="date" href="https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought/article/adam-smith-and-economic-development-in-theory-and-practice-a-rejection-of-the-stadial-model/372A1E262AF6E99DAE48E8DB782DA409">2022 Feb 14</a>
               <div class="jarticlebox">
-                <button class="collapsible">Click to Show</button>
+                <button class="collapsible">In this article, Maria mixes three theories together.</button>
                 <div class="content">
-                  In this article, Maria mixes three theories together which I will now unentangle:<br><br>
                   1: Adam Smith allegedly offers a model of economic development in both his Lectures on Jurisprudence and the Wealth of Nations— but <span class="highlight">all the examples Smith uses are exceptions to his allegedly theoretical model, a strange choice if Smith really wanted to use that model to explain development.</span> I suggest Smith is criticizing rather than endorsing. He tells us we are naturally driven to build models, to build systems, to imagine “invisible chains which bind together all these disjointed objects … [thus] … introduc[ing] order into this chaos of jarring and discordant appearances.” What if he was saying that our tendency is to do that even though reality does not fit the model?<br><br>
                   2:  <span class="highlight">Perhaps the models we create are not meant to necessarily be correct or definite, rather are meant to be replaced by better systems in the future.</span><br><br>
                   3: The four stages are a taxonomy of different relations between means of production and social, moral, political, and legal institutions, not a model of development from one stage to another. <span class="highlight">It may not be an accident that Smith tends to use “state of society” rather than “stage of society.”</span>
@@ -165,7 +167,7 @@
           </tr>
       </table>
     <br></div>
-    <!-- 2022 jan 01 ministry of economy and planning -->
+    <!-- 2022 jan 01 ministry of economy and planning: -->
     <div data-category="econ saudi" class="filterDiv">
       <table>
           <tr>
@@ -192,7 +194,7 @@
           </tr>
       </table>
     <br></div>
-    <!-- sep 3 2020 global south -->
+    <!-- sep 3 2020 global south: -->
     <div data-category="econ recs" class="filterDiv">
         <table>
             <tr>
@@ -301,21 +303,47 @@
     <br></div>
     <!-- is this 2017? climate change saghir-->
     <!-- 2015 Dec 18 -->
-    <div data-category="" class="filterDiv">
+    <!-- 2010 jeddah flood policy -->
+    <!-- 2009 october end -->
+    <div data-category="econ healthecon usa" class="filterDiv">
       <table>
           <tr>
-            <td class="first"><img class="journal" src=""</td>
-            <td><strong></strong><br>
-              by <br>
-              from <a class="date" href=""></a>
+            <td class="first"><img class="journal" src="images/journals/health-affairs-2022-11.png"></td>
+            <td><strong>Is Health Spending Excessive? If So, What Can We Do About It?</strong><br>
+              by Henry J Aaron, Paul B Ginsburg<br>
+              from Health Affairs <a class="date" href="https://www.healthaffairs.org/doi/10.1377/hlthaff.28.5.1260">2009 September/October</a>
               <div class="jarticlebox">
-  
+                <button class="collapsible">The US is spending too much on healthcare.</button>
+                <div class="content">
+                  <ul>
+                    <li>Spending more than others do on health
+                      means spending less than others do on other private or public services—education,
+                      housing, income security, or national defense, for example.</li>
+                    <li>Simple correlations
+                      indicate that there is little or no connection between health spending and both life
+                      expectancy and infant mortality in US states and OECD countries.  Multivariate analyses that include such additional determinants of health as incomes, environmental quality, and personal habits do not
+                      change this conclusion.5, 6</li>
+                      <li>We know of no hard evidence showing that the quality of high-price U.S. services is better than that corresponding services elsewhere. In some cases, however, price differences are so large (for example, MRI studies in the United States and Japan)14 that no plausible quality difference can explain the gap.</li>
+                  </ul>
+                </div>
+                To lower spending without lowering net welfare, it is necessary to:
+                <ul>
+                  <li>organize the delivery of care to promote efficient cooperation among the many providers and practitioners involved</li>
+                  <li>conduct costly research
+                    over many years to identify which procedures are effective at reasonable cost</li>
+                  <li>develop protocols that enable providers to identify in advance patients in whom
+                    expected benefits of treatment are lower than costs - and design incentives that encourage providers to act on those protocols</li>
+                  <li>provide research support to maintain
+                    the flow of beneficial innovations</li>
+                  <li>blend the fee-for-service model with others such as per episode and per per-
+                    son</li>
+                </ul>
+                
               </div>
             </td>
           </tr>
       </table>
     <br></div>
-    <!-- 2010 jeddah flood policy -->
     <!-- 1996 April 25 Buchanan ripping minwage apart -->
     <div data-category="econ minwage" class="filterDiv">
       “Just as no physicist would claim that “water runs uphill,” no self-respecting economist would claim that increases in the minimum wage increase employment. Such a claim, if seriously advanced, becomes equivalent to a denial that there is even minimal scientific content in economics, and that, in consequence, economists can do nothing but write as advocates for ideological interests. Fortunately, only a handful of economists are willing to throw over the teaching of two centuries; we have not yet become a bevy of camp-following whores.”<br><br>
