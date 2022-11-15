@@ -55,6 +55,9 @@
   }
 
   /* ------------------------------------------- NAVBAR!!! */
+  
+  a {color: #3494BA;}
+
   .navbar {
     overflow: hidden;
     background-color: #333;
@@ -514,6 +517,8 @@
       color: white;
       background-color: #3494BA;
     }
+
+    .collapsible a {color: white;}
     
     /* .active, .collapsible:hover {
       background-color: #bfbfbf;
