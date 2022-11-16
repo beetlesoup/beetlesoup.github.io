@@ -1,17 +1,7 @@
-
 @font-face {
-  font-family: 'cabinsketchregular';
-  src: url('fonts/cabinsketch-regular-webfont.woff2') format('woff2'),
-       url('fonts/cabinsketch-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'dosis';
-  src: url('fonts/dosis-variablefont_wght-webfont.woff2') format('woff2'),
-       url('fonts/dosis-variablefont_wght-webfont.woff') format('woff');
+  font-family: 'quicksandregular';
+  src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+       url('fonts/quicksand-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -19,7 +9,7 @@
 
 
 body {
-  font-family: 'dosis';
+  font-family: 'calibri';
 }
 
 /* ---------------------------------- make three columns for spoiler tag */
@@ -132,7 +122,7 @@ h2 {
 
 }
 
-p { margin: 15px; }
+p {}
 
 hr {
   display: block;
@@ -158,7 +148,7 @@ hr {
 
 
 .first {
-  width: 55px;
+  width: 80px;
   vertical-align: top;
 }
 
@@ -173,4 +163,12 @@ hr {
 
 .pieces {
   vertical-align: top;
+}
+
+.inline {
+  float: right;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
 }
