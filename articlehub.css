@@ -507,6 +507,7 @@
     }
   
     .collapsible {
+      font-size: smaller;
       border-radius: 5px;
       cursor: pointer;
       padding: 8px;
@@ -527,6 +528,7 @@
 
     .collapsaudi {
       background-color: #005149;
+      font-size: smaller;
     }
     
     .collapsible:after {
@@ -547,6 +549,17 @@
       transition: max-height 0.2s ease-out;
       margin: 5px 0px 5px 0px; /*top right bottom left*/
     }
+
+    .scontent {
+      padding: 0 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      /* border: solid 1px #005149;
+      border-top: none; */
+      margin: 5px 0px 5px 0px; /*top right bottom left*/
+    }
+
 
     .humunudge {
       width: 35%;

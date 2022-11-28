@@ -172,3 +172,42 @@ hr {
   padding: 5px;
   width: 150px;
 }
+
+.collapsible {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  color: white;
+  background-color: #3494BA;
+}
+
+.collapsible a {color: white;}
+
+/* .active, .collapsible:hover {
+  background-color: #bfbfbf;
+  color: white;
+} */
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: 5px 0px 5px 0px; /*top right bottom left*/
+}
