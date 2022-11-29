@@ -546,6 +546,9 @@
       padding: 0 10px;
       max-height: 0;
       overflow: hidden;
+      border: 1px dashed #3494BA;
+      border-top: none;
+      border-bottom: none;
       transition: max-height 0.2s ease-out;
       margin: 5px 0px 5px 0px; /*top right bottom left*/
     }
