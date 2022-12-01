@@ -40,26 +40,18 @@
 <!-- why did I make categoryBoxes again? -->
 <div id="categoryBoxes">
 <br><span class="fh">Areas</span><br>
-<button class="filtercollapsible"><input type="checkbox" data-category="econ" name="category" unchecked> Economics</button>
-  <div class="subfilter"><input type="checkbox" data-category="healthecon" name="category" unchecked>Health Economics</div>
-<button class="filtercollapsible"><input type="checkbox" data-category="microscope" name="category" unchecked>Microscope Discoveries</button>
-  <div class="subfilter"><input type="checkbox" data-category="microbiology" name="category" unchecked>Microbiology <input type="checkbox" data-category="space" name="category" unchecked>Space</div>
-<button class="filtercollapsible"><input type="checkbox" data-category="nudge" name="category" unchecked>Nudge Content</button>
+<button class="filterbox1"><input type="checkbox" data-category="econ" name="category" unchecked> Economics ▸</button>
+  <button class="btn2"><input type="checkbox" data-category="econtheory" name="category" unchecked>Theory</button>
+  <button class="btn2"><input type="checkbox" data-category="healthecon" name="category" unchecked>Health Economics</button>
+<button class="filterbox1"><input type="checkbox" data-category="microbiology" name="category" unchecked>Microbiology</button>
+<button class="filterbox1"><input type="checkbox" data-category="nudge" name="category" unchecked>Nudge Content ▸</button>
+  <button class="btn2"><input type="checkbox" data-category="nudgetheory" name="category" unchecked>Theory</button>
+  <button class="btn2"><input type="checkbox" data-category="nudgestudy" name="category" unchecked>Experiments</button>
+<button class="filterbox1"><input type="checkbox" data-category="space" name="category" unchecked>Space</button>
 
-<br><span class="fh">Types</span><br>
-<div class="filterbox2">
-    <button class="btn2"><input type="checkbox" data-category="news" name="category" unchecked>News and Discoveries</button>
-    <button class="btn2"><input type="checkbox" data-category="recs" name="category" unchecked>Attacks and Recommendations</button>
-    <button class="btn2"><input type="checkbox" data-category="review" name="category" unchecked>Reviews and Meta-Analyses</button>
-    <button class="btn2"><input type="checkbox" data-category="survey" name="category" unchecked>Surveys</button>
-    <button class="btn2"><input type="checkbox" data-category="experiment" name="category" unchecked>Experiments</button>
-</div>
-<br><span class="fh">Tags</span><br>
-<div class="filterbox3">
-    <button class="btn3"><input type="checkbox" data-category="saudi" name="category" unchecked>Saudi</button>
-</div>
-<br><span class="fh">Stories</span><br>
-    <input type="checkbox" data-category="minwage" name="category" unchecked><span class="story">The Minimum Wage</span>
+<br><br>
+<span class="fh">Tags & Stories</span><br>
+  <button class="btn3"><input type="checkbox" data-category="saudi" name="category" unchecked>Saudi</button> <input type="checkbox" data-category="minwage" name="category" unchecked><span class="story">The Minimum Wage</span>
 </div><br>
   <!-- =========================================== THE ARTICLES!!!!!! -->
 
@@ -137,7 +129,7 @@
     <!-- 2022 summer (end of aug)economics of intangible capital -->
 
     <!-- 2022 aug 25 why stinky sweat is good for you -->
-    <div data-category="microscope microbiology news" class="filterDiv">
+    <div data-category="microbiology" class="filterDiv">
     <table>
       <tr>
         <td class="first"><img class="journal" src="images/npr.png"></td>
@@ -148,7 +140,7 @@
     </table>
     <br></div>
     <!-- 2022 aug 17 found neon and helium on moon rocks -->
-    <div data-category="microscope space news" class="filterDiv">
+    <div data-category="space" class="filterDiv">
       <table>
         <tr>
             <td class="first"><img class="journal"  src="images/wired.png"></td>
@@ -163,7 +155,7 @@
     <!-- 2022 june 7 welfare found to prevent crime -->
     <!-- 2022 may 4 choice architecture -->
     <!-- 2022 feb 14 Adam Smith didn't mean it:-->
-    <div data-category="econ theory" class="filterDiv">
+    <div data-category="econ econtheory" class="filterDiv">
       <table>
           <tr>
             <td class="first"><img class="journal" src="images/journals/jhet.jpeg"></td>
@@ -183,7 +175,7 @@
       </table>
     <br></div>
     <!-- 2022 jan 01 ministry of economy and planning: -->
-    <div data-category="econ saudi recs" class="filterDiv">
+    <div data-category="econ saudi econtheory" class="filterDiv">
       <table>
           <tr>
             <td class="first"><img class="journal" src="images/mep.png"></td>
@@ -227,7 +219,7 @@
    <br>
     <!-- jan 23 2020 market power implications-->
     <!-- 2019 no welfare theory -->
-    <div data-category="nudge theory" class="filterDiv">
+    <div data-category="nudge nudgetheory" class="filterDiv">
       <table>
           <tr>
             <td class="first"><img class="journal" src="images/journals/cambridge-bpp.jpg"></td>
@@ -245,7 +237,7 @@
       </table>
     <br></div>
     <!-- 2019 bounded interdisciplinarity -->
-    <div data-category="nudge theory" class="filterDiv">
+    <div data-category="nudge nudgetheory" class="filterDiv">
       <table>
           <tr>
             <td class="first"><img class="journal" src="images/journals/cambridge-bpp.jpg"></td>
@@ -260,7 +252,7 @@
       </table>
     <br></div>
     <!-- 2019 default path -->
-    <div data-category="nudge experiment" class="filterDiv">
+    <div data-category="nudge nudgestudy" class="filterDiv">
       <table>
           <tr>
               <td class="first"><img class="journal" src="images/journals/cambridge-bpp.jpg" alt="Behavioural Public Policy"></td>
@@ -275,7 +267,7 @@
         </table>
     <br></div>
     <!-- 2019 jun 10 nudge corporate culture -->
-    <div data-category="nudge experiment" class="filterDiv">
+    <div data-category="nudge nudgestudy" class="filterDiv">
       <table>
         <tr>
             <td class="first"><img class="journal" src="images/tlnt.png"></td>
@@ -370,7 +362,7 @@
     <br></div><br>
     <!-- 1993 october -->
     <!-- 1984 jan household economics philippines -->
-    <div data-category="econ theory" class="filterDiv">
+    <div data-category="econ econtheory" class="filterDiv">
       <table>
           <tr>
             <td class="first"><img class="journal" src="images/journals/edcc71-1.png"></td>
