@@ -142,11 +142,6 @@
 
 /* FILTER COLLAPSIBLE */
 
-div.wrapper-flex {
-  display: flex;
-  flex-wrap: nowrap; /* this is default */
-}
-
 .filtercollapsible {
   font-size: 16px;
   border: none;
@@ -510,6 +505,8 @@ div.wrapper-flex {
       background-color: var(--nothing);
       color: #43464B;
     }
+
+    
   
     .collapsible {
       font-size: smaller;
