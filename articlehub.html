@@ -34,12 +34,14 @@
         <td><p><span class="note1">PS: Double check checked boxes to make sure they're checked.<span class="sig">- BS</span></span></p></td>
       </tr>
     </table> -->
-    <br><div span class="articlecount">Article Count: 13 <img height="70" src="images/scihub_raven.png"></div>
+    <br><div span class="articlecount">Article Count: 15 <img height="70" src="images/scihub_raven.png"></div>
     <hr class="hr1">
 <!-- ================================== MAKING FILTER -->
 <!-- why did I make categoryBoxes again? -->
 <div id="categoryBoxes">
 <br><span class="fh">Areas</span><br>
+<button class="filterbox1"><input type="checkbox" data-category="animals" name="category" unchecked> Animal Intelligence</button>
+<button class="filterbox1"><input type="checkbox" data-category="cogsci" name="category" unchecked> Cognitive Science</button>
 <button class="filterbox1"><input type="checkbox" data-category="econ" name="category" unchecked> Economics ▸</button>
   <button class="btn2"><input type="checkbox" data-category="econtheory" name="category" unchecked>Theory</button>
   <button class="btn2"><input type="checkbox" data-category="healthecon" name="category" unchecked>Health Economics</button>
@@ -47,6 +49,7 @@
 <button class="filterbox1"><input type="checkbox" data-category="nudge" name="category" unchecked>Nudge Content ▸</button>
   <button class="btn2"><input type="checkbox" data-category="nudgetheory" name="category" unchecked>Theory</button>
   <button class="btn2"><input type="checkbox" data-category="nudgestudy" name="category" unchecked>Experiments</button>
+<button class="filterbox1"><input type="checkbox" data-category="physics" name="category" unchecked>Physics</button>
 <button class="filterbox1"><input type="checkbox" data-category="space" name="category" unchecked>Space</button>
 <button class="filterbox1"><input type="checkbox" data-category="stats" name="category" unchecked> Statistics</button>
 
@@ -111,6 +114,26 @@
                 </td>
               </tr>
           </table>
+    <br></div>
+    <!-- 2022 sep 26 particle physics-->
+    <div data-category="physics" class="filterDiv">
+      <table>
+          <tr>
+            <td class="first"><img class="journal" src="images/journals/the-guardian.jpg"></td>
+            <td><strong>No one in physics dares say so, but the race to invent new particles is pointless</strong><br>
+              by Sabine Hossenfelder
+              on The Guardian<a class="date" href="https://www.theguardian.com/commentisfree/2022/sep/26/physics-particles-physicists">2022 Sep 26</a>
+              <div class="jarticlebox">
+                <span class="quote">Imagine you go to a zoology conference. The first speaker talks about her 3D model of a 12-legged purple spider that lives in the Arctic. There's no evidence it exists, she admits, but it's a testable hypothesis, and she argues that a mission should be sent off to search the Arctic for spiders.<br><br>
+
+                The second speaker has a model for a flying earthworm, but it flies only in caves. There's no evidence for that either, but he petitions to search the world's caves. The third one has a model for octopuses on Mars. It's testable, he stresses.<br><br>
+                  
+                Kudos to zoologists, I've never heard of such a conference. But almost every particle physics conference has sessions just like this, except they do it with more maths.</span>
+                <!-- <span class="quote">Experimental particle physicists know of the problem, and try to distance themselves from what their colleagues in theory development do. At the same time, they profit from it, because all those hypothetical particles are used in grant proposals to justify experiments. And so the experimentalists keep their mouths shut, too. This leaves people like me, who have left the field - I now work in astrophysics - as the only ones able and willing to criticise the situation.</span> -->
+              </div>
+            </td>
+          </tr>
+      </table>
     <br></div>
     <!-- 2022 sep 19 diversity and folk economics -->
     <!-- <div data-category="econ" class="filterDiv">
@@ -247,6 +270,24 @@ That the losers are in fact not compensated in practice becomes a mere footnote.
           </tr>
       </table>
     <br></div>
+    <!-- 2021 jul 28 -->
+    <!-- <div data-category="animals" class="filterDiv">
+      <table>
+          <tr>
+            <td class="first"><img class="journal" src="images/journals/the-conversation.png"></td>
+            <td><strong>Why animals recognise numbers but only humans can do maths</strong><br>
+              by Silke Goebel<br>
+              on The Conversation <a class="date" href="https://theconversation.com/why-animals-recognise-numbers-but-only-humans-can-do-maths-165121">2021 Jul 28</a>
+              <div class="jarticlebox">
+                <span class="quote">Tiny <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031923">guppies</a> and <a href="https://royalsocietypublishing.org/doi/10.1098/rsbl.2019.0138">honeybees</a> as well as <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003347211002843">hyenas</a> and <a href="https://link.springer.com/article/10.1007/s10071-002-0140-0">dogs</a> have been found to perceive and act on numerical stimuli. [...] From as young as <a href="https://www.jstor.org/stable/40063857">ten months old</a>, human infants can detect number changes between one and three, as when one apple is removed from a group of three apples. This skill is shared by many <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(21)00087-5?dgcid=raven_jbs_aip_email#%20">animals</a> with significantly smaller brains, such as fish and bees.<br><br>
+                Read more: <a href="https://theconversation.com/bees-join-an-elite-group-of-species-that-understands-the-concept-of-zero-as-a-number-97316">Bees join an elite group of species that understands the concept of zero as a number</a><br><br>
+                This early numerical system, helping infants and animals perceive the number of a small set of objects without having to actually count, <a href="https://jov.arvojournals.org/article.aspx?articleid=2191634">probably relies</a> on an internal <a href="https://pubmed.ncbi.nlm.nih.gov/21679934/">attentional working memory system</a> that is overwhelmed by numbers above around three. As we get older, we learn to estimate with the so-called <a href="https://www.sciencedirect.com/topics/psychology/approximate-number-system">approximate number system</a>. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015232">Fish</a>, <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2016.0083">birds</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31601685/">bees</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0376635713000284">dolphins</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/22692435/">elephants</a> and <a href="https://dl.acm.org/doi/abs/10.1162/jocn.2008.21032">primates</a> have all been found to possess an approximate number system.<br><br>
+                </span>
+              </div>
+            </td>
+          </tr>
+      </table>
+    <br></div> -->
     <!-- sep 3 2020 global south: -->
     <div data-category="econ" class="filterDiv">
         <table>
@@ -509,6 +550,22 @@ innovation to capture opportunities as progressive social transformers (Hartigan
               from British Journal of Industrial Relations (Wiley)<a class="date" href="https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8543.2009.00723.x">2009 May 12</a>
               <div class="jarticlebox">
                 <span class="quote">Card and Krueger's meta-analysis of the employment effects of minimum wages challenged existing theory. Unfortunately, their meta-analysis confused publication selection with the absence of a genuine empirical effect. We apply recently developed meta-analysis methods to 64 US minimum-wage studies and corroborate that Card and Krueger's findings were nevertheless correct. <span class="highlight">The minimum-wage effects literature is contaminated by publication selection bias</span>, which we estimate to be slightly larger than the average reported minimum-wage effect. <span class="highlight">Once corrected, little or no evidence of a negative association between minimum wages and employment remains.</span></span>
+              </div>
+            </td>
+          </tr>
+      </table>
+    <br></div>
+    <!-- 2002 march -->
+
+    <div data-category="cogsci" class="filterDiv">
+      <table>
+          <tr>
+            <td class="first"><img class="journal" src=""></td>
+            <td><strong>The Representations Underlying Infants' Choice of More: Object Files versus Analog Magnitudes</strong><br>
+              by Lisa Feigenson, Susan Carey and Marc Hauser <br>
+              from Psychological Science (JSTOR)<a class="date" href="https://www.jstor.org/stable/40063857">March 2002</a>
+              <div class="jarticlebox">
+                <span class="quote">Ten- and 12-month-old infants saw crackers placed sequentially into two containers, then were allowed to crawl and obtain the crackers from the container they chose. Infants chose the larger quantity with comparisons of 1 versus 2 and 2 versus 3, but failed with comparisons of 3 versus 4, 2 versus 4, and 3 versus 6.</span>
               </div>
             </td>
           </tr>
