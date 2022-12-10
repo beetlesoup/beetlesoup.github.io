@@ -181,9 +181,11 @@ ul li:before {
   
   a.one:link {
     color: black;
-  }
-  a.one:visited {color: var(--articleheadlink);}
-
+    text-decoration: none;
+    border-bottom: 1px dashed black;
+  }  
+  a.one:visited {color: black;}
+  a.one:hover {color: var(--articleheadlink);}
   a.two:link {color: var(--articleheadlink);}
   a.two:visited {color: var(--articleheadlink);}
 
