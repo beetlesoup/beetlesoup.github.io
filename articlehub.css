@@ -441,6 +441,8 @@
       font-weight: bold;
       color: #005149;
     }
+
+    .special {color: #00512b;}
     /* gonna use these for tags: */
   
     taggies {
