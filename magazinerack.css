@@ -12,17 +12,16 @@
   
 /* flex-container-nowrap contains the colored category buttons */
 .flex-container-nowrap {display: flex; flex-wrap: nowrap;}
-.flex-container-nowrap > button {display: flex; width: 100%; flex-wrap: nowrap;}
+.flex-container-nowrap > button {display: flex; width: 100%; flex-wrap: nowrap; justify-content: right}
+.flex-container-nowrap > .rainbowtag {justify-content: center;}
+@media(max-width: 720px){
+    .flex-container-nowrap > button {justify-content: center;}
+  }
+
 /* --------------------------------------------------- */
 
 /* the categories are rainbow colors, the logos are images */
 .categorybutton, .catlogo {font-family: 'satisfy'; width: 70px; outline: none; color: white; border: none; opacity: 0.5; border-radius: 25px; border-style: solid; border-color: var(--articleboxBg); padding: 5px 10px 5px 10px; cursor: pointer;}
-
-.categorybutton {text-align: right;}
-
-@media(max-width: 720px){
-    .categorybutton {text-align: center;}
-  }
   
 .catlogo {color: black; text-align: center; border: none; height: 20px; padding: 5px 5px 5px 5px; width: auto; margin: auto;}
 
@@ -48,11 +47,6 @@
   .bluetag {background-color: var(--blue);}
   .purpletag {background-color: var(--purple);}
 
-
-  .nothingtag {
-    background-color: var(--nothing);
-    color: #43464B;
-  }
 
   /* ------------------------------------ */
 
