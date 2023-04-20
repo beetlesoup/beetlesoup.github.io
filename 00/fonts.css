@@ -1,0 +1,378 @@
+
+/* ==================================================
+ Categories:
+  header, arabic, ar-en, ru83a
+  handwritten, cursive, letter
+===================================================== */
+
+/* --------------------------------------------------
+cursive handwriting:
+
+arabic fonts:
+
+-----------------------------------------------------*/
+
+@font-face {
+    font-family: 'allura';
+    src: url('fonts/allura-regular-webfont.woff2') format('woff2'),
+         url('fonts/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.allura {font-family: 'allura';}
+
+
+
+/* aref-ruqaa: arabic, ar-en, ru83a */
+@font-face {
+    font-family: 'aref-ruqaa';
+    src: url('fonts/arefruqaa-regular-webfont.woff2') format('woff2'),
+         url('fonts/arefruqaa-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.aref-ruqaa {font-family: 'aref-ruqaa';}
+
+
+/* arslanwa: arabic, ar-en, ru83a */
+@font-face {
+    font-family: 'arslanwa';
+    src: url('fonts/AArslanWessamA-AArslanWessamA.eot');
+    src: url('fonts/AArslanWessamA-AArslanWessamA.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AArslanWessamA-AArslanWessamA.woff2') format('woff2'),
+        url('fonts/AArslanWessamA-AArslanWessamA.woff') format('woff'),
+        url('fonts/AArslanWessamA-AArslanWessamA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.arslanwa {font-family: 'arslanwa';}
+
+/* arslanwb: arabic, ar-en, ru83a */
+@font-face {
+    font-family: 'arslanwb';
+    src: url('fonts/AArslanWessamB-AArslanWessamB.eot');
+    src: url('fonts/AArslanWessamB-AArslanWessamB.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AArslanWessamB-AArslanWessamB.woff2') format('woff2'),
+        url('fonts/AArslanWessamB-AArslanWessamB.woff') format('woff'),
+        url('fonts/AArslanWessamB-AArslanWessamB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.arslanwb {font-family: 'arslanwb';}
+
+@font-face {
+    font-family: 'bad-script';
+    src: url('fonts/badscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/badscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bad-script {font-family: 'bad-script';}
+
+/* baloo: arabic, ar-en, soft */
+@font-face {
+    font-family: 'baloo';
+    src: local('Baloo Bhaijaan 2 Regular'),
+        url('fonts/BalooBhaijaan2-Regular.woff') format('woff'),
+        url('fonts/BalooBhaijaan2-Regular.ttf') format('truetype'),
+        url('fonts/BalooBhaijaan2-Regular.eot') format('eot'),
+        url('fonts/BalooBhaijaan2-Regular.svg#BalooBhaijaan2-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.baloo {font-family: 'baloo';}
+
+/* cairo-play: arabic */
+@font-face {
+    font-family: 'cairo-play';
+    src: url('fonts/cairoplay-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('fonts/cairoplay-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cairo-play {font-family: 'cairo-play';}
+
+
+/* cedarville: handwritten, cursive */
+@font-face {
+  font-family: 'cedarville';
+  src: url('fonts/cedarvillecursive-regular-webfont.woff2') format('woff2'),
+       url('fonts/cedarvillecursive-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cedarville {font-family: 'cedarville';}
+
+@font-face {
+    font-family: 'cookie';
+    src: url('fonts/cookie-regular-webfont.woff2') format('woff2'),
+         url('fonts/cookie-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cookie {font-family: 'cookie';}
+
+/* charmonman: handwritten, cursive  */
+@font-face {
+  font-family: 'charmonman';
+  src: url('fonts/charmonman-regular-webfont.woff2') format('woff2'),
+       url('fonts/charmonman-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'charmonman';
+    src: url('fonts/charmonman-bold-webfont.woff2') format('woff2'),
+         url('fonts/charmonman-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.charmonman {font-family: 'charmonman';}
+
+/* dancing-script:  */
+@font-face {
+    font-family: 'dancing-script';
+    src: url('fonts/DancingScript-Regular.eot');
+    src: url('fonts/DancingScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DancingScript-Regular.woff2') format('woff2'),
+        url('fonts/DancingScript-Regular.woff') format('woff'),
+        url('fonts/DancingScript-Regular.ttf') format('truetype'),
+        url('fonts/DancingScript-Regular.svg#DancingScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dancing-script {font-family: 'dancing-script';}
+
+/* dawning-of-a-new-day: handwritten, cursive, letter, gorgeous
+    bad at accents */
+@font-face {
+    font-family: 'dawning-of-a-new-day';
+    src: url('fonts/dawningofanewday-regular-webfont.woff2') format('woff2'),
+         url('fonts/dawningofanewday-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dawming-of-a-new-day {font-family: 'dawning-of-a-new-day';}
+
+/* el-messiri: arabic */
+@font-face {
+    font-family: 'el-messiri';
+    src: url('fonts/elmessiri-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/elmessiri-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.el-messiri {font-family: 'el-messiri';}
+
+/* grand-hotel: cursive */
+@font-face {
+    font-family: 'grand-hotel';
+    src: url('fonts/grandhotel-regular-webfont.woff2') format('woff2'),
+         url('fonts/grandhotel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.grand-hotel {font-family: 'grand-hotel';}
+
+@font-face {
+    font-family: 'handlee';
+    src: url('fonts/handlee-regular-webfont.woff2') format('woff2'),
+         url('fonts/handlee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.handlee {font-family: 'handlee';}
+
+
+/* harmattan: arabic, ar-en */
+@font-face {
+    font-family: 'harmattan';
+    src: url('fonts/Harmattan-Regular.woff') format('woff'),
+        url('fonts/Harmattan-Regular.ttf') format('truetype'),
+        url('fonts/Harmattan-Regular.eot') format('eot'),
+        url('fonts/Harmattan-Regular.svg#Harmattan-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harmattan';
+    src: url('fonts/Harmattan-Bold.woff') format('woff'),
+        url('fonts/Harmattan-Bold.ttf') format('truetype'),
+        url('fonts/Harmattan-Bold.eot') format('eot'),
+        url('fonts/Harmattan-Bold.svg#Harmattan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.harmattan {font-family: 'harmattan';}
+
+/* homemade-apple: handwritten, letter, cursive, ahhh
+can't read the word TV */
+@font-face {
+  font-family: 'homemade-apple';
+  src: url('fonts/homemadeapple-regular-webfont.woff2') format('woff2'),
+       url('fonts/homemadeapple-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.homemade-apple {font-family: 'homemade-apple';}
+
+@font-face {
+    font-family: 'la-belle-aurore';
+    src: url('fonts/labelleaurore-regular-webfont.woff2') format('woff2'),
+         url('fonts/labelleaurore-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.la-belle-aurore {font-family: 'la-belle-aurore';}
+
+@font-face {
+    font-family: 'monsieur-la-doulaise';
+    src: url('fonts/monsieurladoulaise-regular-webfont.woff2') format('woff2'),
+         url('fonts/monsieurladoulaise-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.monsieur-la-doulaise {font-family: 'monsieur-la-doulaise';}
+
+@font-face {
+    font-family: 'mrs-saint-delafield';
+    src: url('fonts/mrssaintdelafield-regular-webfont.woff2') format('woff2'),
+         url('fonts/mrssaintdelafield-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mrs-saint-delafield {font-family: 'mrs-saint-delafield';}
+
+
+@font-face {
+    font-family: 'parisienne';
+    src: url('fonts/parisienne-regular-webfont.woff2') format('woff2'),
+         url('fonts/parisienne-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.parisienne {font-family: 'parisienne';}
+
+@font-face {
+    font-family: 'rakkas';
+    src: url('fonts/rakkas-regular-webfont.woff2') format('woff2'),
+         url('fonts/rakkas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rakkas {font-family: 'rakkas';}
+
+@font-face {
+    font-family: 'reenie-beanie';
+    src: url('fonts/reeniebeanie-regular-webfont.woff2') format('woff2'),
+         url('fonts/reeniebeanie-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.reenie-beanie {font-family: 'reenie-beanie';}
+
+/* cursive */
+@font-face {
+    font-family: 'rochester';
+    src: url('fonts/rochester-regular-webfont.woff2') format('woff2'),
+         url('fonts/rochester-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rochester {font-family: 'rochester';}
+
+@font-face {
+    font-family: 'rock-salt';
+    src: url('fonts/rocksalt-regular-webfont.woff2') format('woff2'),
+         url('fonts/rocksalt-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rock-salt {font-family: 'rock-salt';}
+
+@font-face {
+    font-family: 'rubik-pixels';
+    src: url('fonts/RubikPixels-Regular.woff') format('woff'),
+         url('fonts/RubikPixels-Regular.woff2') format('woff2'),
+         url('fonts/RubikPixels-Regular.ttf') format('truetype'),
+         url('fonts/RubikPixels-Regular.eot') format('eot'),
+         url('fonts/RubikPixels-Regular.svg#RubikPixels-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.rubik-pixels {font-family: 'rubik-pixels';}
+
+/* satisfy: cursive, header */
+@font-face {
+    font-family: 'satisfy';
+    src: url('fonts/satisfy-regular-webfont.woff2') format('woff2'),
+         url('fonts/satisfy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.satisfy {font-family: 'satisfy';}
+
+/* tajawal: arabic, ar-en */
+@font-face {
+  font-family: 'tajawal';
+  src: url('fonts/tajawal-regular-webfont.woff2') format('woff2'),
+       url('fonts/tajawal-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.tajawal {font-family: 'tajawal';}
+
+@font-face {
+    font-family: 'vibes';
+    src: url('fonts/vibes-regular-webfont.woff2') format('woff2'),
+         url('fonts/vibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vibes {font-family: 'vibes';}
+
+
+/* zeyada: handwritten, looks cursive */
+@font-face {
+  font-family: 'zeyada';
+  src: url('fonts/zeyada-regular-webfont.woff2') format('woff2'),
+       url('fonts/zeyada-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.zeyada {font-family: 'zeyada';}

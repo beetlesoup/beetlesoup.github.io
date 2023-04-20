@@ -1,0 +1,110 @@
+
+/* hello!!!! ✭ */
+
+.light-theme {
+    --bg: #D6DCE5;
+    --fontColor: #43464B;
+    --btnBg: #87CEEB;
+}
+
+.dark-theme {
+    --bg: #43464B;
+    --fontColor: #edfffd;
+    --btnBg: #000080;
+}
+
+.themebtn {
+    font-size: x-large;
+    height: 48px;
+    width: 43px;
+    border: none;
+    border-right: 3px solid #333;
+    margin-left: 3px;
+    background-color: var(--btnBg);
+    cursor: pointer;
+}
+
+body {
+  margin: 0px;
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+/* || Navigation Bar */
+
+nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 55px; font-family: 'homemade-apple'; font-size: small; overflow: hidden; background-color: #333;}
+  
+nav a {color: white; text-decoration: none; margin-left: 15px;}
+  
+.to-the-right {display: flex; justify-content: flex-end; align-items: center;}
+
+.dropdown {overflow: hidden;}
+  
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #fff2cc;
+    color: var(--steelgrey);
+}
+  
+.dropdown-content {
+   display: none;
+   position: absolute;
+   font-family: baloo;
+   background-color: #f9f9f9;
+   min-width: 150px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+/* NAAAVBAAAAR ENNNNNDDDDDDDDD
+============================================ */
+
+.margins {margin: 0px 10px 10px 10px;}
+
+@media screen and (max-width: 900px) {
+  body {
+    /* margin: 30px 20px top right bottom left*/
+  }
+}
+
+/* ------------------------------------ IMAGES */
+/* ---- this is for images you want to be different
+based on screen size (then in html <img src="" class="desktop OR mobile">*/
+.mobile {display: none;}
+
+@media(max-width: 600px){
+  .desktop {
+    display:none;
+  }
+  .mobile {
+    display:block;
+  }
+}
+/* --------------------------------------------- */

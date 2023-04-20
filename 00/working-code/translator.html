@@ -1,0 +1,42 @@
+<style>
+    .translated {
+      display: inline;
+    }
+</style>
+  
+  <body>
+    <p>
+      <button class="translator" onclick="translator(this)">inauspiciously</button> <span class ="translated AR">مشؤومة</span> <span class = "translated FR">de mauvais augure</span><span class="translated ES">desfavorablemente</span>
+    </p>
+  
+  <script>
+      window.onload = function() {
+      var contentText = document.querySelectorAll('.translated');
+      for (var i = 0; i < contentText.length; i++) {
+      contentText[i].style.display = "none";
+      }
+    };
+      
+      function translator(button) {
+        var btnText = button.innerHTML;
+        var translated = [];
+        var siblings = button.nextElementSibling;
+      
+        while (siblings != null && siblings.classList.contains('translated')) {
+          translated.push(siblings);
+          siblings = siblings.nextElementSibling;
+        }
+
+        // Find the current index of the button text in the translated array
+        var currentIndex = translated.findIndex(function(element) {
+          return element.innerHTML === btnText;
+        });
+      
+        // Get the next index in the translated array (or wrap around to 0 if at the end)
+        var nextIndex = (currentIndex + 1) % translated.length;
+        
+        // Set the button text to the next item in the translated array
+        button.innerHTML = translated[nextIndex].innerHTML;
+      }
+      </script>
+  </body>

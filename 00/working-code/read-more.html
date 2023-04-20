@@ -1,0 +1,37 @@
+<style>
+  .poof {display: inline;}
+</style>
+  
+  <body>
+    <p>
+      <span class="readmoremessage">~ read more ~</span> reg reg reg <span class="poof readmorecontent">more more more more more more more more</span>
+      <button onclick="readMoreFunction(this)" class="readmorebutton">▸</button>
+      
+      reg reg reg reg
+    </p>
+  
+    <script>
+        window.onload = function() {
+        var poofs = document.getElementsByClassName("poof");
+        for (var i = 0; i < poofs.length; i++) {
+          poofs[i].style.display = "none";
+        }
+        };
+      
+        function readMoreFunction(button) {
+          var btnText = button.innerHTML;
+          var contentText = button.previousElementSibling;
+          var message = contentText.previousElementSibling;
+      
+          if (contentText.style.display === "none") {
+            contentText.style.display = "inline";
+            message.style.display = "none"
+            button.innerHTML = 'x';
+          } else {
+            contentText.style.display = "none";
+            message.style.display = "inline";
+            button.innerHTML = '▸';
+          }
+        }
+      </script>
+  </body>
