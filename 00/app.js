@@ -165,7 +165,7 @@ const divs = document.querySelectorAll('article');
       
       const words = textContent.toLowerCase().split(/[^\w\d]+/).filter(word => word.length > 3 && !/\w*'\w*/.test(word));
 
-      const commonWords = ['about', 'after', 'also', 'because', 'into', 'like', 'long', 'many', 'more', 'must', 'only', 'other', 'some', 'than', 'that', 'their', 'them', 'there', 'these', 'they', 'this', 'thus', 'were', 'what', 'when', 'which', 'will', 'with', 'would', 'your', 'have', 'just', 'from', 'people', 'been', 'even', 'something', 'thing', 'such', 'much', 'things', 'over'];
+      const commonWords = ['about', 'after', 'also', 'been', 'because', 'each', 'else', 'even', 'from', 'have', 'into', 'just', 'like', 'long', 'many', 'more', 'most', 'much', 'must', 'only', 'other', 'over', 'people', 'something', 'some', 'such', 'than', 'that', 'their', 'them', 'then', 'there', 'these', 'they', 'thing', 'things', 'this', 'thus', 'were', 'what', 'when', 'which', 'will', 'with', 'would', 'your'];
       const filteredWords = words.filter(word => {
         return !commonWords.includes(word) && isNaN(word);
       });
