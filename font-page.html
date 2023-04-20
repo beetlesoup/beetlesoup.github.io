@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Page</title>
+    <meta name="description" content="look at fonts here!"/>
+    <link rel="stylesheet" href="00/fonts.css">
+    <link rel="stylesheet" href="00/main.css">
+    
+    <!-- for the word cloud: -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+</head>
+<body class="light-theme">
+    <nav>
+        <a href="index.html">← Home</a>
+        <div class="to-the-right">
+            <!-- lounge -->
+            <div class="dropdown">
+                <button class="dropbtn">Lounge ▾</button>
+                  <div class="dropdown-content">
+                    <a href="lounge-bookshelf.html">Bookshelf</a>
+                    <a href="lounge-tv.html">TV Room</a>
+                    <a href="magazinerack.html">Magazine Rack</a>
+                  </div>
+            </div>
+            <!-- office -->
+            <div class="dropdown">
+                <button class="dropbtn">Office ▾</button>
+                <div class="dropdown-content">
+                    <a href="articlehub.html">Article Hub</a>
+                </div>
+            </div>
+            <!-- themebtn -->
+            <button class="themebtn" id="themebtn">☀️</button>
+        </div>
+    </nav>
+<main><div class="margins">
+
+    <div id="catContainer">
+        <div class="flex">
+            <button class="categorybutton active" onclick="filterSelection('all')"> Show all</button>
+            <button class="categorybutton" onclick="filterSelection('arabic')">Arabic</button>
+            <button class="categorybutton" onclick="filterSelection('handwriting')">Handwriting</button>
+            <button class="categorybutton" onclick="filterSelection('cursive')">Cursive</button>
+            <button class="categorybutton" onclick="filterSelection('print')">Print</button>
+            <button class="categorybutton" onclick="filterSelection('headings')">Headings</button>
+            <button class="categorybutton" onclick="filterSelection('letter')">Letter</button>
+        </div>
+      </div>
+
+      <div dir="rtl"><h2>هذا العربي العادي عشان تشوفي الخط عنده عربي ولا لا</h2></div>
+
+      <!-- 
+        <div class="filterDiv tags"><div class="flex">
+            <div>
+                <h2>fontname</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+       -->
+      <div class="container"> <!-- keep this-->
+
+        <div class="filterDiv handwriting cursive allura"><div class="flex">
+            <div>
+                <h2>Allura</h2>
+                <p>The casual characters of Allura are simple, clean and very legible. The script and formal sets offer a softer, more formal look.</p>
+
+                <p>Allura was designed with advertising, display and package design in mind. This OpenType Pro version of Allura combines all three styles along with extra alternate glyphs and flourished graphics to give designers maximum flexibility.</p>
+                    
+                <p>In this family come complete with Latin Character sets including Western, Central, and Vietnamese language support.</p>
+            </div>
+            <div dir="rtl">
+                <h2>ألورا</h2>
+                <p>arabic sample text</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv arabic aref-ruqaa"><div class="flex">
+            <div>
+                <h2>Aref Ruqaa</h2>
+                <p>Aref Ruqaa is an Arabic typeface that aspires to capture the essence of the classical Ruqaa calligraphic style.</p>
+
+                <p>The Latin part is based on AMS Euler, but spaced for regular text rather than mathematics.</p>
+                    
+                <p>The Aref Ruqaa project is led by Khaled Hosny, a type designer based in Cairo, Egypt.</p>
+            </div>
+            <div dir="rtl">
+                <h2>عارف رقعى</h2>
+                <p>عارف رقة هو خط عربي يطمح إلى التقاط جوهر أسلوب خط الرقعة الكلاسيكي.</p>
+                <p>الجزء اللاتيني مبني على أساس AMS Euler ، لكنه متباعد للنص العادي بدلاً من الرياضيات.</p>
+                <p>مشروع عارف رقعة بقيادة خالد حسني، مصمم نوع مقيم في القاهرة ، مصر.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv arabic arslanwa"><div class="flex">
+            <div>
+                <h2>Arslan Wessam A</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv arabic arslanwb"><div class="flex">
+            <div>
+                <h2>Arslan Wessam B</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv bad-script"><div class="flex">
+            <div>
+                <h2>Bad Script</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv ar-en baloo"><div class="flex">
+            <div>
+                <h2>Baloo Bhaijaan 2</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv cairo-play"><div class="flex">
+            <div>
+                <h2>Cairo Play</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv handwriting cursive letter cedarville"><div class="flex">
+            <div>
+                <h2>Cedarville Cursive</h2>
+                <p>Designed by Kimberly Geswein. Cederville Cursive is based on the handwriting of a cheerful young preschool teacher. From her love of her Cedarville University alma mater to her passion for her students, she is a delightful, dependable person. Her handwriting contains that same blend of fun appeal with restrained discipline. Many handwritten script fonts have large flourishes, but this is a more simple script, similar to authentic daily handwriting. Cedarville is free for personal and commercial use.</p>
+            </div>
+            <div dir="rtl">
+                <h2>سيدرڤل</h2>
+                <p>صممه كيمبرلي قيسوين. يعتمد سيدرڤل على الكتابة اليدوية لمدرس ما قبل المدرسة الشاب المبتهج. من حبها لجامعة سيدارفيل إلى شغفها بطلابها ، فهي شخص مبهج ويمكن الاعتماد عليه. يحتوي خط يدها على نفس المزيج من الجاذبية الممتعة مع الانضباط المنضبط. تتميز العديد من خطوط النص المكتوبة بخط اليد بزخارف كبيرة ، ولكن هذا نص أكثر بساطة ، مشابهًا للكتابة اليدوية اليومية الأصيلة. سيدرڤل مجاني للاستخدام الشخصي والتجاري.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv cookie"><div class="flex">
+            <div>
+                <h2>Cookie</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv charmonman"><div class="flex">
+            <div>
+                <h2>Charmonman</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv dancing-script"><div class="flex">
+            <div>
+                <h2>Dancing Script</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        
+
+        <div class="filterDiv handwriting cursive letter dawming-of-a-new-day"><div class="flex">
+            <div>
+                <h2>Dawning of a New Day</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv grand-hotel"><div class="flex">
+            <div>
+                <h2>Grand Hotel</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv arabic ar-en harmattan"><div class="flex">
+            <div>
+                <h2>Harmattan</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+
+        <div class="filterDiv handwriting cursive letter homemade-apple"><div class="flex">
+            <div>
+                <h2>Homemade Apple</h2>
+                <p>Homemade Apple is a script, handwritten font designed by Font Diner. The font is licensed under Apache License. The font is free for both personel and commercial usages, modification and distribution.</p>
+            </div>
+            <div dir="rtl">
+                <h2>هوم ميد آبل</h2>
+                <p>يعتبر هوم ميد آبل خطًا نصيًا مكتوبًا بخط اليد صممه فونت داينر. الخط مرخص بموجب ترخيص أباتشي. الخط مجاني للاستخدامات الشخصية والتجارية والتعديل والتوزيع.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv arabic el-messiri"><div class="flex">
+            <div>
+                <h2>El Messiri</h2>
+                <p>El Messiri is a modern Arabic typeface family designed by Mohamed Gaber (Arabic) that began with Jovanny Lemonad's Latin and Cyrillic typeface Philosopher. The Arabic started with the concept of a curvy Arabic typeface inspired by the beauty of Naskh and drawn as if with a brush instead of the traditional bamboo pen. The idea took form with wide counters that improve readability at smaller text sizes, and has subtle details that make it a great display face at larger sizes. El Messiri current comes in 4 weights (Light, Regular, SemiBold and Bold) and the Arabic component has a wide glyph set that supports the Arabic, Farsi and Urdu languages.</p>
+            </div>
+            <div dir="rtl">
+                <h2>المسيري</h2>
+                <p>محمد جابر (القاهرة ، ١٩٨٦) مصمم نوع وفنان مقيم في أمستردام. يكمن اهتمامه الأساسي في الطبيعة اللمسية للإنتاج النوعي وجوانبها التكنولوجية والفلسفية والتاريخية. وهو حاصل على درجة الماجستير في التصميم من ساندبيرق انستيتوت (أمستردام). وقد أسس Kief Type Foundry (نوع مسبك متخصص في الخطوط العربية مفتوحة المصدر) ، و TypePlatform (مساحة بحثية لأنظمة الكتابة قليلة التمثيل تركز على النص العربي) ، وشارك في تأسيس TypeLab في Sandberg Instituut (منصة مفتوحة للتجربة مع الطباعة). عمل كمدرس ضيف في الجامعة الأمريكية بالقاهرة (مصر) وجامعة فرجينيا كومنولث (قطر) وجامعة لينيوس (السويد). بالإضافة إلى ذلك ، غالبًا ما يقدم ورش عمل ومحادثات حول العالم. يتم عرض أعمال تصميمه على خطوط Google ، وتم عرض أعماله الفنية في DDW (الإمارات العربية المتحدة) ، CTM 2020 (ألمانيا) ، بينالي البندقية 2020 (إيطاليا) ، MK & G-Hamburg (ألمانيا) ، Mediamatic (هولندا) ، VCU (قطر) ). تم ترشيح عمله لجائزة جميل للفنون في عام 2013 وحصل على جائزة أفضل خط عرض عربي من Granshan في عام 2016.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv handwriting cursive letter la-belle-aurore"><div class="flex">
+            <div>
+                <h2>La Belle Aurore</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv cursive monsieur-la-doulaise"><div class="flex">
+            <div>
+                <h2>Monsieur La Doulaise</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv mrs-saint-delafield"><div class="flex">
+            <div>
+                <h2>Mrs Saint Delafield</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv parisienne"><div class="flex">
+            <div>
+                <h2>Parisienne</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv rakkas"><div class="flex">
+            <div>
+                <h2>Rakkas</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv reenie-beanie"><div class="flex">
+            <div>
+                <h2>Reenie Beanie</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv rochester"><div class="flex">
+            <div>
+                <h2>Rochester</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv rock-salt"><div class="flex">
+            <div>
+                <h2>Rock Salt</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+        
+        <div class="filterDiv headings rubik-pixels"><div class="flex">
+            <div>
+                <h2>Rubik Pixels</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv satisfy"><div class="flex">
+            <div>
+                <h2>Satisfy</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv tajawal"><div class="flex">
+            <div>
+                <h2>Tajawal</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv vibes"><div class="flex">
+            <div>
+                <h2>Vibes</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+
+        <div class="filterDiv zeyada"><div class="flex">
+            <div>
+                <h2>Zeyada</h2>
+                <p>In years past, our proofs were full of pangrammatic foxes and lynxes and the rest, which made for some very merry reading. But invariably, I'd find myself staring down a lowercase J, and if I questioned the amount of space assigned to its left side, I'd set off in search of some confirmation in the proof. Each time, I'd be reminded that while pangrams delivered all kinds of jocks and japes and jutes and judges, even our prodigious list featured not a single word with a J in the middle.</p>
+            </div>
+            <div dir="rtl">
+                <h2>arabic name</h2>
+                <p>في السنوات الماضية ، كانت براهيننا مليئة بالثعالب الضخمة والوشق والبقية ، مما جعل بعض القراءة ممتعة للغاية. لكن على الدوام ، أجد نفسي أحدق في حرف J صغير ، وإذا تساءلت عن مقدار المساحة المخصصة للجانب الأيسر ، كنت سأبدأ في البحث عن بعض التأكيد في الإثبات. في كل مرة ، أتذكر أنه في حين أن pangrams قدمت جميع أنواع لاعبو jocks و japes و jutes والقضاة ، حتى قائمتنا الرائعة لم تتضمن كلمة واحدة مع J في المنتصف.</p>
+            </div>
+        </div></div>
+        
+      </div> <!-- keep this-->
+  
+
+
+
+</div></main><script src="00/app.js"></script>
+  <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo! Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
+</body>
