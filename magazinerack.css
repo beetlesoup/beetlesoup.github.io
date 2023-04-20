@@ -12,8 +12,12 @@
   
 /* flex-container-nowrap contains the colored category buttons */
 .flex-container-nowrap {display: flex; flex-wrap: nowrap;}
+/* the justify content below works on the text alignment of the color buttons */
 .flex-container-nowrap > button {display: flex; width: 100%; flex-wrap: nowrap; justify-content: right}
+/* ahahaaa exxcept the rainbow tag she gets to be special */
 .flex-container-nowrap > .rainbowtag {justify-content: center;}
+
+/* i want all the buttons to have centered text when i'm on my phone */
 @media(max-width: 720px){
     .flex-container-nowrap > button {justify-content: center;}
   }
