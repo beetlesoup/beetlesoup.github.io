@@ -1,0 +1,76 @@
+
+:root {  /*when you add a new one here, add it under both .articlebox and taggies too */
+    --red: #C00000;
+    --orange: #ff9900;
+    --yellow: #FFC300;
+    --green: #00B050;
+    --blue: #0070C0;
+    --purple: #7030A0;
+    --nothing: #d9d9d9;
+    --lighttagtext: #333;
+  }
+  
+/* flex-container-nowrap contains the colored category buttons */
+.flex-container-nowrap {display: flex; flex-wrap: nowrap;}
+.flex-container-nowrap > button {display: flex; width: 100%; flex-wrap: nowrap;}
+/* --------------------------------------------------- */
+
+/* the categories are rainbow colors, the logos are images */
+.categorybutton, .catlogo {font-family: 'satisfy'; width: 70px; outline: none; color: white; border: none; opacity: 0.5; border-radius: 25px; border-style: solid; border-color: var(--articleboxBg); padding: 5px 10px 5px 10px; cursor: pointer;}
+
+.categorybutton {text-align: right;}
+  
+.catlogo {color: black; text-align: center; border: none; height: 20px; padding: 5px 5px 5px 5px; width: auto; margin: auto;}
+
+  .categorybutton:hover, .catlogo:hover {
+    opacity: 0.8;
+  }
+  
+  .categorybutton.active, .catlogo.active {
+    opacity: 1;
+    border-color: white;
+  }
+
+/* the show all button gets a rainbow tag */
+  .rainbowtag {
+    background: rgb(192,0,0);
+    background: linear-gradient(90deg, rgba(192,0,0,1) 0%, rgba(255,165,0,1) 18%, rgba(255,195,0,1) 35%, rgba(0,176,80,1) 57%, rgba(0,102,204,1) 77%, rgba(112,48,160,1) 93%); 
+  }
+
+  .redtag {background-color: var(--red);}
+  .orangetag {background-color: var(--orange);}
+  .yellowtag {background-color: var(--yellow);}
+  .greentag {background-color: var(--green);}
+  .bluetag {background-color: var(--blue);}
+  .purpletag {background-color: var(--purple);}
+
+
+  .nothingtag {
+    background-color: var(--nothing);
+    color: #43464B;
+  }
+
+  /* ------------------------------------ */
+
+  .titlebox {
+    align-items: center;
+    }
+
+    .titlebox > div {padding: 5px;}
+
+  article {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #d9d9d9;
+    border-top: none;
+    border-left: none;
+  }
+
+  blockquote {border-image: none}
+
+  .red > article, .red > blockquote {border-color: var(--red);}
+  .orange > article, .orange > blockquote {border-color: var(--orange);}
+  .yellow > article, .yellow > blockquote {border-color: var(--yellow);}
+  .green > article, .green > blockquote {border-color: var(--green);}
+  .blue > article, .blue > blockquote {border-color: var(--blue);}
+  .purple > article, .purple > blockquote {border-color: var(--purple);}

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Rack</title>
+    <meta name="description" content="a collection of internet stuff to read"/>
+    <link rel="stylesheet" href="00/fonts.css">
+    <link rel="stylesheet" href="00/main.css">
+    <link rel="stylesheet" href="magazinerack.css">
+    
+    <!-- for the word cloud: -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+</head>
+<body class="light-theme">
+    <nav>
+        <a href="index.html">← Home</a>
+        <div class="to-the-right">
+            <!-- lounge -->
+            <div class="dropdown">
+                <button class="dropbtn">Lounge ▾</button>
+                  <div class="dropdown-content">
+                    <a href="lounge-bookshelf.html">Bookshelf</a>
+                    <a href="lounge-tv.html">TV Room</a>
+                    <a href="magazinerack.html">Magazine Rack</a>
+                  </div>
+            </div>
+            <!-- office -->
+            <div class="dropdown">
+                <button class="dropbtn">Office ▾</button>
+                <div class="dropdown-content">
+                    <a href="articlehub.html">Article Hub</a>
+                </div>
+            </div>
+            <!-- themebtn -->
+            <button class="themebtn" id="themebtn">☀️</button>
+        </div>
+    </nav>
+    Yay! You clicked a link. <strong>Now you can click on more links.</strong>
+    <div class="container">
+        <img width="100%" src="00/images/homepage-and-headers/magazine-rack-wide.jpeg" alt="magazine rack">
+        <div class="bottomleft">&nbsp;- Magazine Rack -&nbsp;</div>
+    </div>
+<main><div class="margins">
+    <p>If you like something, please click on it. I am a thief of words for my personal notebook and you have the audacity to benefit from my diamond snatching without giving the creators at least a view? <strong>Click on some links.</strong> Click. Some of them are even better uncut. Some are lots of filler. Click anyway.</p>
+
+    <div id="catContainer">
+        <div class="flex-container-nowrap">
+        <button class="categorybutton rainbowtag active" onclick="filterSelection('all')"> Show all</button>
+        <button class="categorybutton redtag" onclick="filterSelection('red')">Red</button>
+        <button class="categorybutton orangetag" onclick="filterSelection('orange')">Orange</button>
+        <button class="categorybutton yellowtag" onclick="filterSelection('yellow')">Yellow</button>
+        <button class="categorybutton greentag" onclick="filterSelection('green')">Green</button>
+        <button class="categorybutton bluetag" onclick="filterSelection('blue')">Blue</button>
+        <button class="categorybutton purpletag" onclick="filterSelection('purple')">Purple</button>
+        </div><br>
+        See best of:
+        <div class="flex-container-wrap">
+        <button class="categorybutton catlogo" onclick="filterSelection('fave')">my favorites</button>
+        <img class="categorybutton catlogo" src="00/images/logos/goodreads.png" alt="Goodreads" onclick="filterSelection('goodreads')">
+        <img class="categorybutton catlogo" src="00/images/logos/lithub.png" alt="Literary Hub" onclick="filterSelection('lithub')">
+        <img class="categorybutton catlogo" src="00/images/logos/slate-star-codex.png" alt="Slate Star Codex" onclick="filterSelection('ssc')">
+        <img class="categorybutton catlogo" src="00/images/logos/substack.png" alt="Substack" onclick="filterSelection('substack')">
+        </div>
+      </div>
+      <hr class="hr1">
+
+    <!-- <div class="filterDiv ">
+        <div class="titlebox">emoji date <a href="link"></a> - </div>
+        <article class=" ">
+        </article><hr>
+    </div> -->
+
+      <div class="filterDivcontainer">
+
+         <!-- 20230202 erik hoel book -->
+        <div class="filterDiv purple fave substack">
+            <div class="titlebox">📖 20230202 <a href="https://erikhoel.substack.com/p/introducing-the-world-behind-the">INTRODUCING: The World Behind the World</a> - Erik Hoel on The Intrinsic Perspective (Substack)</div>
+            <article class="purple">
+            <blockquote><p>What do you give away, when you write a book? What piece of yourself are you carving off, I mean? For a writer must treat himself like some sort of grisly compulsive, but mentally. There goes a childhood memory, now severed and served. There goes your first kiss. There goes your first bad break-up. There goes the enigmatic sad smile of your father.</p>
+            <p>In my first book, a novel, what I gave away was myself in my twenties, when I was flawed and prideful and angry but also poetic and barely containable. It's the reason the book has an emotionality I'm still proud of, and that I couldn't pull off now. I carved off chunks of personality and distributed them across characters, and after they left I felt quieter. Inside, I mean. But also, more lonely. As a person I was a bit smaller, and simpler.</p></blockquote>    
+            <blockquote><p>despite how there is an inexhaustible supply of facts, eventually after many volumes a nonfiction writer has nothing left to give, and so their books get thinner, both physically but also metaphysically—they write the book because this is how they make their money, because they know nothing else. Thus the tenth book by a popular nonfiction writer is often some sort of wisp, risking nothing, carving off nothing. Occasionally, an older veteran writer, either of fiction or nonfiction, will overcome the barrier of experience, but only through audacity—meaning that the best cut their hearts out in the end.</p></blockquote>
+            <blockquote><p>It is strange to be in the business of hollowing yourself out. You become a peculiar salesman of self, gradually getting smaller each time. But being an author is also, in many ways, a deeply rewarding pursuit. <mark>So here I am, hoping you decide to check out my alien wares, to buy the jewelry I made from my own bones.</mark></p></blockquote>
+            </article><hr>
+        </div>
+
+        <!-- 20230123 annie ernaux -->
+        <div class="filterDiv yellow">
+        <div class="titlebox">📚 20230123 <a href="https://www.oprahdaily.com/entertainment/books/a42466014/nobel-prize-for-literature-2022-annie-ernaux-a-girls-story/">Why You Should Read the Winner of 2022 Nobel Prize for Literature</a> - Liesl Schillinger on Oprah Daily</div>
+        <article class="yellow">
+          <blockquote><p>In her 20 works of fiction and nonfiction (<mark>searing, stark novels written in a style she calls l'écriture plate—flat writing, direct and unadorned</mark>), [Annie] Ernaux conveys the reality of the lives of the woman she is and was, and the people she has lived among, with utter lack of euphemism, and with a detective's hunger for evidence. <mark>Reading her makes you catch your breath</mark> as you startle to see the patterns of human experience—intimate, professional, familial—that you thought were distinct to you, as universal and specific to certain time, social class, gender. <mark>She compares her technique to writing with a knife, not a pen— shearing flesh off the bone, exposing what lies beneath.</mark></p></blockquote>
+          <!-- <p>See also: <a class="two" href="https://longreads.com/2023/01/19/questioning-the-stories-we-hold-a-reading-list-inspired-by-annie-ernaux/">Questioning the Stories We Hold: A Reading List Inspired by Annie Ernaux</a></p> -->
+        </article><hr>
+        </div>
+
+        <!-- 20230117 looking for alice -->
+        <div class="filterDiv blue substack">
+        <div class="titlebox">🫶🏽 20230117<a href="https://escapingflatland.substack.com/p/looking-for-alice">Looking for Alice</a> - Henrik Karlsson on Escaping Flatland (Substack)</div>
+        <article class="blue">
+            <blockquote><p><mark>When I was seventeen, my crushes were random. As if I was an untrained neural network trying to predict which image was a cat. Maybe this flurry of tan-colored pixels? Maybe this long bendy green thing? I got disappointed <em>a lot</em>, which was great because it meant by my early twenties, I could tell what I liked and what made me want to smash a cucumber to my face.</mark></p></blockquote>
+            <blockquote><p>[in the opening of <a href="https://www.youtube.com/watch?v=kCmlE17iUT0&ab_channel=AwarenessBureau">Into the Abyss</a>] The Reverend is talking about how the Lord works in mysterious ways, and so on—it is exactly the type of conversation you want to avoid. It is very ChatGPT. It is the Reverend repeating things he&#8217;s said before—words that protect him, that allow him to perform the role of Reverend, instead of being what he is: a man named Lopez, who will soon have to watch a boy die.</p>
+  
+            <p>At one point, the Reverend, as a part of a monologue about the beauty of God&#8217;s creation, mentions that he sometimes meditates on the beauty of the squirrels he sees on the golf course. Herzog, standing in a graveyard with nameless crosses, says, with mad Bavarian seriousness, &#8220;Please describe an encounter with a squirrel.&#8221;</p>
+              
+            <p>Lopez is a bit surprised by the question, but he takes it in a playful spirit—his voice lifts, joyously. He starts to talk faster. (This is where the conversation shifts into the type you want.) He is no longer saying versions of things he has said before, he&#8217;s not protecting himself, he&#8217;s just <em>there</em>.</p>
+  
+            <p>From that point on, it takes about ten seconds before he&#8217;s crying.</p>
+  
+            <p>In interviews, Herzog likes to mention this conversation to explain his craft. &#8220;But how on earth did you know to say that?&#8221; says the interviewer. &#8220;Were you just trying to say something unexpected to unbalance him?&#8221; &#8220;No, it was not random&#8221;, Herzog says. &#8220;I knew I had to say those <em>exact</em> words. Because <em>I know the heart of men</em>.&#8221;</p></blockquote>
+            <blockquote><p><mark>If you want to prompt someone to be authentic and playful and generative, you usually just need to ask them something where they have a rich experience to pull from <em>but have never pulled an answer from that experience before</em>. If you ask two or three increasingly detailed questions about something they tell you, you get there.</mark> [...] I tend to find that almost everyone is captivating and loveable when I manage to talk like this.</p></blockquote>
+            <blockquote>
+              <ol>
+                <li>You are born with this weird interiority that no one else can see.</li>
+                <li>You can&#8217;t see it either at first. But if you run enough experiments you get a sense of how that inner space behaves. In particular, <mark>you can figure out which types of people can fuse with your interiority and expand it</mark>.</li>
+                <li>You will not be able to <em>explain</em>  this fusion works. So don&#8217;t do it.</li>
+                <li>But when the interiorities <em>do</em> fuse: notice how things are set in motion.</li>
+              </ol>
+            </blockquote>
+        </article><hr>
+      </div>
+
+      <!-- 20230109 eating and reading -->
+        <div id="eating-with-kathy" class="filterDiv yellow">
+        <div class="titlebox">😋 20230109 <a href="https://publicdomainreview.org/essay/eating-and-reading-with-katherine-mansfield">Eating and Reading with Katherine Mansfield</a> - Aimé Gasston on The Public Domain Review</div>
+        <article class="yellow">
+            <blockquote>
+              <p>Throughout her letters and diaries, Mansfield analogises the act of reading with that of eating, particularly at her most frank, when writing “to” herself in her journal, or to Murry. [...] In 1921, she writes to her cousin, the novelist Elizabeth von Arnim: “I have turned to Milton all last week. There are times when Milton seems the only food to me”. Elsewhere she articulates the “sudden sweet shock” of delight that Henry James gives her. <mark>In a further letter to Murry, she describes “get[ting] up hungry from the french language [because she has] too great an appetite for the real thing to be put off with pretty little kickshaws”.</mark></p>
+              <p>This dissatisfaction, Mansfield's letter concludes, is the result of being spoilt by too much Shakespeare, drawing sharp relief between the “rich” language of English, and the French, which she finds “hard to stomach”. The word “kickshaw” itself derives from French (quelque-chose) and is defined as a “fancy but insubstantial cooked dish, especially one of foreign origin”.</p>
+            </blockquote>
+            <span class="note" style="font-family: 'bad-script';">According to Oxford Reference dot com, kickshaw's first appearance is in Shakespeare's Henry IV Part Two (1597), in which Justice Shallow gives orders to his servant Davy for a meal to be prepared for Falstaff, including 'some pigeons …, a couple of short-legged hens, a joint of mutton, and any pretty little tiny kickshaws'.</span>
+            <blockquote><p>In “<cite>The Modern Soul</cite>”, England is described as “merely an island of beef flesh swimming in a warm gulf sea of gravy” [...] while “<cite>At Lehmann's</cite>” brings us the son of a butcher, “a mean, undersized child very much like one of his father's sausages”, and a pregnant wife who is told to stay away from customers because she looks “unappetizing”.</p></blockquote>
+            <blockquote><p>In the title story, “<cite>Bliss</cite>”, food is everywhere, saturating thought and speech, and even evident in self-consciously avant-garde clothing (nut earrings and dresses like banana skins). The bohemians invited to Bertha's dinner party speak of plays entitled Love in False Teeth and Stomach Trouble, a plan for a fried-fish interior design scheme, and a poem called Table d'Hôte, which opens with the line: “Why must it always be tomato soup?” But this gustatory discourse is unrelated to passion or animal urges [...] The fish will rot, the soup in the poem will go rancid, but there will be another fad to replace it and the guests will have already turned away before they can witness the decay. <mark><cite>Bliss and Other Stories</cite> most often depicts characters too entrapped by metropolitan intellectualism to know how to use their bodies and therefore <em>eat</em>.</mark></p>
+            <cite>In The Garden Party</cite> collection, widely considered to contain some of Mansfield's most accomplished work (with the fiction testifying to her pledge to create a kind of “special prose” which would pay a “sacred debt” to her homeland [New Zealand]), there is a marked shift.</p></blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 2023 01 06 mildly anti-buddhist -->
+        <div id="mildly-anti-buddhist" class="filterDiv blue substack">
+        <div class="titlebox">🧘🏻‍♂️ 20230106 <a href="https://sashachapin.substack.com/p/five-mildly-anti-buddhist-essays" id="mildly-anti-buddhist">Five Mildly Anti-Buddhist Essays</a> - Sasha Chapin on Sasha's 'Newsletter' (Substack)</div>
+    
+        <article class="blue">
+          <blockquote><p><mark>The Buddha was a disagreeable maniac. He left a rich household and a beautiful wife so that he could find the answer to human suffering. To do this, he studied all the best psychotechnologies of his day, and found none of them satisfactory, eventually settling on his own blend, which he taught far and wide.</mark></p>
+          <p><mark>If the conclusion you take from this story is that you should be Buddhist, you are absolutely missing the point.</mark> The point is that we should experiment with everything and pick what best fits our situation, reverence be damned. There is no reason to believe that traditional Buddhist psychological theory and practice should be given ultimate preference, unless you believe that there have been no new psychological insights or useful tools created in the last millennium. [...] we also certainly have modern neuroses—bugs in our cultural programming that bear no resemblance to those of the nobility of the Himalayas of yore. Maybe we need some different tools for those. </p></blockquote>
+          <blockquote><p><mark>The easiest way to define grasping, probably, is to list a series of experiential states that are nice or tolerable, and show how much worse they become when grasping is added.</mark></p>
+          <table>
+            <tr>
+              <th>Normal Emotion/Experience</th>
+              <th>Plus Grasping</th>
+            </tr>
+            <tr>
+              <td>The bittersweet nostalgia of reminiscing about a friend or lover you miss.</td>
+              <td>Stewing over the delusion that you will never truly love again, that everything good is in the past.</td>
+            </tr>
+            <tr>
+              <td>Eating some delicious ice cream and enjoying it.</td>
+              <td>Eating far past the point of satiation because you must have one more second of the experience of sugar.</td>
+            </tr>
+          </table></blockquote>
+          <blockquote><p><mark>With more meditation practice, something even cooler can happen—you can learn to perceive the infinitesimal mental motions that compose grasping, and, in the process, gain the ability to stop a large amount of mental grasping before it starts.</mark> This is <em>really</em> cool, and it's a mental experience I'm glad to have enjoyed</p></blockquote>
+          <blockquote><p>You will obviously run into trouble if you brand yourself as Mentally Perfect in some way. Like, if you’ve become highly invested in the idea that you’re not supposed to experience mental turbulence anymore, this will naturally cause you to avoid stress and conflict, which could, in turn, cause you to avoid growth, accountability, and humility.</p></blockquote>
+          <blockquote><p>I would suggest that if your long-term contemplative life does not demonstrably cash out in some degree of increased behavioral nobility, then what you have is a talent for mental masturbation. And that’s ultimately not so bad! Some people spend their whole lives fucking other people over. Sitting quietly in private rapture is significantly better than that. But I believe there is more to aspire to.</p></blockquote>
+          Solutions: <del>click to see :)</del> OH my GOD he DELETED the POST before I could GET THIS DOWN now I am MORE DETERMINED to STEAL EVERY ESSAY 😱 🗒🤏👀 🥷
+          <blockquote><p><mark>Withdrawal and indifference don’t need to be encouraged in a post-digital consumer world.</mark> That is what is supplied to us by default. Intensity and difference need to be encouraged—<mark>genuine striving and passion. The courage to love fragile transient things, to form deep attachments and let them sculpt and wound you.</mark> Desire for stasis and placation is the default. Desire for something more meaningful is the relatively unsung alternative.</p>
+          <p><mark>Spiritual practice can reduce your normal boring suffering. One great thing you can do with that is replace it with suffering of a more vibrant flavor.</mark></p></blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 202201230 what's the problem with antigone -->
+        <div class="filterDiv yellow acoup">
+        <div class="titlebox">👔 20221230 <a href="https://acoup.blog/2022/12/30/miscellanea-whats-the-problem-with-antigone/">What's the Problem with Antigone?</a> - Bret Devereaux on A Collection of Unmitigated Pedantry</div>
+        <article class="yellow">
+        <blockquote><p>The concept of a public-facing open forum for Classics is not the problem.  Rather the problem is that in <mark>prioritizing famous writers whose names might bring clicks regardless of the worth of their ideas</mark> or the standard of conduct they have set as scholars, Antigone has ensured that many more early career classicists with new, valuable things to say of great interest to the public cannot do so here. <mark>In a remarkably short time, Antigone has, by refusal to prune, let the overgrown thorns of their garden block many of its gates, for those who lack the clout or tenure to risk it.</mark>  It has created a self-closing forum to the great disservice of both potential writers and more importantly potential readers.</p></blockquote>    
+        </article><hr>
+        </div>
+
+         <!-- 20221020 putin tragically misunderstands dostoevsky -->
+        <div class="filterDiv yellow lithub">
+        <div class="titlebox">👨🏼‍🎤 20221020 <a href="https://lithub.com/dear-vladimir-putin-if-youve-read-dostoevsky-youve-tragically-misunderstood-him/">Dear Vladimir Putin: If You've Read Dostoevsky, You've Tragically Misunderstood Him</a> - Austin Ratner on Lit Hub</div>
+        <article class="yellow">
+             <blockquote><p>If some readers empathize with the child, but not with the adult man's rage and needs, Dostoyevsky seems to plead with them that they should. He makes the confession of “abnormal,” antisocial feelings into a virtue in The Brothers Karamazov. Admitting and verbalizing such feelings helps brothers Ivan and Mitya Karamazov not act on them. <mark>They “speak daggers,” as Hamlet says, “but use none.”</mark></p></blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 20221019 when freedom kills -->
+        <div class="filterDiv">
+        <div class="titlebox"> 🧩 20221019 <a href="https://sundogg.substack.com/p/my-freedom-was-killing-me">When Freedom Kills</a> - Michelle Jia on Chasing the Sundog (Substack)</div>
+        <article class="purple">
+        <span class="note" style="font-family: 'charmonman';">- I can't relate to the loneliness, but I  had the same thoughts from reading the same book.</span>
+        </article>
+        <hr>
+        </div>
+
+        <!-- 20221011 beauvoir friendship -->
+        <div class="filterDiv blue fave">
+        <div class="titlebox">🫂 20221011 <a href="https://psyche.co/ideas/for-beauvoir-its-friendship-that-lets-us-become-truly-ourselves">For Beauvoir, it's friendship that lets us become truly ourselves</a> - Skye C Cleary on Psyche</div>
+        <article class="blue">
+        <blockquote><p>Zaza was Beauvoir's best childhood friend. They met at age nine, when Zaza sat next to Beauvoir at school and grew so close that teachers called them 'the inseparables' [...] by Beauvoir's own admission, her entire philosophy of friendship was shaped by her friendship with Zaza. [...] It is possible, certainly her mother thought so, that Beauvoir edged towards infatuation with Zaza. [...] Nevertheless, Beauvoir also said that 'the kind of love where you kiss' held no meaning for her.</p></blockquote>
+        <blockquote><p><mark>Beauvoir wrote that 'for friendship to be authentic, it must first be free.' Of course, there must be some kind of reciprocity in friendship, but how that reciprocity manifests is often lopsided. We tend to lazily think of friendship as symmetrical, when most of the time it isn't - and doesn't need to be, as long as the friendship is based on <u>intersubjectivity</u>. [...] When we understand that we are each subjects for ourselves and objects for others</mark> - in other words, when we freely and reciprocally recognise that other people's lives are as real and vital as our own - then authentic friendship can flourish.</p></blockquote>
+        <blockquote><p>For Beauvoir, authentic friendship springs from an exalted level of cerebral amity. [...] In <em>The Second Sex</em> (1949), Beauvoir distinguishes between spiritual and carnal desire. <mark>Spiritual desire is the intellectual ecstasy sparked when friends are vulnerable; for example, when they share secrets and diaries, show tenderness, and exchange fervent letters.</mark></p></blockquote>
+        <blockquote><p>Sometimes one friend takes advantage of the other and sadistically exploits them, disrupting their intersubjectivity and killing authentic friendship. Beauvoir didn't demand that Zaza feel the same way about her, but then nor did Zaza take advantage of Beauvoir's feelings. Thus authentic friendship could be maintained.</p></blockquote>
+        <blockquote><p>Beauvoir and Zaza were not physically affectionate. They referred to each other with the formal vous, and to other friends with the informal tu. But they were intellectually affectionate. They talked vivaciously about 'adult' things such as justice, Napoleon, travel, and classic books such as Don Quixote (1605-15) by Miguel de Cervantes, and the story of Tristan and Isolde. They introduced each other to scandalous books, and challenged each other's insights and beliefs, such as whether God exists, how marriages of convenience are similar to sex work, whether giving birth is like writing books, and how you can be sure a person will love you forever. They mocked their teachers and complained about their tyrannical parents. They shared secrets, insecurities, and coping mechanisms.</p></blockquote>
+        <blockquote><b>Beauvoir's life-long partner Jean-Paul Sartre read a draft of Beauvoir's novel The Inseparables. He didn't care for it. He said it was too sad.</b> Or perhaps he was jealous. The intersubjective message of the novel certainly didn't gel with Sartre's early philosophy. Sartre believed that we can never trust one another beyond doubt, and therefore there is no foundation on which to connect with other people and understand them. [...] Crucially, for Beauvoir, our singularities are a 'metaphysical fact', <b>but</b> '<mark>the tragedy of the unhappy consciousness [arises when] each consciousness seeks to posit itself alone as sovereign subject.</mark>' <b>In a posthumously published notebook, Sartre wrote about the virtue of generosity and defined 'true friendship' as '[c]ombatants who together create a setting of intersubjectivity in their own way.'</b></blockquote>
+        </article><hr>
+        </div>
+
+         <!-- 20220106 anohter dumb blonde -->
+        <div class="filterDiv yellow lithub">
+        <div class="titlebox">💃🏻 20221006 <a href="https://lithub.com/another-dumb-blonde-on-the-controversial-adaptation-of-joyce-carol-oatess-epic-novel/">Another Dumb <em>Blonde</em>: On the Controversial Adaptation of Joyce Carol Oates's Epic Novel</a> - Heidi Seaborn on Lit Hub</div>
+        <taggies class="yellowtag">#Reviews</taggies>
+        <article class="yellow">
+        <blockquote><p>I first read <em>Blonde</em> soon after it was published. [...] I came away from the novel thinking Marilyn had been a victim of the studio system and the usual misogyny that by that time I, too, was overly familiar with. Twenty years later, I read Blonde again. [...] Concerned with celebrity culture in America, I'd chosen this enduring icon as the star of my thesis [...]. I'd researched the hell out of her. So, this time reading Blonde, I saw how far Oates strayed from the biography of Marilyn Monroe.</p></blockquote>
+        <p>This movie makes up trauma for Marilyn to have gone through and shows nothing of the agency she showed, how she worked on her craft and pushed for recognition to leverage for better deals. How she was determined, funny, and surrounded by loving friends and family.</p>
+        <blockquote><p>But does that matter? It's entertainment after all, storytelling.</p></blockquote>
+        <blockquote><p>I can't help comparing Blonde to another recent film about a famous dead celebrity—Elvis. [...] Unlike in Blonde, Elvis Presley is multidimensional, nuanced, and human. Sure, Andrew Dominik is no Baz Luhrmann. But I wonder if the fact that Elvis relies on biographical research rather than a novel made it the more successful film for me (and most critics).</p></blockquote>
+        <blockquote><p><mark>Blonde [the novel] is not the story of Marilyn Monroe. However, it is the blueprint for the film. Many of the scenes that have provoked the greatest controversy—and that veer the furthest from reality—are straight out of the novel. A novel that was lauded in the early aughts. But in the 22 years between the publication of Blonde and the film's arrival, the world has changed.</mark> We've had Harvey Weinstein and #MeToo. We've had a misogynist in the White House. We've had the strike-down of Roe v. Wade. What may have read as a fictious biography—or myth-making, as Oates describes her novel—became a film that is a demeaning and vulgar portrait not only of Marilyn Monroe, but of women in general.</p></blockquote>     
+        </article><hr>
+      </div>
+
+      <!-- 20220105 copper toxicity -->
+    <div class="filterDiv purple fave substack">
+    <div class="titlebox">🥵 20221005 <a class="one" href="https://sundogg.substack.com/p/what-can-i-say-to-make-you-believe">What Can I Say To Make You Believe Me? On copper toxicity, the female body and the twisted mind of medicine</a> - Michelle Jia on Chasing the Sundog (Substack)</div>
+    <article class="purple">
+      <blockquote><p><mark>If copper can kill a tree, why do we believe it is safe to put this same material directly inside our reproductive systems?</mark> Why do we believe that “local inflammation due to copper ions,” a spooky process not much studied since the 80s, can ever be fully local, fully contained, fully understood and managed?</p></blockquote>
+      <blockquote><p>I have not had my IUD for fourteen months now. I removed it myself, accidentally in fact, while taking a shower in Detroit and removing my menstrual cup. Suddenly — with a strange swoon of pain — the coil was in my hands, already oxidizing a bit in the pale light.</p></blockquote>
+      <blockquote><p>Then, over the next weeks, something strange began to happen. There had long been a buzz inside me, a kind of anxious static, and it was suddenly gone. Not quite sadness, not quite fear, the buzz simply cast a heavy pallor over things — gave every moment a sense of constriction, of potential loss. Now that it was gone I was experiencing a set of feelings I thought I had relinquished entirely with my youth: simple, blithe feelings, like the pleasure of merely being alive. [...] And then how surprised I felt to notice I had been doing that, as though some old part of me had suddenly woken up from a very long hibernation, shaken but essentially intact. Altered but sincere. It scared me how much better I already felt. I tried not to think about what it all meant.</p><p>Over the next few months I began to sleep less, noticing I could wake from 7.5 or 8 hours of sleep and feel fine. I lost weight, about 30 pounds in total — from a combination of concerted dieting and a body that suddenly seemed able to yield to its own transformation. It became easier to plan, to become optimistic about the future. My mental health stabilized in a way that made it easier to care for myself.</p></blockquote>
+      <blockquote><p>I felt rather like a woman whose life had been saved by an exorcism — grateful, but unable to speak the truth. Alive, but embarrassed by what had saved her. Indebted to forces mysterious and crude.</p></blockquote>
+      <blockquote><p>I hadn't thought of this for some time, of the copper IUD, or mineral balancing, or any of that — in large part because in daily life I try not to think about it all. But recently, I was forced to, because I once again had the symptoms of copper toxicity. Bloated, tired, feeling horrid and very sad, I gained 2-3 pounds over the course of a month in which nothing else had changed. I was reminded because a friend recently came over and commented on my copper cookware, [...] I stopped cooking with them. The feelings went away. Quietly, almost embarrassed that it had worked, I went back to my life, saying nothing, telling nothing, living on the patchwork I had made — a patchwork of knowledge systems meant to carry me whole.</p></blockquote>
+    </article><hr>
+    </div>
+
+    <!-- 20220930 too much money judah -->
+    <div class="filterDiv red">
+    <div class="titlebox">💰 20220930 <a class="one" href="https://bewrong.substack.com/p/the-problem-of-too-much-money">The Problem of Too Much Money</a> - Judah on Be Wrong (Substack)</div>
+    <article class="red">
+        <blockquote><p><mark>the countries that are exporting more than they import? They're doing about as well as an Employee of the Month</mark> [...] <mark>[Unused money is] about as useful as your “gifted kid” status from middle school.</mark> One way to look at a growing bank account is as a sign that you don't know what that money should be doing, or can't use it to get what you want.</p><p>The net importer is buying things they need and want, the net exporter is piling up IOUs, literal pieces of paper. <mark>You can't even eat this kind of paper, it's made of cotton and linen.</mark></p></blockquote>
+        <blockquote><p><mark>there's a lot of cash out there.
+  
+            What happens to it?</mark> People give it to banks. Or to investors, who give it to banks. Or to trust funds, who give it to banks. Or to insurance companies, who give it to banks. [...] banks run out useful places to give money to. [...] The money has to go somewhere, and so it does. It goes into billion-dollar gambling tables a.k.a. trading desks. It goes into companies building the future of trade-able JPEGs. <mark>It goes to people who give it to other people, who give it to other people, in the hopes of finding someone who knows what to do with it.</mark></p></blockquote>
+           <blockquote><p>If you've ever tried to hire people, you know how incredibly hard it is to find the right person for the job. This is how it is with most things. The median worker is fairly unimpressive, the median restaurant is passable, the median NGO is terribly inefficient. The average <strong>thing</strong> is, by definition, kinda mid. <mark><a href="https://danluu.com/people-matter/">People</a> and projects who are worth investing in are rare. So money just continues floating around.</mark></p><p><mark>Imagination is rarer still.</mark></p></blockquote>
+    </article><hr>
+    </div>
+
+    <!-- 20220913 intense corporate valerie -->
+    <div class="filterDiv">
+    <div class="titlebox">👩🏻‍💼 20220913 <a class="one" href="https://valeriezhang.substack.com/p/intense-corporate-valerie">Intense Corporate Valerie</a> - Valerie Zhang on Val's Pals</div>
+    <hr>
+    </div>
+
+    <!-- 20220907 shape your social graph -->
+    <div class="filterDiv blue substack">
+    <div class="titlebox">🏺 20220907 <a class="one" href="https://escapingflatland.substack.com/p/first-we-shape-our-social-graph-then?utm_source=substack&utm_medium=email#%C2%A7curating-your-input">First we shape our social graph; then it shapes us</a> - Henrik Karlsson on Escaping Flatland (Substack)</div>
+    <article class="blue">
+        <blockquote><p>By replacing a peer group that is low-skilled (such as a peer group in a school) with one that is exceptional (such as Mersenne's mathematical salon), we can leverage our human capacity to internalize our culture to foster exceptional talent. Erik Hoel calls this <em>the peer replacement theory of genius</em>. No one raises children like this anymore.</p></blockquote>
+        <blockquote><p>Now, I am sending these ideas into my pocket notebook, which will send them to my future self, who will send them to you—now. My five-year-old, watching me jot down the notes, my hands foamy from the dishes, is also an audience for my output, albeit the lesson she draws is another.</p><p>It is this overall flow, into you and out from you, that determines what you become.</p></blockquote>
+        <blockquote><p>Over time, I got good at modeling these reactions ahead of time. This changed my writing, and it changed me. I became shrewd-cute and the writing became not a line of words on paper but an instrument to manipluate my audience. This shaping is not bad in itself. The problem was rather this: <mark>the gravity field of <em>this particular audience</em> did not align with my ethics and aesthetics: their expectations pulled me away from the places my thoughts needed to go. The poems, in conforming to their laughs and tears, hollowed out</mark>.</p></blockquote>
+        <blockquote><p>Let me phrase what I've been saying in this essay in a slightly different way. <mark><strong>What you want to create is a distributed apprenticeship in the art of being you.</strong></mark> [...] by actively curating your “audience”, as well as what you let into your senses, you can [...] create an environment that pulls you in the direction you want to go.</p></blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 20220906 the gossip trap -->
+        <div class="filterDiv orange substack">
+        <div class="titlebox">👄 20220906 <a class="one" href="https://erikhoel.substack.com/p/the-gossip-trap">The gossip trap: How civilization came to be and how social media is ending it</a> - Erik Hoel on The Intrinsic Perspective (Substack) [A review of <cite>The Dawn of Everything</cite> by David Graeber and David Wengrow]</div>
+        <article class="orange">
+        <p><strong>Click this link to see all the sweet sweet info in the introduction, not copied here.</strong></p>
+        <blockquote><p>In asking "What took so long?" the Sapient Paradox is the prehistoric analog of the Fermi Paradox. Instead of: “Why are we alone in the universe?” the Sapient Paradox asks: <mark>“Why were we trapped in prehistory [for so long]?”</mark> And just as the Fermi Paradox implies a Great Filter, the Sapient Paradox implies a Great Trap, a trap in which human society lived for, at minimum, 50,000 years, and, at maximum, something like 200,000 years or even more. [...] Steven Pinker, in <cite>The Better Angels of Our Nature</cite>, discusses a "Hobbesian trap" of mutual warfare between tribes.</p></blockquote>
+        <blockquote><p>My mother used to quote Eleanor Roosevelt all the time: "Great minds discuss ideas. Average minds discuss events. Small minds discuss people."</p>
+        <p><mark>A "gossip trap" is when your whole world doesn't exceed Dunbar's number and to organize your society you are forced to discuss mostly people. It is <cite>Mean Girls</cite> (and mean boys), but forever.</mark> And yes, gossip can act as a leveling mechanism and social power has a bunch of positives—it's the stuff of life, really. But it's a terrible way to organize society. <mark>So perhaps we leveled ourselves into the ground for 90,000 years.</mark> Being in the gossip trap means reputational management imposes such a steep slope you can't climb out of it, and essentially prevents the development of anything interesting, like art or culture or new ideas or new developments or anything at all. Everyone just lives like crabs in a bucket, pulling each other down. All cognitive resources go to reputation management in the group, to being popular, leaving nothing left in the tank for invention or creativity or art or engineering. Again, much like high school.</p>
+        
+        <p>And this explains why violating the Dunbar number forces you to invent civilization—at a certain size (possibly a lot larger than the actual Dunbar number) you simply can't organize society using the non-ordinal natural social hierarchy of humans.</p></blockquote>
+        <blockquote><p>There's a lot of ancient instructions, just lying around, still in your cells. Weird hair growth is the result of a cell latching on to some ancient genetic instruction. Our predecessors had lots of hair everywhere, your cells get confused, and you begin to manifest your hirsute ancestors. The hairy tufts springing from your grandfather's ears are there because parts of him are literally devolving into an ancient creature.</p>
+        <p>What if there were a mental equivalent? After all, if we lived in a gossip trap for the majority of our existence as humans, then <mark>what would it be, mentally, to atavistically return to that gossip trap?</mark></p>
+
+        <p><mark>Well, it sure would look a lot like Twitter.</mark></p></blockquote>
+        <blockquote><p><mark>Of course we gravitate to cancel culture—<em>it's our innate evolved form of government</em>.</mark></p></blockquote>
+        </article><hr>
+        </div>
+
+        <div class="filterDiv orange">
+            <div class="titlebox">🫵🏼 20220823 <a id="cultivating-agency" class="one" href="https://nadia.xyz/agency">Cultivating Agency</a> - Nadia Asparouhova</div>
+            <article class="orange">
+                <i>A critique of societal -not personal- antinatalism</i>
+            <blockquote><p>If “grit” - the desire to persevere when faced with a challenge, popularized by psychologist Angela Duckworth - has been the human trait <i>du jour</i> of the last fifteen-odd years, I suspect that “agency” - a belief in one's ability to influence their circumstances - could be the defining trait of the next generation.</p></blockquote>
+            <blockquote><p>The world doesn't happen <em>to</em> us; it is shaped by us. [...] If Gen X and Millennials grew up with a “digital divide,” perhaps Gen Z will face an “agentic divide”: those who believe they have the power to change their circumstances, versus those who do not. [...] It's not quite pessimism that's creeping into our consciousness like a cold bony hand, but rather the insidious belief that we are helpless to do anything to change the state of the world.</p></blockquote>
+            </article><hr>
+          </div>
+
+          <!-- 20220724 don't blame d -->
+            <div class="filterDiv green atlantic">
+            <div class="titlebox">👮🏼‍♂️ 20220724 <a id="shishkin-dostoevsky" class="one" href="https://www.theatlantic.com/ideas/archive/2022/07/russian-literature-books-ukraine-war-dostoyevsky-nabokov/670928/">Don't Blame Dostoyevsky</a> - Mikhail Shishkin on The Atlantic</div>
+            <article class="green">
+            <blockquote><p>The Putin regime has dealt Russian culture a crushing blow, just as the Russian state has done to its artists, musicians, and writers so many times before. People in the arts are forced to sing patriotic songs or emigrate. The regime has in effect “canceled” culture in my country. [...] That's how it was during the Golden Horde, that's how it was in Stalin's time, that's how it is today under Vladimir Putin.</p></blockquote>
+            <blockquote><p><mark>Slaves give birth to a dictatorship and a dictatorship gives birth to slaves. There is only one way out of this vicious circle, and that is through culture. Literature is an antidote to the poison of the Russian imperialist way of thinking [...] and the regime today will do everything it can to prevent that.</mark></p></blockquote>
+            <blockquote><p>The road to the Bucha massacre leads not through Russian literature, but through its suppression. [...] Russian literature owes the world another great novel. I sometimes imagine a young man who is now in a trench and has no idea that he is a writer, but who asks himself: “What am I doing here? Why has my government lied to me and betrayed me? Why should we kill and die here? Why are we, Russians, fascists and murderers?”</p><p>That is the task of Russian literature, to keep asking those eternal, cursed questions: “Who is to blame?” and “What is to be done?”</p></blockquote>
+            </article><hr>
+            </div>
+
+        <!-- 20220713 learning the elite class aella -->
+        <div class="filterDiv purple">
+        <div class="titlebox">👗 20220713 <a class="one" href="https://aella.substack.com/p/learning-the-elite-class">Learning the Elite Class</a> - Aella on Knowingless</div>
+        <hr>
+        </div>
+
+        <!-- 20220412 dreamers -->
+        <div class="filterDiv purple fave">
+        <div class="titlebox">💭 20220412 <a class="one" href="https://astra-mag.com/articles/dreamers-in-broad-daylight-ten-conversations/">Dreamers in Broad Daylight: Ten Conversations</a> - Leslie Jamison on Ecstasy, the first of Astra Magazine's two issues.</div><hr>
+        </div>
+        
+        <!-- 20220303 russian lit on the war -->
+        <div class="filterDiv green bigthink">
+        <div class="titlebox">🕵🏻‍♂️ 20220303 <a class="one" href="https://bigthink.com/the-past/russia-literature-ukraine-putin/">What classic Russian literature can tell us about Putin's war on Ukraine</a> - Tim Brinkhof on Big Think</div>
+        <article class="green">
+            <blockquote><p><mark>It is important that we give credit where credit is due. Leo Tolstoy and Dostoevsky — Putin's two favorite writers — each have created some of the most convincing arguments in favor of non-violent resistance to evil in the history of the human race.</mark></p></blockquote>
+            <blockquote><p>Like Tolstoy, Dostoevsky believed in the inherent value of every human life. And, like Tolstoy, Dostoevsky had arrived at this conclusion via personal experience. In his youth, the author was arrested for discussing socialist literature and sentenced to die by firing squad. Fortunately, he was spared by a last minute pardon from the tsar himself.</p><p>The author's brief encounter with death launched his religious reawakening, turning him from a pragmatist into a spiritualist. In his fiction, Dostoevsky would often recount the terror and despair he had felt while attending his own execution, and posited that the existential dread of this situation alone was more than enough to justify abolishing the death penalty.</p></blockquote>
+            <p><mark>BUT</mark></p>
+            <blockquote><p>After serving years of hard labor in Siberia, Dostoevsky returned to Saint Petersburg to found a literary journal with brother Mikhail. Its writers called themselves pochvenniki, men who advocated a common allegiance to and respect for Russia's soil and natural resources.</p><p>Devotion to Russia was accompanied by antipathy, even hostility, toward European countries. Later in life, Dostoevsky traveled through Europe to seek treatment for his epilepsy and to escape creditors. <mark>In letters, he expressed a deeply rooted longing to return home while simultaneously reflecting on the many ways in which European people were spiritually inferior to Russians.</mark></p></blockquote>
+            <blockquote><p><mark>He daydreamed of a war between Europe and Russia and felt certain that Russia would win.</mark> The Russian spirit, Dostoevsky wrote in Dresden, will have “such sacredness that even we are impotent to fathom the whole depth of that force… nine-tenths of our strength consists just in the fact that <mark>foreigners do not understand and never will understand the depth and power of our unity.”</mark></p><p>As Hans Kohn mentions in an article from 1945 titled “Dostoevsky's Nationalism,” the author's philosophy of humility and compassion is at odds with the enthusiasm he showed whenever the Russian Empire waged war to expand its territory. Dostoevsky waited for the moment when, in Kohn's terms, “the Slav world under Russia's leadership would fulfill its destiny.”</p><p>Dostoevsky used even stronger terms. <mark>“The present peace,” he wrote in his diary, “is always and everywhere much worse than war, so incomparably worse that it finally becomes outright immoral to maintain it… War develops in [man] for love of his fellow men and brings nations together by teaching them esteem for each other. War rejuvenates men.”</mark>
+            </p></blockquote>
+        </article><hr>
+      </div>
+
+      <!-- 20220223 use conversational doorknobs -->
+        <div id="conversational-doorknobs" class="filterDiv fave blue substack">
+        <div class="titlebox">🚪 20220223 <a id="conversational-doorknobs" class="one" href="https://experimentalhistory.substack.com/p/good-conversations-have-lots-of-doorknobs">Good conversations have lots of doorknobs</a> - <span class ="author">Adam Mastroianni</span> on Experimental History (Substack)</div>
+        <article class="blue">
+        <blockquote><p>Givers think that conversations unfold as a series of invitations; takers think conversations unfold as a series of declarations. [...] <mark>It's easy to assume that givers are virtuous and takers are villainous, but that's giver propaganda.</mark> [...] It's easy to remember how lonely it feels when a taker refuses to cede the spotlight to you, but easy to forget how lovely it feels when you don't want the spotlight and a taker lets you recline on the mezzanine while they fill the stage. <mark>When you're tired or shy or anxious or bored, there's nothing better than hopping on the back of a conversational motorcycle, wrapping your arms around your partner's waist, and holding on for dear life while they rocket you to somewhere new.</mark> [...] When we're all standing on the perimeter of an empty dance circle, takers are the martyrs who will launch themselves into the middle and do the stanky legg.</p></blockquote>
+        <blockquote><p>Neither givers nor takers have it 100% correct, and their conflicts often come from both sides' insistence that the other side must convert or die. Rather than mounting a Inquisition on our interlocutors, we ought to focus on perfecting our own technique. And the way to do that, I think, is by adding a bunch of doorknobs.</p></blockquote>
+        <blockquote><mark><strong>
+        DO NOT BE<br><br>
+    
+        A SOCIAL SLOB<br><br>
+    
+        USE CONVERSATIONAL DOORKNOBS
+        </strong></mark></blockquote>
+        </article><hr>
+      </div>
+
+      <!-- 20210328 avoid half heartedness -->
+        <div class="filterDiv blue substack">
+        <div class="titlebox">💘 20210328 <a class="one" href="https://ava.substack.com/p/how-to-avoid-half-heartedness">how to avoid half-heartedness</a> - <span class ="author">Ava</span> on bookbear express (Substack)</div>
+        <article class="blue">
+        <blockquote><p>I think that people come alive when they're serious about what they love—when they choose to pay careful attention to what feeds and sustains them. [...] I think [crushes are] indicative of a desire to place happiness <em>outside</em> of ourselves.</p></blockquote>
+        <blockquote><p>When you're unsure of yourself, it's easy to be obsessed with the idea of love—the idea that happiness will arrive when someone else loves you. This can lead to you ignoring your own life.</p><p>
+        Briana West: “You want [love] to provide for you what you think you cannot give yourself: stability, security, hope, happiness. So long as you function on this belief, you place “love” as being something that is outside of you when the reality is that you cannot see, create, or experience on the outside what you are not already.”</p></blockquote>
+        <blockquote><p>something to pour your love into, something that nourishes you</p></blockquote>
+        <blockquote><p>You can't believe that something, someone else will be a solution. It never is. <mark>If you're fundamentally ambivalent about yourself</mark> no one else can change that relationship. <mark>Everything you're reaching for is just a mirage.</mark></p><p>
+          Don't rely on someone else to give you what you need. <mark>Choose what nourishes you every day.</mark> <u>See how strong you become when you remember that love is just reassertation, choosing something over and over. Do it one more time & watch mundane repetition become something transcendent.</u></p></blockquote>
+        </article><hr>
+      </div>
+
+      <!-- 2021 01 02 the lost art of the manly weep -->
+        <div id="manly-weep" class="filterDiv orange fave">
+        <div class="titlebox">😭 20210102 <a class="one" href="https://poskok.info/the-lost-art-of-the-manly-weep/">The Lost Art of the Manly Weep</a> - Sandra Newman on POSKOK</div>
+        <article class="orange">
+        <blockquote>
+          <p>
+            But actually, <mark>the gender gap in crying seems to be a recent development.</mark> Historical and literary evidence suggests that, in the past, not only did men cry in public, but no one saw it as feminine or shameful. In fact, male weeping was regarded as normal in almost every part of the world for most of recorded history.
+          </p>
+          <p>
+            Consider <mark>Homer's <cite>Iliad</cite>, in which the entire Greek army bursts into unanimous tears no less than three times. King Priam not only cries but tears his hair and grovels in the dirt for woe. Zeus weeps tears of blood</mark>, and even the immortal horses of Achilles cry buckets at the death of Patroklos. Of course, we can't regard the Iliad as a faithful account of historical events, but there's no question that ancient Greeks saw it as a model for how heroic men should behave.
+          </p>
+          <p>
+            This exaltation of male weeping continued into the Middle Ages, where it appears in historical records, as well as fictional accounts. In chronicles of the period, we find one ambassador repeatedly bursting into tears when addressing Philip the Good, and the entire audience at a peace congress throwing themselves on the ground, sobbing and groaning as they listen to the speeches. In the 11th-century French epic <cite>The Song of Roland</cite>, the poet describes this reaction to the death of the eponymous hero: 'The lords of France are weeping bitter tears,/ And 20,000 faint in their grief and fall.' We can be pretty sure this didn't happen as described, but it's still remarkable that <mark>20,000 knights swooning from grief were considered noble, not ridiculous</mark>.
+          </p>
+          <p>
+            Furthermore, the sobbing male hero wasn't only a Western phenomenon; he appears in Japanese epics as well. <mark>In <cite>The Tale of Heike</cite>, which is often cited as a source for the ideal behaviour of a samurai,</mark> we find men crying demonstratively at every turn. Here's <mark>a typical response to the death of a commander-in-chief: 'Of all who heard, friend or foe, not one but wept until his sleeves were drenched.'</mark>
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>
+            In medieval romances, we find innumerable instance of knights crying purely because they miss their girlfriends. In Chrétien de Troyes' <cite>The Knight of the Cart</cite>, <mark>no less a hero than Lancelot weeps at a brief separation from Guinevere. At another point, he cries on a lady's shoulder at the thought that he won't get to go to a big tournament.</mark> What's more, instead of being disgusted by this snivelling, she's moved to help, and Lancelot gets to go to the tournament after all. <mark>The knights of King Arthur, King Mark, King Everyone are routinely reduced to tears every time they're told a heart-wrenching story.</mark>
+          </p>
+        </blockquote>
+        <blockquote>
+          <p>St Jerome's letter to Eustochium has eight separate references to crying; he describes himself as being in ‘floods of tears’, ‘drenched with tears’, and ends by exhorting worshippers to ‘Nightly wash your bed and water your couch with your tears’. St Ignatius of Loyola, the founder of the Jesuits, describes 175 separate crying episodes in a single 40-page section of his diary.</p>
+          <p>Weeping was such a central part of worship that it was written into the rules of monastic orders as a required accompaniment of prayer and repentance. Throughout the medieval era, disapproval of crying is confined to hypocritical tears, which were understood to be common in both men and women. Put another way, until recently, grown men actually forced themselves to cry publicly in the hope of impressing their peers.</p>
+          <p>There’s one glaring exception to this worldwide sobfest. As the medievalist Sif Rikhardsdottir of the University of Iceland notes, Scandinavians maintained a dry-eyed composure through these sobbing centuries. In her Medieval Translations and Cultural Discourse (2012), Rikhardsdottir illustrates this point by citing two versions of a medieval epic in which a boy hero is lost in the woods. The French hero dissolves in self-pitying tears; his Icelandic counterpart stoically admires the scenery and contemplates his next move.</p>
+        </blockquote>
+        <blockquote>Outside of Scandinavia, rampant male boo-hooing persisted well into the Early Modern period, and extended to parliamentarians as well as knights and monks.</blockquote>
+        <blockquote><mark>But from the 18th through the 20th centuries, the population became increasingly urbanised; soon, people were living in the midst of thousands of strangers. Furthermore, changes in the economy required men to work together in factories and offices where emotional expression and even private conversation were discouraged as time-wasting.</mark> As Tom Lutz writes in Crying: The Natural and Cultural History of Tears (1999), factory managers deliberately trained their workers to suppress emotion with the aim of boosting productivity: ‘You don’t want emotions interfering with the smooth running of things.’</blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 20201020 mary somerville -->
+        <div class="filterDiv green marginalian">
+        <div class="titlebox">👩🏻‍🔬 20201020 <a class="one" href="https://www.themarginalian.org/2020/10/20/mary-somerville/">Tenacity, the Art of Integration, and the Key to a Flexible Mind: Wisdom from the Life of Mary Somerville, for Whom the Word “Scientist” Was Coined</a> - Maria Popova on The Marginalian</div><hr>
+        </div>
+
+        <!-- 2020 jun 1 -->
+        <div id="ssc-origin-of-tom" class="filterDiv orange ssc">
+        <div class="titlebox">💭 20200601 <a class="one" href="https://slatestarcodex.com/2020/06/01/book-review-origin-of-consciousness-in-the-breakdown-of-the-bicameral-mind/">Book Review: Origin of Consciousness in the Breakdown of the Bicameral Mind</a> - <span class ="author">Scott Alexander</span> on Slate Star Codex</div>
+        <article class="orange">
+        <blockquote><p>Julian Jaynes' <cite>The Origin Of Consciousness In The Breakdown Of The Bicameral Mind</cite> is a brilliant book, with only two minor flaws. First, that it purports to explains the origin of consciousness. And second, that it posits a breakdown of the bicameral mind. I think it's possible to route around these flaws while keeping the thesis otherwise intact. So I'm going to start by reviewing a slightly different book, the one Jaynes should have written.</p></blockquote>
+       Theory of mind, how people think of the thought of older cultures, how people translate old works.
+       <blockquote><p>a typical translation might use a phrase like “Fear filled Agamemnon's mind”. Wrong! There is no word for “mind” in the <cite>Iliad</cite>, except maybe in the very newest interpolations. The words are things like kardia, noos, phrenes, and thumos, which Jaynes translates as heart, vision/perception, belly, and sympathetic nervous system, respectively. He might translate the sentence about Agamemnon to say something like “Quivering rose in Agamemnon's belly”. It still means the same thing - Agamemnon is afraid - but it's how you would talk about it if you didn't have an idea of “the mind” as the place where mental things happened - you would just notice your belly was quivering more. Later, when the Greeks got theory of mind, they repurposed all these terms.</p></blockquote>
+       <blockquote><p>Suppose Achilles is overcome with rage and wants to kill Agamemnon. But this would be a terrible [idea]; after [thinking] about it for a while, he [decides] against. If Achilles has no concept of any of the bracketed words, nothing even slightly corresponding to those terms, how does he conceptualize his own actions? Jaynes:</p>
+       <blockquote>The response of Achilles begins in his etor, or what I suggest is a cramp in his guts, where he is in conflict, or put into two parts (mermerizo) whether to obey his thumos, the immediate internal sensations of anger, and kill the king, or not. It is only after this vacillating interval of increasing belly sensations and surges of blood, as Achilles is drawing his mighty sword, that the stress has become sufficient to hallucinate the dreadfully gleaming goddess Athene who then takes over control of the action and tells Achilles what to do.</blockquote></blockquote>
+       <blockquote><p><mark>As you go about your day, you hear a voice that tells you what to do, praises you for your successes, criticizes you for your failures, and tells you what decisions to make in difficult situations. Modern theory-of-mind tells you that this is your own voice, thinking thoughts. It says this so consistently and convincingly that we never stop to question whether it might be anything else.</mark></p><p><mark>If you don't have theory of mind, what do you do with it?</mark></p></blockquote>
+       <blockquote><p><mark>Then, around 1250 BC,</mark> this well-oiled system started to break down. Jaynes blames trade. <mark>Traders were always going into other countries, with different gods. These new countries would be confusing, and the traders' hallucinatory voices wouldn't always know all the answers. And then they would have to negotiate with rival merchants! Here theory of mind becomes a huge advantage</mark> - you need to be able to model what your rival is thinking in order to get the best deal from him. And your rival also wants theory of mind, so he can figure out how to deceive you. Around 1250 BC, trade started picking up, and these considerations became a much bigger deal. Then around 1200 BC, the Bronze Age collapsed.</p></blockquote>
+       <blockquote><p>But <mark>as theory of mind spread, the voices of the gods faded. They receded from constant companions, to only appearing in times of stress (the most important decisions) to never appearing at all.</mark> Jaynes interprets basically everything that happened between about 1000 BC and 700 BC as increasingly frantic attempts to bring the gods back or deal with a godless world.</p>
+       <p>Now, to be fair, he cites approximately one zillion pieces of literature from this age with the theme “the gods have forsaken us” and “what the hell just happened, why aren't there gods anymore?” As usual, everyone else wimps out and interprets these metaphorically - claiming that this was just a poetic way for the Mesopotamians to express how unlucky they felt during this chaotic time. Jaynes does not think this was a metaphor - for one thing, people have been unlucky forever, but <mark>the 1000 - 750 BC period was a kind of macabre golden age for “the gods have forsaken us” literature</mark>.</p></blockquote>
+       <blockquote><p>So people got desperate. He says this period was the origin of augury and divination. Omens “were probably present in a trivial way” before this period, but not very important; “there are, for example, no Sumerian omen texts whatsoever”. But <mark>after about 1000 BC, omens become an international obsession</mark>. [...] And then there are the demons. Early Sumerians didn't really worry about demons. Their religion was very clear that the gods were in charge and demons were impotent. Post 1000 BC, all of this changes. [...] <mark>and angels, and prophets, and</mark> all the other trappings of religion. When the gods spoke to you every day, and you couldn't get rid of them even if you wanted to, angels - a sort of intermediary with the gods - were unnecessary. <b>There was no place for prophets - when everyone is a prophet, nobody is.</b> There wasn't even <mark>prayer</mark>, at least not in a mystical sense - <mark>as Jaynes puts it, “schizophrenics do not beg to hear their voices - it is unnecessary - in the few case where this does happen, it is during recovery when the voices are no longer heard with the same frequency.”</mark>
+       </p>
+        <p>The Assyrians invented the idea of Heaven. <mark>Previously, Heaven had been unnecessary. You could go visit your god in the local ziggurat, talk to him, ask him for advice. But word went around that gods had retreated to heaven</mark> - some of the stories even use those exact words, blaming the Great Flood or some other cataclysm. The ziggurats shifted from houses for the gods to e-temen-an-ki - pedestals that the gods could descend to from Heaven, should they ever wish to return.</p>
+        <p><mark>By 500 BC, the ability to hear the gods was limited to a few prophets, oracles, and poets.</mark> Jaynes is especially interested in this last group - he cites various ancient sources claiming that the poets only transcribe what they hear gods and goddesses sing to them (everyone else wimps out and says this is metaphorical).</p></blockquote>
+        <blockquote><p>Jaynes ends by referencing one of my favorite ancient texts, Plutarch's <cite>On The Failure Of Oracles</cite>. Plutarch, writing around 100 AD, is not a skeptic. He believes oracles work <em>in theory</em>. But he records a general consensus that they don't work as well as they used to, and that some day soon they will stop working at all.</p></blockquote>
+        <blockquote><p>The last oracle to fade away was the greatest - Delphi, perched atop a fantastic gorge as if suspended between Heaven and Earth. Jaynes tries to give us an impression of how important it was in its time; important people from all over the classical world would make the pilgrimage there, leave lavish gifts, and ask Apollo for advice on weighty matters. He thinks that the oracle's fame protected it; if a cultural validation is an important ingredient in god-hearing, Delphi had the strongest and best. Its reputation was unimpeachable. Still, in the centuries after Plutarch, its prophecies became rarer and rarer; the Pythia's few divine utterances became separated by more and more incoherent raving. Finally:</p>
+        <blockquote>As part of [the Emperor Julian's] personal quest for authorization, he tried to rehabiliate Delphi in AD 363, three years after it had been ransacked by Constantine. Through his remaining priestess, Apollo prophecied that he would never prophesy again. And the prophecy came true.</blockquote></blockquote>
+        <blockquote><p>if [American Indians, or Zulus, or Greenland Inuit, or Polynesians, or any other human group presumably isolated from second-millennium-BC Assyrians] were perfectly normal conscious people like us, then Jaynes is wrong about everything.</p></blockquote>
+        </article><hr>
+        </div>
+ 
+        <!-- 20190910 malcolm gladwell tipping point -->
+        <div class="filterDiv yellow fave atlantic">
+        <div class="titlebox">📖 20190910 <a class="one" href="https://www.theatlantic.com/ideas/archive/2019/09/when-malcolm-gladwell-says-nothing-at-all/597697/">Malcolm Gladwell Reaches His Tipping Point</a> - Andrew Ferguson on The Atlantic</div>
+        <taggies class="yellowtag">#Reviews</taggies>
+          <article class="yellow">
+            <p>Although <mark>AF seems to be complaining about not understanding a book whose whole thesis is that nobody actually understands each other outside of small social circles, 😛</mark> his scathing review of pop social science makes some valid points, such as chasing down MG's cited statistic about poets having the highest suicide rate and exposing how stupidly (ahem, uninformedly) it was calculated. There's also this gem about Truth-Default Theory, the theory that states that people are more likely to assume truth in the absence of reason to be suspicious:</p>
+            <blockquote><p><strong>"I don't know whether <i>default to truth</i> will enter the Gladwell lexicon with tipping point and stickiness. But his appropriation of the phrase does show that his attitude to social science remains unquestioning. When he encounters a study published in a journal with a complicated name, he <i>defaults to swallowing it whole."</i></strong></blockquote>
+            <p>He ends the article praising MG for his newfound epistemological humility, which "<em>of course, wouldn't have sold all those million books if he had begun practicing it 20 years earlier.</em>"</p>
+          </article><hr>
+        </div>
+
+        <!-- 20190313 vagabond mannequin -->
+        <div class="filterDiv purple jellyfishreview">
+        <div class="titlebox">☠️ 20190313 <a class="one" href="https://jellyfishreview.wordpress.com/2019/03/13/vagabond-mannequin-by-k-b-carle/">Vagabond Mannequin</a> - KB Carle on Jellyfish Review</div><hr>
+        </div>
+        
+        <!-- 20180926 i endured it -->
+        <div class="filterDiv purple jellyfishreview">
+        <div class="titlebox">🩸 20180926 <a class="one" href="https://jellyfishreview.wordpress.com/2019/03/15/i-endured-it-it-was-fine-by-allie-marini/">I endured it. It was fine</a> - Allie Marini on Jellyfish Review</div><hr>
+        </div>
+
+        <!-- 2018 01 01 paul bryant's review of the tunnel -->
+        <div class="filterDiv yellow goodreads">
+        <div class="titlebox">😂 20180101 <a class="one" href="https://www.goodreads.com/review/show/2235934244">Paul Bryant's Goodreads review of <cite>The Tunnel</cite> by William Gass</a></div><hr>
+        </div>
+
+        <div class="filterDiv yellow">
+        <div class="titlebox">🗣 20171011 <a id="shtetl-not-the-critic" class="one" href="https://scottaaronson.blog/?p=3488">Not the critic who counts</a> - Scott Aaronson on Shtetl-Optimized</div>
+        <article class="yellow">
+        <blockquote><p>There's a website called Stop Timothy Gowers! !!! —yes, that's the precise name, including the exclamation points.  The site is run by a mathematician who for years went under the pseudonym “owl / sowa,” but who's since outed himself as Nikolai Ivanov [...] [Sir Timothy Gowers is a Fields Medalist] who's known at least as well for explaining math, in his <a class="two" href="https://gowers.wordpress.com/">blog</a>, books, <a  class="two" href="https://www.dpmms.cam.ac.uk/~wtg10/mathsindex.html">essays</a>, MathOverflow, and elsewhere, in a remarkably clear, friendly, and accessible way.  He's also been a leader in the fight to free academia from predatory publishers.</p></blockquote>
+        <blockquote><p>When I browse sites like “Stop Timothy Gowers! !!!” or SneerClub, I tend to get depressed about the world [...] But then I reflect that there's at least one glaring asymmetry between the sides.</p></blockquote>
+        <blockquote><p>when you read sowa's blog, for all the anger about the sullying of mathematics by unworthy practitioners, there's a striking absence of mathematical <em>exposition</em>.  Not once does sowa ever say: “OK, forget about the controversy.  Since you're here, instead of just telling you about the epochal greatness of Grothendieck, let me <em>walk you through an example</em>.  Let me share a beautiful little insight that came out of his approach, in so self-contained a way that even a physicist or computer scientist will understand it.”  In other words, sowa never uses his blog to do what Gowers does every day.</p></blockquote>
+        <blockquote><p>Similar comments apply to Slate Star Codex versus r/SneerClub.  <mark>When I read an SSC post, even if I vehemently disagree with the central thesis (which, yes, happens sometimes), I <em>always</em> leave the diner intellectually sated.  For the rest of the day, my brain is <em>bloated</em> with new historical tidbits</mark>, or a deep-dive into the effects of a psychiatric drug I'd never heard of, or a jaw-dropping firsthand account of life as a medical resident, or a different way to think about a philosophical problem—or, if nothing else, some wicked puns and turns of phrase.</p><p>But when I visit r/SneerClub—well, I get exactly what's advertised on the tin.</p></blockquote>
+        <blockquote><p><mark>When I was in college, I devoured Ray Monk's two-volume biography of Bertrand Russell.  This is a superb work of scholarship, which I warmly recommend to everyone.</mark>  But there's one problem with it: Monk is <em>constantly</em> harping on his subject's failures, and he has no sense of humor, and Russell does.  The result is that, <mark>whenever Monk quotes Russell's personal letters at length to prove what a jerk Russell was, the quoted passages just leap off the page—as if old Bertie has come back from the dead to share a laugh with you, the reader, while his biographer looks on sternly and says, “you two think this is <em>funny</em>?”</mark></p><p>For a writer, I can think of no higher aspiration than that: to write like Bertrand Russell or like Scott Alexander—in such a way that, even when people quote you to stand above you, your words break free of the imprisoning quotation marks, wiggle past the critics, and enter the minds of readers of your generation and of generations not yet born.</p></blockquote>
+        <blockquote><p>the title of this post comes from the famous Teddy Roosevelt quote:</p><blockquote>It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds;</blockquote></blockquote>
+        </article><hr>  
+        </div>
+            
+        <!-- 20170513 reality detail -->
+        <div class="filterDiv red">
+        <div class="titlebox">🔬 20170513 <a class="one" href="http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail">Reality has a surprising amount of detail</a> - John Salvatier</div>
+        <article class="red">
+        <blockquote><p>It's tempting to think 'So what?'' and dismiss these details as incidental or specific to stair carpentry. And they <strong>are</strong> specific to stair carpentry; that's what makes them details. But <mark>the existence of a surprising number of meaningful details</mark> is <em>not</em> specific to stairs. Surprising detail <mark>is a near universal property of getting up close and personal with reality.</mark> [...] You might think the fiddly detailiness of things is limited to human centric domains, and that physics itself is simple and elegant. That's true in some sense - the physical laws themselves tend to be quite simple - but the manifestation of those laws is often complex and counterintuitive.</p></blockquote>
+        <blockquote><p>Another way to see that noticing the right details is hard, is that different people end up noticing <em>different</em> details. [...] I kept arguing because I thought I was right. I felt really annoyed with him and he was annoyed with me. [...] If we had been able to get these points across, we could have come to consensus. Drawing a diagram was probably a good idea, but computing the angle was probably not. Instead we stayed annoyed at each other for the next 3 hours.</p></blockquote>
+        <blockquote><p><mark>Before you've noticed important details they are, of course, basically invisible.</mark> It's hard to put your attention on them because you don't even know what you're looking for. But <em>after</em> you see them they quickly become so integrated into your intuitive models of the world that they become essentially transparent. [...] This means it's really easy to get <em>stuck</em>. Stuck in your current way of seeing and thinking about things. Frames are made out of the details that seem important to you. The important details you haven't noticed are invisible to you, and the details you <em>have</em> noticed seem completely obvious and you see right through them. This all makes makes it difficult to imagine how you could be missing something important.</p></blockquote>
+        <blockquote><p>“what could convince you you were wrong?” you'll likely get back an answer like “if it turned out all the data on my side was faked” or some other extremely strong requirement for evidence rather than “I would start doubting if I noticed numerous important mistakes in the details my side's data and my colleagues didn't want to talk about it”. [...] The direction for improvement is clear: seek detail you would not normally notice about the world.</p></blockquote>
+        </article><hr>
+        </div>
+
+
+        <!-- 20160819 why not insects -->
+        <div class="filterDiv orange theconvo">
+        <div class="titlebox">🐜 20160819 <a class="one" href="https://theconversation.com/what-do-aliens-look-like-the-clue-is-in-evolution-63899">What do aliens look like? The clue is in evolution</a> - Matthew Wills on The Conversation</div>
+        <article class="orange">
+            <p>Why not giant intelligent “insects”?</p>
+                <blockquote><p>
+                  Insects are by far the most species rich group on Earth: why shouldn't aliens look more like them? Unfortunately, having your skeleton on the outside makes growth difficult, and entails periodic shedding and regrowth. <mark>On Earth-like planets, all but relatively small terrestrial animals with external skeletons would collapse under their own weight during moulting, and some critical size may be necessary for suitably complex brains.</mark></p></blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 2015 a dent in the universe -->
+        <div class="filterDiv blue fave ribbonfarm">
+        <div class="titlebox">💭 20150218 <a class="one" href="https://www.ribbonfarm.com/2015/02/18/a-dent-in-the-universe/">A Dent in the Universe</a> - Venkatesh Rao on Ribbonfarm</div>
+        <article class="blue">
+        <blockquote><p><mark>At higher levels of the Maslow hierarchy, imagination is a survival skill.</mark> At the apex, where self-actualization is the primary concern, lack of imagination means death. Metaphoric death followed by literal death of the sort that tortured artists achieve through suicide. Less sensitive souls, such as earnest political philosophers and technically brilliant but unimaginative mathematicians, seem to end up clinically insane and institutionalized. Or as ranting homeless psychotics.</p></blockquote>
+        <blockquote><p><em>Choosing</em> to navigate non-deterministic challenges with imagination is a way to deal with self-actualization before it becomes a problem. Equally, <mark>choosing a non-imaginative path <em>even</em> when an imaginative path opens up is a symptom of the natural fear of self-actualization. The fear is based on the unconscious (and correct) belief that awakening dormant needs might kill you, and the (incorrect) assumption that not doing so will ensure that they remain asleep indefinitely</mark>.</p></blockquote>
+        <blockquote><p>Even the least narcissistic types, willing or even eager to have their individuality be subsumed into an undifferentiated collective, cannot solve the problem of self-actualization through imitation. Navigating the darkness that is the challenge of self-actualization is something you have to ultimately do alone. Collective ayahuasca ceremonies can only help you along so far.</p></blockquote>
+        <blockquote>
+        <img src="https://ribbonfarm.wpenginepowered.com/wp-content/uploads/2015/02/maslow.png"></blockquote>
+        <blockquote><p>The problem that makes you hit the ceiling of the esteem stage [...] When the mask and the daemon are not integrated, your visible behavior becomes a battleground between the two. When the mask wins, the daemon  loses some form and sinks a little deeper into the subconscious. When the daemon wins, you get something between an inappropriate outburst and a psychotic break. [...] The only way out is to integrate the mask and the daemon in a non-zero-sum way. This is self-actualization and it takes imagination.</p></blockquote>
+        <blockquote><p>Dealing with your shadow is a necessary prelude to self-actualization, but it can turn into a massive yak-shaving introspection exercise that then turns into an addiction if you don't level up. I call it shaving the shadowyak. [...] You have to deal with your shadow just enough to turn it into a friendly daemon that you can then begin integrating with your mask.</p></blockquote>
+        <blockquote><p>I'll offer a definition: <i>imagination is the ability to create unpredictable new meaning while generating more freedom than you consume.</i></p>
+        <p>The experience of being imaginative is simply the experience of being alive to possibilities, in an open-ended way. The experience of seeing many possible meanings and futures in any given fragment of external reality (and not just the ones your shadow has chosen to inhabit).</p>
+        <p><mark>Unlike creativity, imagination is an appreciative skill with an external locus, rather than an instrumental capacity with an internal locus.</mark> To notice a pattern in current events that could serve as a premise for a movie is imagination. To be able to develop that premise into an actual screenplay with compelling characters, fresh dialog and an engrossing plot is creativity. You feed creativity by making things. You feed imagination by being curious about things beyond your own shadow.</p></blockquote>
+        <blockquote><p>If only you find relief in the creation, it is projection. If only people very similar to you find relief in the creation, it is still projection. If surprising people find surprising sorts of meaning in the creation, it is self-actualization.</p></blockquote>
+        </article><hr>
+        </div>
+
+        <!-- 20131120 you live in a pixel -->
+        <div class="filterDiv fave blue waitbutwhy">
+        <div class="titlebox">🖼 20131120 <a class="one" href="https://waitbutwhy.com/2013/11/life-is-picture-but-you-live-in-pixel.html">Life is a Picture, But You Live in a Pixel</a> - <span class ="author">Tim Urban</span> on Wait but Why</div><hr>
+        </div>
+
+        <div class="filterDiv blue">
+        <div class="titlebox">👀 20090521 This is Water: Kenyon College commencement speech by David Foster Wallace</div>
+        <article class="blue">
+        <blockquote>
+            <p>if you're worried that I plan to present myself here as the wise, older fish explaining what water is to you younger fish, please don't be. I am not the wise old fish. The point of the fish story is merely that the most obvious, important realities are often the ones that are hardest to see and talk about. <mark>Stated as an English sentence, of course, this is just a banal platitude, but the fact is that in the day to day trenches of adult existence, banal platitudes can have a life or death importance</mark>, or so I wish to suggest to you on this dry and lovely morning.</p>
+        </blockquote>
+              <blockquote><p>If your total freedom of choice regarding what to think about seems too obvious to waste time discussing, I'd ask you to think about fish and water, and to bracket for just a few minutes your scepticism about the value of the totally obvious.</p></blockquote>
+              <blockquote><p>the traffic jams and crowded aisles and long checkout lines give me time to think, and if I don't make a conscious decision about how to think and what to pay attention to, I'm gonna be pissed and miserable every time I have to [grocery] shop [after work in a crowded supermarket].</p></blockquote>
+              <blockquote><p>But most days, if you're aware enough to give yourself a choice, you can choose to look differently at this fat, dead-eyed, over-made-up lady who just screamed at her kid in the checkout line. Maybe she's not usually like this. Maybe she's been up three straight nights holding the hand of a husband who is dying of bone cancer. [...] But if you really learn how to pay attention, then you will know there are other options. <mark>It will actually be within your power to experience a crowded, hot, slow, consumer-hell type situation as not only meaningful, but sacred, on fire with the same force that made the stars: love, fellowship, the mystical oneness of all things deep down.</mark></p></blockquote>
+              <blockquote><p>Not that that mystical stuff is necessarily true. The only thing that's capital-T True is that you get to decide how you're gonna try to see it.</p><p>This, I submit, is the freedom of a real education, of learning how to be well-adjusted. You get to consciously decide what has meaning and what doesn't. You get to decide what to worship.</p>
+              <p>Because here's something else that's weird but true: in the day-to-day trenches of adult life, there is actually no such thing as atheism. <mark>There is no such thing as not worshipping. Everybody worships. The only choice we get is what to worship.</mark> And the compelling reason for maybe choosing some sort of god or spiritual-type thing to worship [...] is that pretty much anything else you worship will eat you alive.</p></blockquote>
+              <blockquote><p><mark>The really important kind of freedom involves attention and awareness</mark> and discipline, and being able truly to care about other people and to sacrifice for them over and over in myriad petty, unsexy ways every day.</p><p><mark>That is real freedom. That is being educated, and understanding how to think. The alternative is unconsciousness, the default setting, the rat race, the constant gnawing sense of having had, and lost, some infinite thing.</mark></p></blockquote>
+              <blockquote><p>the real value of a real education, which has almost nothing to do with knowledge, and everything to do with simple awareness; awareness of what is so real and essential, so hidden in plain sight all around us, all the time, that we have to keep reminding ourselves over and over:</p><p><em>“This is water.”</em></p><p><em>“This is water.”</em></p><p>It is unimaginably hard to do this, to stay conscious and alive in the adult world day in and day out.</p></blockquote>
+            </article><hr>
+            </div>
+            
+            <!-- 2008 10 21 -->
+            <div class="filterDiv green">
+            <div class="titlebox">👥 20081021 <a class="one" href="https://litkicks.com/bigthinkingrepublicsoul/">Big Thinking: Plato and the Republic of Your Soul</a> - Levi Asher on Lit Kicks</div>
+            <article class="green">
+            <p>Theory: the book is intended as a work of psychology rather than politics.</p>
+            <blockquote><p>
+              Plato's <cite>Republic</cite> presents a model for the ideal human soul as a city-state ruled by a truly wise, loving and attentive “philosopher king”. The concept of the “philosopher king” has been much quoted as Plato's prescription for good government, but in fact the actual text develops the idea only as a metaphor, and never states whether or not Plato or Socrates believe such a state to be possible or desirable in the real world. <mark>The concept of the “Philosopher King” describes Plato's (and Socrates's) prescription for being a good person, not being a good government.</mark></p></blockquote>
+              <p><mark>The other four less perfect types of government Plato (via Socrates) describes in this extended metaphor are also... personality types.</mark></p>
+              <blockquote>
+                <p>The double level of meaning — everything relates to both the city and the soul — renders the allegories murky at times, and much of Plato's usually brisk and humorous style gets lost in the dense depths. For newcomers to Plato, I'd recommend instead the <cite>Gorgias</cite>, the <cite>Phaedo</cite>, the <cite>Meno</cite> or the three short works that narrate Socrates' death: <cite>Apology</cite>, <cite>Crito</cite> and <cite>Phaedo</cite>.</p>
+              </blockquote>
+            </article><hr>
+            </div>
+
+            <div id="slehar-cartoon-epistemology" class="filterDiv red">
+                <div class="titlebox">🧠 20021228 <a class="one" href="https://qualiacomputing.com/2022/12/28/cartoon-epistemology-by-steven-lehar-2003/?s=35">Cartoon Epistemology</a> - Steven Lehar</div>
+                <article class="red">
+                <h3>Part I: Something Very Strange!</h3>
+                <blockquote><p><img class="inarticle" style="max-width: 500px;" src="00/images/magrack/2002-cartoonepistemology/image-28.png"><br>
+                        But then how come things in the distance look smaller? Perspective is something that happens in your eye, not out in the world!</p>
+                </blockquote>
+                <blockquote><p>Well, take a look at this. See the two sides of this street? They are straight and parallel as far as the eye can see</p><p><i>So?</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-31.png"><p>But LOOK! Those straight parallel sides also MEET AT A POINT! RIGHT THERE! Can you SEE it?</p><p><i>Well they LOOK like they meet at a point. But they don't really!</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-32.png"><p>And if you turn around and look behind you, they meet at a point back there too!</p><p><i>So? I don't get it.</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-33.png"><p>So this street that we are standing on is shaped like the rind of a melon slice with two curved sides that meet at a point at either end. And those end points are at eye level, even though the street is under our feet.</p></blockquote>
+                <blockquote><p><i>But it only looks that way. It's an illusion. We know that the world isn't really warped like that.</i></p></blockquote>
+                <blockquote><p>Yes but HOW do we “know”? We “know” by using a warped reference scale to judge the objective size of things in the warped subjective world.</p></blockquote>
+                <blockquote><p><i>I don't know if I see anything warped at all! Looks perfectly straight to me!</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-36.png"></blockquote>
+                <blockquote><p><mark>take a look at what happens when you walk down the road. Things from far away expand outwards and get bigger and bigger until you pass them, and then they shrink back down again to a tiny little dot before they disappear altogether!</mark></p><p><i>Hmmm, I suppose it is a bit like some kind of bubble.</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-37.png"></blockquote>
+                <blockquote><p>Now look- you stay here and let me take a few paces. See? now my world is the biggest here where I stand, but your world is biggest over there where you stand.</p></blockquote>
+                <blockquote><p>we each have our own private bubble, and we can never see into anyone else's bubble.</p></blockquote>
+                <blockquote><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-40.png"></blockquote>
+                <blockquote><p><i>whatever happened to the real world that we know exists independent of our experience of it? Where did it go? Does it not even exist? Is everything just a hallucination or lucid dream?</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-41.png"><p>Of course it exists! Otherwise there would be nothing to keep the picture in your bubble synchronized with the picture in mine.</p></blockquote>
+                <blockquote><p>You cannot see the external world directly. You can only see it through your private conscious experience of it. So this world you see around you is the picture in your brain. In other words <mark>beyond the dome of the sky above, and beyond the solid earth underfoot, is the inner surface of your true physical skull.</mark></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-44.png"></blockquote>
+                <h3>Part II: There is nothing strange at all!</h3>
+                <blockquote><p><i>And as the cortex lights up electrically, you see the world around you.</i></p><img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-50.png"><p>Is the electrical activity in the cortex shaped like a street with houses under a domed sky?</p><p><i>No! Neurons chatter away in the brain in a pattern that is nothing like the shape of the world you see.</i></p></blockquote>
+                <h3>Part III: It's all in your head!</h3>
+                <blockquote><p>Motor control is tele-motive, like a virtual-reality body glove, electronically coupled to a remote android body that automatically replicates its posture.</p></blockquote>
+                <blockquote><p>Except in perception that android body is not remote, but surrounding, like a body glove suspended in a control room which is located inside the head of the giant android body that it controls.</p></blockquote>
+                <blockquote><p>And projected into that control room is a volumetric colored replica of the surrounding environment constructed on the basis of sensory input.</p></blockquote>
+                <blockquote><p>As the controller cavorts about in this synthetic reality, the larger android body cavorts in the external world, giving the controller the impression that he is interacting with the external world directly…<img class="inarticle" style="max-width: 400px;" src="00/images/magrack/2002-cartoonepistemology/image-79.png"></p></blockquote>
+                </article><hr>
+                </div>
+
+                <!-- 1996 march 13 pythagoras cult -->
+                <div class="filterDiv green">
+                    <div class="titlebox">🙏🏼 19960313 <a href="https://www.washingtonpost.com/archive/1996/03/13/pythagoras-the-cult-of-personality-and-the-mystical-power-of-numbers/92ef23a9-fad2-4c12-8089-ddd0aaf8c4a7/">Pythagoras: The Cult of Personality and the Mystical Power of Numbers</a> - Danny Hakim on the Washington Post</div>
+                    <article class="green">
+                        <button class="collapsible">Background</button>
+                        <div class="content green">
+                            <blockquote>Mnesarchus, a Greek jeweler, and his wife, Parthenis, a housewife, were affluent worshippers of Apollo and lived on the Greek isle of Samos. On a visit to the town of Delphi, they consulted the Pythian oracle. She told the young couple they would have a son who would change the world. Mnesarchus promptly renamed his wife Pythias, and the lovers dutifully followed the seer's instructions to visit Phoenicia, in what now is Syria, for the baby's birth. They named him Pythagoras, and the family moved to Samos.</blockquote>
+                            <blockquote>At 18, Pythagoras left Samos. He studied in Miletus, a Greek-occupied seaport on the coast of modern-day Turkey, with Thales, the legendary naturalist, and explored his roots in Phoenicia. Then he went to Memphis in Egypt to study for more than 20 years with Egyptian religious mystics. Not until Pythagoras turned 60 did he begin to settle down, and his thoughts on aging were not those of the typical senior citizen: the great man saw life in four stages. "Twenty years a boy, 20 years a youth, 20 years a young man and 20 years an old man."</blockquote>
+                            <blockquote>Having completed the first three of those epochs, Pythagoras decided to nest. His travels had brought him to Croton, a city in southern Italy inhabited mostly by Greeks. Historians disagree about what he did there, but there is general agreement that Pythagoras combined radiant charisma with a shaman's magnetic charm. He was a teacher of many things, an uptown mystic in a backwater town. Crotonians flocked to bask in his glamour and soak up his wisdom. Pythagoras also had a "golden thigh," according to many ancient writers, who soberly reported this curious characteristic as if the man's leg literally were made of the metal. This led Crotonians to what they considered a natural conclusion: Pythagoras was either the god Apollo or the son of Apollo. There was no one the great man wouldn't teach -- children, the poor, city elders. To all, he disseminated his beliefs on faith, diet and morality. He even spoke to women, whom he treated as equals, atypical behavior for a man in those days.</blockquote>
+                            <blockquote>Within a few days after Pythagoras arrived at Croton, the teacher saw fishermen pulling in a large haul of fish. Pythagoras told them how many fish they had. When they tallied their catch, they were stunned to learn that he was correct. When Pythagoras ordered the men to return the fish to the sea, they thought it best to comply, Iamblichus says. As if by a further miracle, not one fish died. With such flourishes, Pythagoras spread his doctrine of strict vegetarianism. According to legends, he had long performed these odd, magical feats. For example, traveling as a youth, Pythagoras had been seized by pirates hoping to sell him on the slave market. Oddly, the boy didn't seem to mind. He sat in a corner of the ship in a trance. He didn't eat. He didn't drink. He didn't move for three days. The pirates became concerned. But when opportune winds blew the ship well ahead of schedule, they concluded that the boy was no mere waif but a god. When the ship reached Egypt, crew members carried him ashore. They erected an altar to him, surrounded him with food and fruits and departed. Pythagoras had that kind of luck. His good fortune continued in Croton whose citizens had built him a school and a temple honoring his patron god, Apollo.</blockquote>
+                            <blockquote>The faithful were divided into two ranks -- disciples who lived in a commune, sharing all possessions, and a larger group called "Acousmatics," whose dedication was less consuming. The disciples lived faithfully in step with their guru. Like Pythagoras, they ate lightly, taking neither meat nor fish. They slept sparingly, drank no alcohol, insisted on monogamy. They never ate beans because Pythagoras taught that men's souls were inside the beans. They never traveled the high road, never touched white roosters. They "received from {Pythagoras} laws," Iamblichus says, "as if they were divine precepts, without which they did nothing."</blockquote>
+                            <blockquote>This was an age in which old, stable social orders and their trusted religions were breaking down. Society was in ferment. Many people were seeking new values and updated moral guideposts. Pythagoras's cult had a lot in common with Orphic cults sweeping Greece. These were named for Orpheus, the tragic mythological lover. Orphics preached and practiced a potpourri of science, mysticism and monkish self-control. Angry Greek men and women were seeking the same salvation through Orphics and Pythagoras's cult that today's malcontents seek in such modern movements as militias and new religions. Life in that time, according J.B. Bury in his History of Greece, was not like that of the good old days. Gone were the secure, nuclear households of Homer's age three centuries earlier. In a tumultuous era of increasing political democracy, which many saw as promoting mob rule and social debauchery, new cults such as the Pythagoreans and Orphics offered new creeds by which to live, preaching temperance, communal living and oligarchy, government by an enlightened few. Many people in Pythagoras's day were drawn by hushed whispers about life after death in some kind of nether world, a concept that reached Greeks from Egyptian and Eastern cultures. Secrecy and mystical traditions were part of the cults' appeal. It gave them an air of enlightenment and revolution. Each group had its own spin. Orphics emphasized transmigration of souls after death into new bodies. Cults dedicated to the god Dionysius preferred frenzied channeling rituals.</blockquote>
+                            <blockquote>To Pythagoras, numbers were divine, the primary elements of all existence. Individual numbers had magical powers. Numbers, he said, are "the cause of gods and demons." Pythagoras started counting with the number 3. One and 2 he considered building blocks for all other numbers, not numbers themselves. "Opportunity was 7," modern scholar Ward Rutherford writes in his account of the Pythagoreans' linkage of numbers with even the most abstract notions. "Justice is 4, masculinity an odd number, femininity an even." Two embodied the female principle, 3 the male and so marriage was 5. Odd as such thinking may seem today, Pythagoreans developed key concepts that influenced development of modern science. One, for example, was that nature, or reality, at its deepest level is mathematical. "All is number," Pythagoras taught, using a formulation surprisingly close to views expressed by Albert Einstein and others: God is a mathematician. But Pythagoreans went a bit further. They claimed that their numerical mysticism could lead to spiritual purification, ultimately uniting souls of individuals with the divine.</blockquote>
+                            <blockquote>Pythagoras established one of the world's first laboratories, where he tested acoustics by hammering bells of different weights and measuring the pitch of tones they produced. He discovered that musical pitch is related to vibration in string and varies with the string's length. He found musical harmony results from waves in vibrating strings that are precise multiples of one another -- one wave in the vibrating string being exactly twice or three times the length of another with which it harmonizes. He measured the stars and plotted an Earth-centered solar system. In fact, he argued that movements of stars and planets produced a form of musical harmony beyond human comprehension -- the source of the expression "the music of the spheres." But the Pythagoreans did not share their knowledge. Secrecy was maintained with fervor, including knowledge of various geometric forms considered to have divine properties.</blockquote>  
+                        </div> <!-- end of collapsible content -->
+                        <div dir="rtl" class="ar">الخاتمة:</div>
+                        <blockquote>Like Chicago, Croton soon became a one-star town. Like Michael Jordan, Pythagoras had become omnipotent. He probably was above direct involvement in political frays, but many in his cult were not. As Bury wrote, his adherents turned the order into "an instrument of political power." [...] When Telis, the Sybarite dictator, demanded return of refugees who had fled to Croton, many Crotonians wanted to comply. They had suffered in recent conflicts with other city-states and were not confident about their power. But Pythagoras was defiant and rallied Croton. His disciple, Milo the wrestler, raised an army and attacked Sybaris. Though outnumbered, Milo's troops crushed Sybaris so completely that it virtually disappeared. Suddenly, Croton was a major power in the region. Yet even in victory, bitter dissension remained. Lingering problems with cults festered across the Greek world.</blockquote>
+                        <blockquote>Problems for Pythagoras came to a head after he had been in Croton about 20 years. A nobleman named Cylon asked to join the Pythagoreans, but he had a reputation as a partier, so Pythagoras balked. Spurned, Cylon rallied the population against Pythagoras and ambushed him at Milo's house. In the clash, the house was burned, and most local Pythagoreans were killed. The Pythagorean school, though, did not fade.</blockquote>
+                        <blockquote>The demise of Pythagoras has never been clear. Diogenes Laertius reports that he escaped the fire at Milo's, only to come to a bean field, sacred ground. When he refused to cross it, pursuers from Croton caught him and slit his throat. Other reports say he escaped to Metapontum, a Greek-Italian city-state, and died there shortly afterward. Some reports place him last in Delos, consoling a dying teacher. Sightings of Pythagoras, Elvis-like, were reported for years.</blockquote>
+                    </article><hr>
+                </div> 
+
+
+    </div>
+      
+    <div id="word-cloud"></div>
+
+
+
+
+
+</div></main><script src="00/app.js"></script>
+  <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo! Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
+</body>

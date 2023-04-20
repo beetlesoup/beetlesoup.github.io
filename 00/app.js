@@ -157,7 +157,7 @@ for (i = 0; i < coll.length; i++) {
 // =========================== WORD CLOUD:
 
 
-const divs = document.querySelectorAll('.articlebox');
+const divs = document.querySelectorAll('article');
       let textContent = '';
       divs.forEach(div => {
         textContent += div.textContent;
@@ -165,7 +165,7 @@ const divs = document.querySelectorAll('.articlebox');
       
       const words = textContent.toLowerCase().split(/[^\w\d]+/).filter(word => word.length > 3 && !/\w*'\w*/.test(word));
 
-      const commonWords = ['about', 'also', 'because', 'into', 'like', 'long', 'many', 'more', 'must', 'only', 'other', 'some', 'than', 'that', 'their', 'them', 'there', 'these', 'they', 'this', 'thus', 'were', 'what', 'when', 'which', 'will', 'with', 'would', 'your', 'have', 'just', 'from', 'people', 'been', 'even', 'something', 'thing', 'such', 'much', 'things', 'over'];
+      const commonWords = ['about', 'after', 'also', 'because', 'into', 'like', 'long', 'many', 'more', 'must', 'only', 'other', 'some', 'than', 'that', 'their', 'them', 'there', 'these', 'they', 'this', 'thus', 'were', 'what', 'when', 'which', 'will', 'with', 'would', 'your', 'have', 'just', 'from', 'people', 'been', 'even', 'something', 'thing', 'such', 'much', 'things', 'over'];
       const filteredWords = words.filter(word => {
         return !commonWords.includes(word) && isNaN(word);
       });

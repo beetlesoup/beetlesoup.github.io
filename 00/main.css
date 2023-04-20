@@ -2,24 +2,41 @@
 /* hello!!!! ✭ */
 
 .light-theme {
-    --bg: #D6DCE5;
-    --fontColor: #43464B;
+    /* full page background and font colors: */
+    --bg: #D6DCE5; --fontColor: #43464B;
+    /* what color should links be when you hover on them: */
+    --linkhovercolor: #0070C0;
+    /* background color of each article: */
+    --articlebg: #f5f5f5;
+    /* when highlighting using <mark>: */
+    --highlightColor: #fff2cc; --highlightTextColor: ;
+    /* -------------------------------------------- */
+    /* if you have words in your header image like on magazine rack: */
+    --headerimagelabelbg: #F2F2F2;
+    /* theme button background color: */
     --btnBg: #87CEEB;
 }
 
 .dark-theme {
-    --bg: #43464B;
-    --fontColor: #edfffd;
+    /* full page background and font colors: */
+    --bg: #43464B; --fontColor: #edfffd;
+    /* what color should links be when you hover on them: */
+    --linkhovercolor: #0070C0;
+    /* background color of each article: */
+    --articlebg: #333;
+    /* when highlighting using <mark>: */
+    --highlightColor: #7030A0; --highlightTextColor: white;
+    /* -------------------------------------------- */
+    /* if you have words in your header image like on magazine rack: */
+    --headerimagelabelbg: #3B3838;
+    /* theme button background color: */
     --btnBg: #000080;
 }
 
 .themebtn {
-    font-size: x-large;
-    height: 48px;
-    width: 43px;
-    border: none;
-    border-right: 3px solid #333;
-    margin-left: 3px;
+    font-size: x-large; height: 48px; width: 43px;
+    border: none; border-right: 4px solid #333;
+    margin-left: 4px;
     background-color: var(--btnBg);
     cursor: pointer;
 }
@@ -31,7 +48,13 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
-/* || Navigation Bar */
+/* ============================================= Navigation Bar */
+
+a {color: inherit; text-decoration: underline dashed;}
+a:hover {color: var(--linkhovercolor);}
+
+/* justify-content: space-between means it'll push things to the edges
+   align-items: center should mean vertically */
 
 nav {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 55px; font-family: 'homemade-apple'; font-size: small; overflow: hidden; background-color: #333;}
   
@@ -83,10 +106,17 @@ nav a {color: white; text-decoration: none; margin-left: 15px;}
     display: block;
   }
   
-/* NAAAVBAAAAR ENNNNNDDDDDDDDD
-============================================ */
+/* ============================= NAVBAR END ======= */
 
 .margins {margin: 0px 10px 10px 10px;}
+.container {position: relative;}
+.filterDivcontainer {margin-top: 20px; overflow: hidden;}
+.filterDiv {display: none;}
+.show {display: block;}
+/* ------------------------------------------------ */
+.flex {display: flex;}
+.flex-container-nowrap {display: flex; flex-wrap: nowrap;}
+.flex-container-wrap {display: flex; flex-wrap: wrap;}
 
 @media screen and (max-width: 900px) {
   body {
@@ -94,9 +124,8 @@ nav a {color: white; text-decoration: none; margin-left: 15px;}
   }
 }
 
-/* ------------------------------------ IMAGES */
-/* ---- this is for images you want to be different
-based on screen size (then in html <img src="" class="desktop OR mobile">*/
+/* ---- this is for things you want to be different
+based on screen size (eg <img src="" class="desktop OR mobile">)*/
 .mobile {display: none;}
 
 @media(max-width: 600px){
@@ -107,4 +136,45 @@ based on screen size (then in html <img src="" class="desktop OR mobile">*/
     display:block;
   }
 }
+
+/* ------------------------------------ IMAGES */
+
+  /* WORDS ON IMAGES: */
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    background-color: var(--headerimagelabelbg);
+    padding: 0px 5px 0px 5px; /*top right bottom left*/
+  }
+  /* -----------------end words on images */
+
+  .inarticle {width: 100%; display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 /* --------------------------------------------- */
+
+article {
+    padding: 5px 5px 10px 10px;  /* top right bottom left */
+    font-size: small;
+    background-color: var(--articlebg);
+}
+
+blockquote {
+    margin-left: 15px;
+    padding-left: 20px;
+    border-left: 2px solid;
+    border-image:linear-gradient(to top,#c4e17f, #f7fdca,#fad071,#f0766b,#db9dbe,#c49cdf, #6599e2,#61c2e4) 10;
+}
+
+mark {
+    background-color: var(--highlightColor);
+    color: var(--highlightTextColor);
+  }
+
+hr {margin: 30px 0;}
+  .hr1 {margin: 30px 0; border: 0; height: 2px; background-image: linear-gradient(to right, transparent, black, transparent);}
