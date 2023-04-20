@@ -50,8 +50,10 @@ body {
 
 /* ============================================= Navigation Bar */
 
-a {color: inherit; text-decoration: underline dashed;}
-a:hover {color: var(--linkhovercolor);}
+a, button {background-color: inherit; border-width: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit; cursor: pointer; padding: 0;}
+
+a {text-decoration: underline dashed var(--fontColor);}
+a:hover {color: var(--linkhovercolor); text-decoration: underline dashed var(--fontColor);}
 
 /* justify-content: space-between means it'll push things to the edges
    align-items: center should mean vertically */
@@ -118,6 +120,8 @@ nav a {color: white; text-decoration: none; margin-left: 15px;}
 .flex-container-nowrap {display: flex; flex-wrap: nowrap;}
 .flex-container-wrap {display: flex; flex-wrap: wrap;}
 
+.translator {text-decoration: underline dashed #43464B;}
+
 @media screen and (max-width: 900px) {
   body {
     /* margin: 30px 20px top right bottom left*/
@@ -137,7 +141,7 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   }
 }
 
-/* ------------------------------------ IMAGES */
+/* ===================================== IMAGES */
 
   /* WORDS ON IMAGES: */
   
@@ -151,12 +155,23 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   }
   /* -----------------end words on images */
 
+  .book {
+    box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgba(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 0px 3px 3px 0px;
+    height: 150px;
+  }
+
   .inarticle {width: 100%; display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-/* --------------------------------------------- */
+  .bad {filter: blur(3px);}
+  .bad:hover{filter: blur(0px);}
+  .bad:focus{filter:blur(0px);}
+
+/*================================================= */
 
 article {
     padding: 5px 5px 10px 10px;  /* top right bottom left */
@@ -178,3 +193,5 @@ mark {
 
 hr {margin: 30px 0;}
   .hr1 {margin: 30px 0; border: 0; height: 2px; background-image: linear-gradient(to right, transparent, black, transparent);}
+
+  .hr2 {margin: 30px 0; border: 0; border-top: 1px dashed #6a6c6f;}

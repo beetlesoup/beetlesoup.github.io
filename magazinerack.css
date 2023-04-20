@@ -13,7 +13,7 @@
 /* flex-container-nowrap contains the colored category buttons */
 .flex-container-nowrap {display: flex; flex-wrap: nowrap;}
 /* the justify content below works on the text alignment of the color buttons */
-.flex-container-nowrap > button {display: flex; width: 100%; flex-wrap: nowrap; justify-content: right}
+.flex-container-nowrap > button {display: flex; width: 100%; flex-wrap: nowrap; justify-content: right; align-items: center;}
 /* ahahaaa exxcept the rainbow tag she gets to be special */
 .flex-container-nowrap > .rainbowtag {justify-content: center;}
 
