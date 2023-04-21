@@ -1,0 +1,58 @@
+
+.tv-featured { height: 150px; border: solid 2px black}
+
+.categorybutton {
+    display: inline;
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+  }
+  
+  .categorybutton:hover {
+    opacity: 0.8;
+  }
+  
+  .categorybutton.active {
+    opacity: 1;
+    border-color: white;
+  }
+
+  /* ========================================= */
+
+  h2 {
+    /* font-size: xx-large; */
+    margin-bottom: 0.4em;
+  }
+
+  h3 {margin-bottom: 0.6em; font-weight: bolder;}
+
+  /* ------------------------- */
+
+  /* damn it */
+
+  .first {
+    vertical-align: top;
+  }
+
+  .words {
+    vertical-align: top;
+  }
+
+  .firstp {margin-top: 0;}
+
+  .mediacard {
+    padding: 0px 10px 0px 10px; /* top right bottom left? */
+  }
+
+  .tv {
+    width: 100px;
+    border: solid 2px black;
+  }
+
+
+  .yt {
+    height: 120px;
+    border: solid 2px white;
+  }

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Room</title>
+    <meta name="description" content="TV. Television. Moving Pictures with Sound and Color."/>
+    <link rel="icon" type="image/png" href="00/images/homepage-and-headers/icon-tv.png">
+    <link rel="stylesheet" href="00/fonts.css">
+    <link rel="stylesheet" href="00/main.css">
+    <link rel="stylesheet" href="lounge-tv.css">
+</head>
+<body class="light-theme">
+    <nav>
+        <a href="index.html">← Home</a>
+        <div class="to-the-right">
+            <!-- lounge -->
+            <div class="dropdown">
+                <button class="dropbtn">Lounge ▾</button>
+                  <div class="dropdown-content">
+                    <a href="lounge-bookshelf.html">Bookshelf</a>
+                    <a href="lounge-tv.html">TV Room</a>
+                    <a href="magazinerack.html">Magazine Rack</a>
+                  </div>
+            </div>
+            <!-- office -->
+            <div class="dropdown">
+                <button class="dropbtn">Office ▾</button>
+                <div class="dropdown-content">
+                    <a href="articlehub.html">Article Hub</a>
+                </div>
+            </div>
+            <!-- themebtn -->
+            <button class="themebtn" id="themebtn">☀️</button>
+        </div>
+    </nav>
+<main>
+<img width="100%" src="00/images/homepage-and-headers/tv-small-rfa.png" alt="TV in a pretty set up">
+<div class="margins">
+    <span style="font-size: small;">This might sound crazy, but sometimes you'll want to use your Ring Fit Adventure screen to watch something that isn't Ring Fit Adventure.</span>
+
+    <h2>Favorites</h2>
+    <a href="#mythic-quest"><img class="tv-featured" src="00/images/tv/mythic-quest-1.png"></a>
+    <a href="#service-france"><img class="tv-featured" src="00/images/tv/au-service-de-la-france-1.png"></a>
+    <a href="#b99"><img class="tv-featured" src="00/images/tv/b99.jpg"></a>
+    <!-- <a href="#marvelous-maisel"><img class="tv-featured" src="00/images/tv/marvelous-maisel.jpg"></a> -->
+    <br><br>
+
+    <h3>Lists:</h3>
+    <div id="catContainer">
+        <p class="firstp">
+        Here to laugh? I used to find a lot of great TV shows by using search terms like "weird" and "offbeat". These are what I thought were the <button class="categorybutton" onclick="filterSelection('sitcom')"> Best Sitcoms</button>. Sublist of that: shows that put <button class="categorybutton" onclick="filterSelection('masks')">masks on</button> when we did. Or maybe you're looking for someone to 
+        <button class="categorybutton" onclick="filterSelection('standup')"> standup</button> or sit down, as long as they tell you some jokes! See all that and more in the <button class="categorybutton" onclick="filterSelection('funny')"> laugh list</button>.</p>
+        <p> Okay, it doesn't have to be funny to be good cinematography.
+        <button class="categorybutton" onclick="filterSelection('feel')"> These works</button> mean to convey an emotion to you, and they do it well.</p>
+  
+        <button class="categorybutton active" onclick="filterSelection('all')"> Deselect</button>
+      </div>
+
+      <div class="container">
+        
+        <div class="filterDiv feel">
+            <h3>The Bear (2022)</h3>
+            <!-- season 1 released jun 23 2022 -->
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/the-bear.png"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p class="firstp">Well of course you're going to watch Lip in his non-spinoff new series! And it will be worth it. Have you ever seen a TV show decide to show you what anxiety feels like?</p>
+                    <p>The Bear has a huge thing in common with <a class="body" href="#single-drunk-female">Single Drunk Female</a>: while having nothing to do with the older show, <s>Lip</s> Carmy is a plausible continuation of Lip from Shameless. I feel like The Bear and SDF are siblings... and The Bear is better.</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+        
+        <div class="filterDiv funny standup">
+            <h3 id="look-at-you-taylor">Look at You: Taylor Tomlinson (2022)</h3>
+            <!-- 2022 march 8 -->
+            <table>
+                <tr>
+                  <td class="first"><img class="tv" src="00/images/tv/look-at-you-tomlinson.jpg"></td>
+                  <td class="words">
+                    <div class="mediacard">
+                    <p class="firstp">Taylor Tomlinson is SO FUNNY! We love a therapy bitch. If <span class="popup" onclick="wordsAppear()">anyone's still saying<span class="popuptext" id="reboots01e03">Looking at you, Reboot S01E03</span>
+                    </span> that woke people
+                    <button class="translator" id="lay-notfunny" data-text-swap="aren't funny" data-text-original="دمهم تقيل">دمَّهم تقيل</button>, this is what you show them. <strong>Banger <button class="translator" id="lay-after" data-text-swap="after" data-text-original="ورا">ورا</button> banger</strong> without resorting to placeholder punchlines. She's hilarious.</p>
+                    <p>It's even funnier if you watch her 2020 show after this. You'll go OH. YES. SHE <em>WAS</em> LIKE THAT. IT MAKES SENSE. lmao.</p>
+                    &#8220;That's not fair to Kevin!&#8221;
+                    </div>
+                  </td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>كيرة والجن (٢٠٢٢)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>المكتب (٢٠٢٢)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Uncoupled (2022)</h3>
+        </div>
+    
+        <div class="filterDiv family">
+          <h3>Sweet Tooth (2021)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Ginny & Georgia (2021 - season 1 is enough)</h3>
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/ginny-georgia-idk.jpg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p class="firstp">If TV shows were sisters, G&G would be the anorexic and musically gifted youngest child after <a class="body" href="#suburgatory">Suburgatory</a> and <a class="body" href="#insatiable">Insatiable</a>.
+                    </p>
+                    <p><iframe width="100%" src="https://www.youtube.com/embed/3P1dWcr6xiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv funny sitcom">
+            <!-- season 1 released feb 7 2020 -->
+            <h3 id="mythic-quest">Mythic Quest (2020 - )</h3>
+            <table>
+                <tr>
+                  <td class="first"><img class="tv" src="00/images/tv/mythic-quest-1.png"></td>
+                  <td class="words">
+                    <div class="mediacard">
+                    <p class="firstp">omg. how to even begin describing my favorite TV show of all time (currently)? You don't even have to be a fan of that dumb Philly show to enjoy this one. Mythic Quest is funny and cute and new.</p>
+                    
+    
+                    After S01E7: read <a class="body" class="body" href="lounge-bookshelf.html#tears-of-the-anaren">Tears of the Anaren</a>.
+                    </div>
+                  </td>
+                </tr>
+              </table>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>The Boys (2019 - )</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>The Umbrella Academy (2019 - )</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Ramy (2019 - uhh... season 1 only)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Pose (2018 - 2021)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3 id="insatiable">Insatiable (2018 - 2019)</h3>
+        </div>
+    
+        <div class="filterDiv feel">
+            <h3>Go and See (1948, restored 2018)</h3>
+            <table>
+              <tr>
+                <td><img class="tv" src="00/images/tv/come-and-see.jpeg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv ">
+            <!-- season 1 released 2017 nov 29 -->
+            <h3 id="marvelous-maisel">The Marvelous Mrs. Maisel (2017 - 2022)</h3>
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/marvelous-maisel-1.jpg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv funny sitcom">
+            <!-- season 1 finished airing 2017 may 17 -->
+            <h3>Speechless (2016 - 2018)</h3> 
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/speechless.png"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv funny sitcom">
+            <h3 id="the-mick">The Mick (2017 - 2018)</h3>
+            <!-- season 1: jan 1 - may 2 2017
+                 season 2: sep 26 - apr 3 2018 -->
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/the-mick-2.jpeg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>HAPPY! (2017 - 2019)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>GLOW (2017 - 2019)</h3>
+        </div>
+        
+        <div class="filterDiv ">
+            <h3>The Good Place (2016 - 2020)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Preacher (2016 - 2019)</h3>
+        </div>
+    
+        <div class="filterDiv masks">
+            <h3>Superstore (2015 - 2020)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>F is for Family (2015 - 2021)</h3>
+        </div>
+    
+        <div class="filterDiv family">
+            <h3>Inside Out (2015)</h3>
+        </div>
+            
+        <div class="filterDiv funny sitcom">
+            <h3 id="service-france">Au Service de la France (2015 - 2018)</h3>
+            <!-- s01: oct 28 - nov 12 2015
+                 s02: jun 28 - jul 26 2018 -->
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/au-service-de-la-france-1.png"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+            
+        <div class="filterDiv funny sitcom">
+            <h3>Jane the Virgin (2014 - 2019)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3 id="rick-and-morty">Rick and Morty (2013 - )</h3>
+        </div>
+            <!-- first ep dec 2013 -->
+    
+        <div class="filterDiv funny sitcom masks">
+            <h3 id="b99">Brooklyn Nine-Nine (2013 - 2021)</h3>
+            <!-- season 1 finished airing 2014 mar 25 -->
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/b99.jpg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Orange is the New Black (2013 - 2019)</h3>
+        </div>
+    
+        <div class="filterDiv funny sitcom">
+            <h3>Don't Trust the B in Apartment 23 (2012-2014)</h3>
+            <!-- s01: apr 11 - may 23 2012 
+                 s02: oct 23 2012 - sep 6 2014 -->
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/dont-trust-the-b-1.jpg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv funny sitcom">
+            <h3 id="suburgatory">Suburgatory (2011 - 2014)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Franklin and Bash (2011 - 2014)</h3>
+        </div>
+    
+        
+    
+        <div class="filterDiv funny sitcom">
+            <h3>Better Off Ted (2009 - 2010)</h3>
+        </div>
+    
+        <div class="filterDiv funny family">
+            <h3>The Emperor's New Groove (2000)</h3>
+        </div>
+    
+        <h2>Expired Shows</h2>
+    
+        <div class="filterDiv funny sitcom">
+            <h3>The Mindy Project (2012-2017)</h3>
+        </div>
+    
+         <div class="filterDiv funny sitcom">
+              <h3>Happy Endings (2011 - 2013)</h3>
+          </div>
+    
+          <div class="filterDiv funny sitcom">
+            <h3>Community (2009 - 2015)</h3>
+          </div>
+          <div class="filterDiv funny sitcom">
+              <h3>Cougar Town (2009 - 2015)</h3>
+          </div>
+    
+          <div class="filterDiv funny sitcom">
+            <h3>How I Met Your Mother (2005 - 2014)</h3>
+          </div>
+        <h2>Blah, Blah.</h2>
+    
+        <div class="filterDiv ">
+            <h3>Interview with the Vampire (2022 - )</h3>
+        </div>
+    
+        <div class="filterDiv sliceoflife">
+            <h3 id="single-drunk-female">Single Drunk Female (2022)</h3>
+            <!-- season 1: jan 20 - mar 17 2022 --> 
+            <table>
+              <tr>
+                <td class="first"><img class="tv" src="00/images/tv/single-drunk-female.jpg"></td>
+                <td class="words">
+                  <div class="mediacard">
+                    <p class="firstp">Hey, Sophia Black D'Elia! Her character here is a perfect continuation of the one she played in <a class="body" class="body" href="#the-mick">The Mick</a>, even though it's a totally different person. I can't speak for <s>virgin viewers</s> people who haven't seen it, but a LOT of the appeal for me came from this: it is not a spinoff, but it feels like one.</p>
+                    <p>Where Sabrina was a rich kid with liberal views, a general apathy about her life, and a fear of going to college, Samantha is a 28 year old alcoholic who has to attempt a fresh start because she pretty much used to be... Sabrina.</p> <p>Even the tone of the new show (light drama, muted comedy) shifted from the old one (wild sitcom) in a way that feels, to me, like Sabrina herself took the control away from Mick. &lt;3</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="filterDiv laugh friends sliceoflife">
+          <h3 id="pivoting">Pivoting (2022)</h3>
+          <table>
+            <tr>
+              <td class="first"><img class="tv" src="00/images/tv/pivoting.jpg"></td>
+              <td class="words">
+                <div class="mediacard">
+                  <p class="firstp">From: things I've found while stalking Eliza Coupe from Happy Endings. The pilot episode didn't hook me, but I blew through S01E03-S01E10 on a Friday. Pivoting has birthed one, no, <em>two</em> new categories on this webpage! This is a great ridiculous sitcom that kind of follows Friends in that... it's about friends and we laugh while we follow their lives. I won't tell you what the second category is yet.</p>
+                  <p>Omg, it's Garrett from Superstore.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+      </div>
+    
+      <div class="filterDiv ">
+        <h3 id="white-lotus">The White Lotus (2021)</h3>
+        <table>
+          <tr>
+            <td class="first"><img class="tv" src="00/images/tv/white-lotus-1.png"></td>
+            <td class="words">
+              <div class="mediacard">
+                <p class="firstp">Why... why is this so popular? I'll admit it is strangely compelling. I just <em>had</em> to finish it. But... only because... well... ? :/</p>
+                <p>I did learn something from Tanya, though: I fill my own cup!</p>
+                Two scenes I enjoyed the most:
+                <p>"He could have still been butch, dad."</p>
+                <iframe width="50%" src="https://www.youtube-nocookie.com/embed/2J2u0ACVW-c?start=71" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </td>
+          </tr>
+        </table>
+    </div>
+    
+        <div class="filterDiv ">
+            <h3>The Other Two (2019 - 2021)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>American Gods (2017 - 2021)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Powerless (2017)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Younger (2015 - Oh God Please Stop)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Mixology (2014)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Selfie (2014)</h3>
+        </div>
+    
+        <div class="filterDiv ">
+            <h3>Manhattan Love Story (2014)</h3>
+        </div>
+    
+        <h2>Actually, No</h2>
+            <p>If I wasn't someone who appreciated knowing what's inside books and movies even when I don't like them, I'd call these a waste of my goddamn time.</p>
+          <div class="filterDiv ">
+            <h3>Blank (2022)</h3>
+          </div>
+
+      </div> <!-- <- end tv show container -->
+
+
+</div></main><script src="00/app.js"></script>
+  <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo! Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
+</body>
