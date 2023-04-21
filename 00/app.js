@@ -136,7 +136,19 @@ function translator(button) { //idk why it says (button)
   button.innerHTML = translated[nextIndex].innerHTML;
 }
 
-// ========================================== COLLAPSIBLE
+// ------------------------------------- pop up button
+function popup(button) {
+  var btnText = button;
+  var popup = button.nextElementSibling;
+
+  if (popup.style.display === "none") {
+    popup.style.display = "inline";
+  } else {
+    popup.style.display = "none";
+  }
+}
+
+// -------------------------------------- collapsible
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
