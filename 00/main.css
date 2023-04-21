@@ -231,6 +231,7 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   }
 
   
+  .good {filter: drop-shadow(0 0 0.5rem rgb(255, 217, 0));}
 /* note: if marking an image as bad, add tabindex="0" to it (img src="" tabindex="0") so it becomes focusable (so that clicking it can remove the blur */
   .bad {filter: blur(3px);}
   .bad:hover{filter: blur(0px);}

@@ -1,0 +1,24 @@
+
+
+
+h2 {text-align: right;}
+
+.text-feed {width: 50%;}
+
+hr {margin: 10px 0;}
+
+
+.images {width: 50%;}
+
+.book, .tv, .good, .neutral, .bad {height: 170px;}
+
+.tv {border: solid 2px black;}
+  
+/* .book {
+    margin: auto;
+    border-radius: 0px 3px 3px 0px;
+  }
+   */
+
+.bad {border: solid 2px gray;}
+    
