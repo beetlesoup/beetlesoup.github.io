@@ -94,10 +94,3 @@
   .green > article, .green > blockquote {border-color: var(--green);}
   .blue > article, .blue > blockquote {border-color: var(--blue);}
   .purple > article, .purple > blockquote {border-color: var(--purple);}
-
-  .red > article > blockquote > mark {background-color: ; color: ;}
-  .orange > mark {background-color: ; color: ;}
-  .yellow > mark {background-color: ; color: ;}
-  .green > mark {background-color: ; color: ;}
-  .blue > article > blockquote > mark {background-color: var(--bluehighlight); color: ;}
-  .purple > mark {background-color: ; color: ;}
