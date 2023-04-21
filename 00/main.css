@@ -236,6 +236,8 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
 
 /*================================================= */
 
+h2 {font-family: 'satisfy';}
+
 article {
     padding: 5px 5px 10px 10px;  /* top right bottom left */
     font-size: small;
