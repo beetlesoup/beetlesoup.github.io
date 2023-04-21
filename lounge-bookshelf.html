@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <meta name="description" content="Books! Yum!"/>
+    <link rel="stylesheet" href="00/fonts.css">
+    <link rel="stylesheet" href="00/main.css">
+    
+    <!-- for the word cloud: -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+</head>
+<body class="light-theme">
+    <nav>
+        <a href="index.html">← Home</a>
+        <div class="to-the-right">
+            <!-- lounge -->
+            <div class="dropdown">
+                <button class="dropbtn">Lounge ▾</button>
+                  <div class="dropdown-content">
+                    <a href="lounge-bookshelf.html">Bookshelf</a>
+                    <a href="lounge-tv.html">TV Room</a>
+                    <a href="magazinerack.html">Magazine Rack</a>
+                  </div>
+            </div>
+            <!-- office -->
+            <div class="dropdown">
+                <button class="dropbtn">Office ▾</button>
+                <div class="dropdown-content">
+                    <a href="articlehub.html">Article Hub</a>
+                </div>
+            </div>
+            <!-- themebtn -->
+            <button class="themebtn" id="themebtn">☀️</button>
+        </div>
+    </nav>
+<main><div class="margins">
+
+    <img id="headerimage" src="00/images/lounge-bookshelf-short.jpg" width="100%">
+    <!-- <img src="00/images/lounge-bookshelf-likemagrack copy.jpg" width="100%">
+    <img src="00/images/lounge-bookshelf-red copy.jpg" width="100%">
+    <img src="00/images/lounge-bookshelf-white copy.jpg" width="100%"> -->
+    <div class="margin">
+    Find me <a class="body" href="https://www.goodreads.com/user/show/1821447-betule-sairafi">on Goodreads</a> for more.<br>
+
+    Jump to: <a class="body" href="">Weekend Reads</a> - <a class="body" href="">Narrative Nonfiction</a> - <a class="body" href="">Backstage Pass</a> - <a class="body" href="">Coffee Table Books</a> - <a class="body" href="">Beautiful Mistakes</a> - <a class="body" href="">Old Favorites</a><br>
+    <br>
+
+    <h2>Featured</h2>
+    <img class="book" alt="Fish Don't Exist by Lulu Miller" src="00/images/books/fish-dont-exist.jpg"/> <a href="library/no-common-sense.html"><img class="book" alt="Philosophy Tackles Climate Change" src="00/images/books/no-common-sense.jpeg"/></a>
+    <img class="book" alt="The Ghost Map by Steven Johnson" src="00/images/books/ghost-map.jpg"/>
+
+
+    <hr class="hr2">
+
+    <h2>Read Over a Weekend</h2>
+    <!-- See short(er) stories <a class="body" href="short-stories.html">here</a>.<br> -->
+    <!-- 2022 sep 20 -->
+    <img class="book" alt="The Book of Goose by Yiyun Li" src="00/images/books/book-of-goose.jpg"/>
+    <!-- 2022 mar 29 -->
+    <img class="book" alt="Lessons in Chemistry by Bonnie Garmus" src="00/images/books/lessons-in-chemistry.jpg"/>
+    <!-- 2021 jun 1 -->
+    <img class="book" alt="Tears of the Anaren by CW Longbottom" src="00/images/books/tears-anaren.png"/>
+    <!-- 2017 may 2 -->
+    <!-- <img class="book" alt="All Systems Red by Martha Wells" src="00/images/books/murderbot1.jpg"> -->
+    <!-- older -->
+    <img class="book" alt="Things Fall Apart by Chinua Achebe" src="00/images/books/things-fall-apart.jpg">
+
+    <!-- create a read more button: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_read_more -->
+
+    <!-- <div class="booktalk">
+
+      <span class="nothing"><a id="tears-of-the-anaren" href=""></a><span class="title">Tears of the Anaren</span> (<a class="body" href="https://books.apple.com/gb/book/tears-of-the-anaren/id1568866717">free on iBooks</a>) is the embarassingly good short story by the backstory guy on <a class="body" href="lounge-tv.html#mythic-quest">my favorite more-than-a-sitcom</a>. <span class="dots">.</span></span>
+      <span class="readmorecontent">
+          On Mythic Quest, he's a prolific but washed up <em>old</em> sci-fi/fantasy writer who was recruited to work on a video game long, long ago. The (fictional) Nebula award winning story that made his (fictional) career is written exactly how he speaks on the show: like a prolific <s>but washed up</s> old sci-fi/fantasy writer, and I <span class="popup" onclick="wordsAppear()">hate to say<span class="popuptext" id="tota-hatetosay">of course the girl is depicted like that</span></span>
+      </span>
+      <button onclick="readMoreFunction(this)" class="buttonReadMore">-  more -</button>
+       I loved every word of it. At 28 pages there's not much of a story, but CW's prose is, dare I admit it? beautiful.
+       <span class="nothing"><span class="dots">.</span></span>
+       <span class="readmorecontent">
+        [<button class="buttonReadMore">Mythic Quest S01E07 spoiler:</button> <a class="spoiler">this is nothing like a story would be if Isaac Asimov wrote it! NOTHING!</a>]
+       </span>
+       <button onclick="readMoreFunction(this)" class="buttonReadMore">-  more -</button>
+       <hr class="hr3">
+       Sometimes compared to <a class="body" href="lounge-tv.html#marvelous-maisel">The Marvelous Mrs Maisel</a> (but in chemistry instead of... <s>divorce</s> comedy), <span class="title">Lessons in Chemistry</span> is a laugh-out-loud Mary Sue story not meant to be taken seriously. Who you should take seriously is <a class="body" href="https://www.themarginalian.org/2020/10/20/mary-somerville/">Mary Somerville</a>.
+       <hr class="hr3">
+       And <span class="title">The Book of Goose</span>? A big fat lie, Goose is a successful example of what the books on <a class="body" href="#beautiful-mistakes">Beautiful Mistakes</a> are trying to do. &nbsp;<a class="body" href="https://open.substack.com/pub/escapingflatland/p/looking-for-alice">&lt;3</a>
+
+    </div> -->
+
+  <hr class="hr2">
+
+  <h2>Narrative Nonfiction</h2>
+  <h3>Human Histories: Science Edition</h3>
+  <img class="book" alt="Fish Don't Exist by Lulu Miller" src="00/images/books/fish-dont-exist.jpg"/>
+  <img class="book" alt="The Ghost Map by Steven Johnson" src="00/images/books/ghost-map.jpg"/>
+  <img class="book" alt="Obsessive Genius" src="00/images/books/obsessive-genius.jpeg"/>
+  <h3>Stories of the World</h3>
+  <a href="library/debt-graeber.html">
+  <img class="book" alt="Debt by David Graeber" src="00/images/books/debt.png"/></a>
+  <img class="book" alt="Sapiens by Yuval Noah Hariri" src="00/images/books/sapiens.jpg"/>
+
+  <hr class="hr2">
+
+  <h2 class="withdescription">Backstage Pass</h2>
+  <div class="description">Psyche! This isn't behind the scenes of the theatre of man. This is behind the scenes of the theatre of God.</div>
+  <img class="book" alt="No Bad Parts by Richard C Schwartz (2021)" src="00/images/books/no-bad-parts.jpg">
+  <img class="book" alt="Existential Kink by Carolyn Elliott (2020)" src="00/images/books/existential-kink.jpeg">
+  <!-- <img class="book" alt="Couples that Work by Jennifer Petriglieri (2019)" src="00/images/books/couples=that-work.jpg"/> -->
+  <img class="book" alt="We've Had One Hundred Years of Psychotherapy- and the World's Gotten Worse! by James Hillman and Michael Ventura (1992)" src="00/images/books/a-hundred-years-of-psychotherapy.jpg">
+  <img class="book" alt="Man's Search for Meaning by Viktor Frankl (1946)" src="00/images/books/mans-search-for-meaning.jpg"/>
+
+  <hr class="hr2">
+
+  <h2>Coffee Table Books</h2>
+  <img class="book" alt="Human Errors by Nathan Lents" src="00/images/books/human-errors.jpg"/>
+  <img class="book" alt="Plato and a Platypus Walk into a Bar by Thomas Cathcart & Daniel Klein" src="00/images/books/plato-platypus.png"/>
+  <img class="book" alt="Philosophy Tackles Climate Change" src="00/images/books/no-common-sense.jpeg"/>
+
+    <!-- sapiens -->
+
+
+
+  <p><span class="author">Author</span>'s <span class="title">Title</span> is boop beep woop de doo don't look here yet</p>
+  <hr class="hr2">
+
+
+<a id="beautiful-mistakes"><h2 class="withdescription">Beautiful Mistakes</h2></a>
+<div class="description">This shelf is for books that fall short in execution. But that's on me, for disregarding the journey simply because there's no destination. I was disappointed in these titles, but maybe that just means you shouldn't take me to an art gallery.</div>
+<img class="book bad" alt="The Iliac Crest" src="00/images/books/iliac-crest.png">
+<img class="book bad" alt="Kafka on the Shore by Haruki Murakami" src="00/images/books/kafka-shore.jpg">
+<button class="collapsible"><span class="title">Kafka on the Shore</span> contains one good page -specifically the bottom half. If you click to see the excerpt then don't read the book because it's basically catfishing.</button>
+    <div class="content"><img width="100%" src="https://imgur.com/pM4h4Aw.png">
+    <!-- flag: accessibility image text -->
+    </div>
+
+
+<hr class="hr2">
+
+    <!-- assassin's fate -->
+<!-- <img class="book" alt="Assassin's Fate by Robin Hobb" src="00/images/books/assassins-fate.jpg"/> -->
+
+<h2>Old Favorites</h2>
+    <img class="book" alt="The Way of Kings by Brandon Sanderson" src="00/images/books/stormlight-1.jpg">
+    <img class="book" alt="The Hitchhiker's Guide to the Galaxy by Douglas Adams" src="00/images/books/hitchhikers-guide.png">
+    <img class="book" alt="The Lies of Locke Lamora by Scott Lynch" src="00/images/books/locke-lamora-1.jpg">
+    <img class="book" alt="Guards, Guards! by Terry Pratchett" src="00/images/books/terry-pratchett-guards.jpg">
+    <img class="book" alt="Assassin's Apprentice by Robin Hobb" src="00/images/books/assassins-apprentice.jpg">
+    <img class="book" alt="Heroes Die by Matthew Woodring Stover" src="00/images/books/heroes-die.jpg">
+    <img class="book" alt="Ender's Game by Orson Scott Card" src="00/images/books/enders-game.jpg">
+    <img class="book" alt="A Game of Thrones by George RR Martin" src="00/images/books/a-got.jpg">
+    <img class="book" alt="Angels and Demons by Dan Brown" src="00/images/books/angels-demons.jpg">
+    <img class="book" alt="Holes by Louis Sachar" src="00/images/books/holes.jpg">
+    <img class="book" alt="Artemis Fowl by Eoin Colfer" src="00/images/books/artemis-fowl-1.jpg">
+    <img class="book" alt="Harry Potter and the Philosopher's Stone by JK Rowling" src="00/images/books/hp1.jpg">
+
+  <hr class="hr2">
+
+
+
+</div></main><script src="00/app.js"></script>
+  <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo! Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
+</body>
