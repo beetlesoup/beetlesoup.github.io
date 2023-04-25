@@ -1,23 +1,40 @@
 <head>
-    <link rel="stylesheet" href="working-code/books.css">
+    
+  <style>
+    .book-box {
+  border: 1px solid lightgray;
+  width: 110px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  perspective: 400px;
+}
+
+.book {
+  width: 200px;
+  height: 300px;
+  transform: rotateY(-30deg);
+}
+
+.book > :first-child {
+  background: #0d47a1aa;
+  width: 100px;
+  height: 150px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+
+  </style>
 </head>
 <br><br>
+<br><br>
 
-
-    <div class="book-box">
-        <div class="book">
-          <div class="inner-book">
-            <div class="img" style="padding-top: calc(1.07 * 100%)">
-              <img src="images/books/fish-dont-exist.jpg" />
-            </div>
-            <div class="page"></div>
-            <div class="page page-2"></div>
-            <div class="page page-3"></div>
-            <div class="page page-4"></div>
-            <div class="page page-5"></div>
-            <div class="img final-page" style="padding-top: calc(1.07 * 100%)">
-              <img src="images/books/fish-dont-exist.jpg" />
-            </div>
-          </div>
-        </div>
-        </div>
+<div class="book-box">
+  <div class="book">
+    <img src="images/books/fish-dont-exist.jpg">
+    </div>
+  </div>
+</div>
