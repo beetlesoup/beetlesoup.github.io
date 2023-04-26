@@ -2,31 +2,13 @@
 :root {  /*when you add a new one here, add it under both .articlebox and taggies too */
     --red: #C00000;
     --orange: #ff9900;
-    --yellow: #FFEA00;
+    --yellow: #faee81;;
     --green: #00B050;
     --blue: #0070C0;
     --purple: #7030A0;
     --nothing: #d9d9d9;
     --lighttagtext: #333;
   }
-
-.light-theme {
-  --redhighlight: ; --redhighlighttext: ;
-  --orangehighlight: ; --orangehighlighttext: ;
-  --yellowhighlight: ; --yellowhighlighttext: ;
-  --greenhighlight: ; --greenhighlighttext: ;
-  --bluehighlight: ; --bluehighlighttext: ;
-  --purplehighlight: ; --purplehighlighttext: ;
-}
-
-.dark-theme {
-  --redhighlight: #C00000; --redhighlighttext: ;
-  --orangehighlight: ; --orangehighlighttext: ;
-  --yellowhighlight: ; --yellowhighlighttext: ;
-  --greenhighlight: ; --greenhighlighttext: ;
-  --bluehighlight: #0070C0; --bluehighlighttext: ;
-  --purplehighlight: ; --purplehighlighttext: ;
-}
   
 /* flex-container-nowrap contains the colored category buttons */
 .flex-container-nowrap {display: flex; flex-wrap: nowrap;}
@@ -74,9 +56,20 @@
 
   .titlebox {
     align-items: center;
+    color: white;
+    padding: 10px;
+    font-family: 'la-belle-aurore';
+    /* a:hover {color: var(--linkhovercolor); text-decoration: underline dashed var(--fontColor);} */
     }
 
     .titlebox > div {padding: 5px;}
+
+    .titlebox > a {text-decoration: underline dashed white;}
+    .titlebox > a:hover {color: #333; text-decoration: underline dashed #333}
+
+    .yellow > .titlebox > a {text-decoration: underline dashed #333;}
+
+    .yellow > .titlebox > a:hover {color: white; text-decoration: underline dashed white;}
 
   article {
     border-style: solid;
@@ -94,3 +87,34 @@
   .green > article, .green > blockquote {border-color: var(--green);}
   .blue > article, .blue > blockquote {border-color: var(--blue);}
   .purple > article, .purple > blockquote {border-color: var(--purple);}
+
+  .red > .titlebox {background-color: var(--red);}
+  .orange > .titlebox {background-color: var(--orange);}
+  .yellow > .titlebox {background-color: var(--yellow); color: #333}
+  .green > .titlebox {background-color: var(--green);}
+  .blue > .titlebox {background-color: var(--blue);}
+  .purple > .titlebox {background-color: var(--purple);}
+
+  .light-theme {
+    --redhighlight: #ffadad; --redhighlighttext: ;
+    --orangehighlight: #ffd79b; --orangehighlighttext: ;
+    --yellowhighlight: ; --yellowhighlighttext: ;
+    --greenhighlight: #c6e5ae; --greenhighlighttext: ;
+    --bluehighlight: #a5d6fa; --bluehighlighttext: ;
+    --purplehighlight: #e6c6ff; --purplehighlighttext: ;
+  }
+  
+  .dark-theme {
+    --redhighlight: #C00000; --redhighlighttext: ;
+    --orangehighlight: #ff9900; --orangehighlighttext: ;
+    --yellowhighlight: ; --yellowhighlighttext: ;
+    --greenhighlight: #00B050; --greenhighlighttext: ;
+    --bluehighlight: #0070C0; --bluehighlighttext: ;
+    --purplehighlight: #7030A0; --purplehighlighttext: ;
+  }
+
+  .red mark {background-color: var(--redhighlight);}
+  .orange mark {background-color: var(--orangehighlight);}
+  .green mark {background-color: var(--greenhighlight);}
+  .blue mark {background-color: var(--bluehighlight);}
+  .purple mark {background-color: var(--purplehighlight);}
