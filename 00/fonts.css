@@ -89,6 +89,34 @@ arabic fonts:
 
 .baloo {font-family: 'baloo';}
 
+@font-face {
+    font-family: 'birthstone-bounce';
+    src: url('fonts/BirthstoneBounce-Regular.eot');
+    src: url('fonts/BirthstoneBounce-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BirthstoneBounce-Regular.woff2') format('woff2'),
+        url('fonts/BirthstoneBounce-Regular.woff') format('woff'),
+        url('fonts/BirthstoneBounce-Regular.ttf') format('truetype'),
+        url('fonts/BirthstoneBounce-Regular.svg#BirthstoneBounce-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'birthstone-bounce';
+    src: url('fonts/BirthstoneBounce-Medium.eot');
+    src: url('fonts/BirthstoneBounce-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BirthstoneBounce-Medium.woff2') format('woff2'),
+        url('fonts/BirthstoneBounce-Medium.woff') format('woff'),
+        url('fonts/BirthstoneBounce-Medium.ttf') format('truetype'),
+        url('fonts/BirthstoneBounce-Medium.svg#BirthstoneBounce-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.birthstone-bounce {font-family: 'birthstone-bounce';}
+
 /* cairo-play: arabic */
 @font-face {
     font-family: 'cairo-play';
@@ -167,7 +195,23 @@ arabic fonts:
     font-style: normal;
 }
 
-.dawming-of-a-new-day {font-family: 'dawning-of-a-new-day';}
+.dawning-of-a-new-day {font-family: 'dawning-of-a-new-day';}
+
+@font-face {
+    font-family: 'delius-swash-caps';
+    src: url('fonts/DeliusSwashCaps-Regular.eot');
+    src: url('fonts/DeliusSwashCaps-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DeliusSwashCaps-Regular.woff2') format('woff2'),
+        url('fonts/DeliusSwashCaps-Regular.woff') format('woff'),
+        url('fonts/DeliusSwashCaps-Regular.ttf') format('truetype'),
+        url('fonts/DeliusSwashCaps-Regular.svg#DeliusSwashCaps-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.delius-swash-caps {font-family: 'delius-swash-caps';}
+
 
 /* el-messiri: arabic */
 @font-face {
@@ -190,6 +234,21 @@ arabic fonts:
 }
 
 .grand-hotel {font-family: 'grand-hotel';}
+
+@font-face {
+    font-family: 'euphoria-script';
+    src: url('fonts/EuphoriaScript-Regular.eot');
+    src: url('fonts/EuphoriaScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/EuphoriaScript-Regular.woff2') format('woff2'),
+        url('fonts/EuphoriaScript-Regular.woff') format('woff'),
+        url('fonts/EuphoriaScript-Regular.ttf') format('truetype'),
+        url('fonts/EuphoriaScript-Regular.svg#EuphoriaScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.euphoria-script {font-family: 'euphoria-script';}
 
 @font-face {
     font-family: 'handlee';
@@ -248,6 +307,21 @@ can't read the word TV */
 .la-belle-aurore {font-family: 'la-belle-aurore';}
 
 @font-face {
+    font-family: 'meow-script';
+    src: url('fonts/MeowScript-Regular.eot');
+    src: url('fonts/MeowScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MeowScript-Regular.woff2') format('woff2'),
+        url('fonts/MeowScript-Regular.woff') format('woff'),
+        url('fonts/MeowScript-Regular.ttf') format('truetype'),
+        url('fonts/MeowScript-Regular.svg#MeowScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.meow-script {font-family: 'meow-script';}
+
+@font-face {
     font-family: 'monsieur-la-doulaise';
     src: url('fonts/monsieurladoulaise-regular-webfont.woff2') format('woff2'),
          url('fonts/monsieurladoulaise-regular-webfont.woff') format('woff');
@@ -267,6 +341,35 @@ can't read the word TV */
 
 .mrs-saint-delafield {font-family: 'mrs-saint-delafield';}
 
+@font-face {
+    font-family: 'ms-madi';
+    src: url('fonts/MsMadi-Regular.eot');
+    src: url('fonts/MsMadi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MsMadi-Regular.woff2') format('woff2'),
+        url('fonts/MsMadi-Regular.woff') format('woff'),
+        url('fonts/MsMadi-Regular.ttf') format('truetype'),
+        url('fonts/MsMadi-Regular.svg#MsMadi-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.ms-madi {font-family: 'ms-madi';}
+
+@font-face {
+    font-family: 'oooh-baby';
+    src: url('fonts/OoohBaby-Regular.eot');
+    src: url('fonts/OoohBaby-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OoohBaby-Regular.woff2') format('woff2'),
+        url('fonts/OoohBaby-Regular.woff') format('woff'),
+        url('fonts/OoohBaby-Regular.ttf') format('truetype'),
+        url('fonts/OoohBaby-Regular.svg#OoohBaby-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.oooh-baby {font-family: 'oooh-baby';}
 
 @font-face {
     font-family: 'parisienne';
@@ -353,6 +456,21 @@ can't read the word TV */
 
 }
 
+@font-face {
+    font-family: 'stalemate';
+    src: url('fonts/Stalemate-Regular.eot');
+    src: url('fonts/Stalemate-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Stalemate-Regular.woff2') format('woff2'),
+        url('fonts/Stalemate-Regular.woff') format('woff'),
+        url('fonts/Stalemate-Regular.ttf') format('truetype'),
+        url('fonts/Stalemate-Regular.svg#Stalemate-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.stalemate {font-family: 'stalemate';}
+
 .tajawal {font-family: 'tajawal';}
 
 @font-face {
@@ -365,6 +483,48 @@ can't read the word TV */
 
 .vibes {font-family: 'vibes';}
 
+@font-face {
+    font-family: 'vibur';
+    src: url('fonts/Vibur.eot');
+    src: url('fonts/Vibur.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Vibur.woff2') format('woff2'),
+        url('fonts/Vibur.woff') format('woff'),
+        url('fonts/Vibur.ttf') format('truetype'),
+        url('fonts/Vibur.svg#Vibur') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.vibur {font-family: 'vibur';}
+
+@font-face {
+    font-family: 'windsong';
+    src: url('fonts/WindSong-Regular.eot');
+    src: url('fonts/WindSong-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/WindSong-Regular.woff2') format('woff2'),
+        url('fonts/WindSong-Regular.woff') format('woff'),
+        url('fonts/WindSong-Regular.ttf') format('truetype'),
+        url('fonts/WindSong-Regular.svg#WindSong-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'windsong';
+    src: url('fonts/WindSong-Medium.eot');
+    src: url('fonts/WindSong-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/WindSong-Medium.woff2') format('woff2'),
+        url('fonts/WindSong-Medium.woff') format('woff'),
+        url('fonts/WindSong-Medium.ttf') format('truetype'),
+        url('fonts/WindSong-Medium.svg#WindSong-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.windsong {font-family: 'windsong';}
 
 /* zeyada: handwritten, looks cursive */
 @font-face {
