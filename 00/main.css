@@ -45,7 +45,7 @@ body {
   margin: 0px;
   background: var(--bg);
   color: var(--fontColor);
-  font-family: 'harmattan', Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  font-family: 'baloo', Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
 /* ============================================= Navigation Bar */
