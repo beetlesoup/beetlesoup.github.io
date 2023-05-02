@@ -8,12 +8,14 @@
     <p>
       <button class="translator" onclick="translator(this)">inauspiciously</button> <span class ="translated AR">مشؤومة</span> <span class = "translated FR">de mauvais augure</span><span class="translated ES">desfavorablemente</span>
     </p>
+
+    <p><button class="translator" onclick="translator(this)">inauspiciously</button> <span class ="translated AR">مشؤومة</span> <span class = "translated FR">de mauvais augure</span><span class="translated ES">desfavorablemente</span></p>
   
   <script>
       window.onload = function() {
-      var contentText = document.querySelectorAll('.translated');
-      for (var i = 0; i < contentText.length; i++) {
-      contentText[i].style.display = "none";
+      var translatedText = document.querySelectorAll('.translated');
+      for (var i = 0; i < translatedText.length; i++) {
+        translatedText[i].style.display = "none";
       }
     };
       

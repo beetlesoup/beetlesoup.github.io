@@ -10,7 +10,15 @@
     for (var i = 0; i < poofs.length; i++) {
       poofs[i].style.display = "none";
     }
+
+    var translatedText = document.querySelectorAll('.translated');
+      for (var i = 0; i < translatedText.length; i++) {
+        translatedText[i].style.display = "none";
+      }
+      
     };
+
+    
 
 /* Adding an event handler: we have a button that says "Dark".
    How are we going to make it turn the theme dark? */
@@ -134,18 +142,6 @@ function translator(button) { //idk why it says (button)
 
   // Set the button text to the next item in the translated array
   button.innerHTML = translated[nextIndex].innerHTML;
-}
-
-// ------------------------------------- pop up button
-function popup(button) {
-  var btnText = button;
-  var popup = button.nextElementSibling;
-
-  if (popup.style.display === "none") {
-    popup.style.display = "inline";
-  } else {
-    popup.style.display = "none";
-  }
 }
 
 // -------------------------------------- collapsible
