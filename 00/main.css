@@ -225,6 +225,8 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     margin: auto;
     border-radius: 0px 3px 3px 0px;
     height: 150px;
+    border-right: solid 4px gray;
+   
   }
 
   .inarticle {width: 100%; display: block;

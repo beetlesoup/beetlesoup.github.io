@@ -12,7 +12,13 @@ hr {margin: 10px 0;}
 
 .book, .tv, .good, .neutral, .bad {height: 170px;}
 
-.tv {border: solid 2px black;}
+.tv {
+  border-top: solid 3px black;
+  border-right: solid 3px black;
+  border-bottom: solid 3px black;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
   
 /* .book {
     margin: auto;
