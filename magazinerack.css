@@ -54,22 +54,31 @@
 
   /* ------------------------------------ */
 
+  .light-theme {
+    --titleboxcolor: white;
+    --titleboxfont: ;
+  }
+
+  .dark-theme {
+    --titleboxcolor: black;
+    --titleboxfont: ;
+  }
+
   .titlebox {
+    /* background-color: var(--titleboxcolor); */
     align-items: center;
-    color: white;
-    padding: 10px;
-    /* font-family: 'vibur'; */
+    /* padding: 10px 5px 2px 10px; */
     /* a:hover {color: var(--linkhovercolor); text-decoration: underline dashed var(--fontColor);} */
     }
 
     .titlebox > div {padding: 5px;}
 
-    .titlebox > a {text-decoration: underline dashed white;}
-    .titlebox > a:hover {color: #333; text-decoration: underline dashed #333}
+    .titlebox > a {text-decoration: underline dashed var(--fontColor);}
+    .titlebox > a:hover {color: var(--linkhovercolor); text-decoration: underline dashed var(--linkunderlinehovercolor);}
 
-    .yellow > .titlebox > a {text-decoration: underline dashed #333;}
+    /* .yellow > .titlebox > a {text-decoration: underline dashed #333;} */
 
-    .yellow > .titlebox > a:hover {color: white; text-decoration: underline dashed white;}
+    /* .yellow > .titlebox > a:hover {color: white; text-decoration: underline dashed white;} */
 
     /* stalemate, vibur, rochester */
 
@@ -90,12 +99,12 @@
   .blue > article, .blue > blockquote {border-color: var(--blue);}
   .purple > article, .purple > blockquote {border-color: var(--purple);}
 
-  .red > .titlebox {background-color: var(--red);}
+  /* .red > .titlebox {background-color: var(--red);}
   .orange > .titlebox {background-color: var(--orange);}
   .yellow > .titlebox {background-color: var(--yellow); color: #333}
   .green > .titlebox {background-color: var(--green);}
   .blue > .titlebox {background-color: var(--blue);}
-  .purple > .titlebox {background-color: var(--purple);}
+  .purple > .titlebox {background-color: var(--purple);} */
 
   .light-theme {
     --redhighlight: #ffadad; --redhighlighttext: ;

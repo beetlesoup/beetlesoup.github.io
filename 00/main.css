@@ -6,6 +6,7 @@
     --bg: #D6DCE5; --fontColor: #43464B;
     /* what color should links be when you hover on them: */
     --linkhovercolor: #188bdd;
+    --linkunderlinehovercolor: #43464B;
     /* background color of each article: */
     --articlebg: #f5f5f5;
     /* when highlighting using <mark>: */
@@ -22,6 +23,7 @@
     --bg: #43464B; --fontColor: #edfffd;
     /* what color should links be when you hover on them: */
     --linkhovercolor: #00B0F0;
+    --linkunderlinehovercolor: #00B0F0;
     /* background color of each article: */
     --articlebg: #333;
     /* when highlighting using <mark>: */
