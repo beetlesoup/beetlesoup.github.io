@@ -73,8 +73,11 @@
 
     .titlebox > div {padding: 5px;}
 
-    .titlebox > a {text-decoration: underline dashed var(--fontColor);}
-    .titlebox > a:hover {color: var(--linkhovercolor); text-decoration: underline dashed var(--linkunderlinehovercolor);}
+    .titlebox > a {
+      font-family: 'la-belle-aurore';
+      text-decoration: underline var(--fontColor);
+    }
+    .titlebox > a:hover {color: var(--linkhovercolor); text-decoration: underline var(--linkunderlinehovercolor);}
 
     /* .yellow > .titlebox > a {text-decoration: underline dashed #333;} */
 
