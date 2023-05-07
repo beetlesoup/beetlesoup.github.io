@@ -1,0 +1,9 @@
+
+
+
+.bs {
+    display: flex;
+    border: solid 10px white; border-radius: 5px;
+}
+
+.book {margin: 10px;}
