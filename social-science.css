@@ -1,0 +1,14 @@
+
+.headerimage {width: 100%; height: auto; float: none; bottom: auto;}
+
+.title {font-family: 'homemade-apple';}
+.subtitle {margin-bottom: 5px;}
+
+article {
+    border: solid 5px white;
+}
+
+
+img {height: 100px}
+
+
