@@ -11,6 +11,7 @@
     --articlebg: #f5f5f5;
     /* when highlighting using <mark>: */
     --highlightColor: #fff2cc; --highlightTextColor: ;
+    --saudihighlight: #E2EFDA;
     /* -------------------------------------------- */
     /* if you have words in your header image like on magazine rack: */
     --headerimagelabelbg: #F2F2F2;
@@ -28,6 +29,8 @@
     --articlebg: #333;
     /* when highlighting using <mark>: */
     --highlightColor: #7030A0; --highlightTextColor: white;
+    --saudihighlight: #1e8020;
+    --saudihighlighttextcolor:  ;
     /* -------------------------------------------- */
     /* if you have words in your header image like on magazine rack: */
     --headerimagelabelbg: #3B3838;
@@ -276,12 +279,20 @@ blockquote {
     border-image:linear-gradient(to top,#c4e17f, #f7fdca,#fad071,#f0766b,#db9dbe,#c49cdf, #6599e2,#61c2e4) 10;
 }
 
+.squote {border-image:linear-gradient(to bottom, #005149, #c4e17f, #053c2d, black) 10;}
+
+/* #E2EFDA */
+
 mark {
     background-color: var(--highlightColor);
     color: var(--highlightTextColor);
     padding-left: 2px;
     padding-right: 2px;
   }
+
+.shighlight {
+    background-color: var(--saudihighlight);
+}
 
 hr {margin: 30px 0;}
   .hr1 {margin: 30px 0; border: 0; height: 2px; background-image: linear-gradient(to right, transparent, black, transparent);}
