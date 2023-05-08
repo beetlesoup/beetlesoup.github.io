@@ -23,6 +23,7 @@ switcher.addEventListener('click', function() {
 
 // If we save our current state somewhere, we can easily filter the divs.
 var checkedCategories = ["cars", "animals", "fruits", "colors"];
+
 // We need a function that detects the click on a checkbox and adds/removes that category.
 var changeCategory = function changeCategory(event) {
   // The event object will tell us exactly what was clicked.
@@ -39,8 +40,11 @@ var changeCategory = function changeCategory(event) {
   else if (!checkbox.checked && savedCategoryIndex !== -1) {
     checkedCategories.splice(savedCategoryIndex, 1);
   }
+
+
   renderCategories();
 };
+
 // We want a reusable function that will show/hide any categories we want to see.
 var renderCategories = function renderCategories() {
   // We need a list of all the divs. So we just select all the divs that have the data-category attribute and slice them into an array.
@@ -65,6 +69,7 @@ var renderCategories = function renderCategories() {
 };
 // Finally we have to add an event to the checkboxes.
 document.querySelector("#categoryBoxes").addEventListener('click', changeCategory);
+
 
 
 var coll = document.getElementsByClassName("collapsible");
