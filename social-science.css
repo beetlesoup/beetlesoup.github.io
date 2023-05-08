@@ -1,14 +1,17 @@
 
 .headerimage {width: 100%; height: auto; float: none; bottom: auto;}
 
-.title {font-family: 'homemade-apple';}
-.subtitle {margin-bottom: 5px;}
-
 article {
-    border: solid 5px white;
+    border: solid 4px white;
+    border-radius: 5px;
 }
 
+.headbox {display: flex; margin-bottom: 10px;}
 
-img {height: 100px}
+.title {font-family: 'homemade-apple';}
+
+.subtitle {font-style: italic;}
+
+.hr2 {margin: 8px;}
 
 
