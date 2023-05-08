@@ -6,7 +6,18 @@ article {
     border-radius: 5px;
 }
 
-.headbox {display: flex; margin-bottom: 10px;}
+.journal {
+    width: 100px; float: left; margin-right: 10px;
+}
+
+.logo {
+    width: 100px; float: left; margin-right: 10px;
+}
+
+.headbox {
+    vertical-align: middle;
+    display: flex; margin-bottom: 10px;
+}
 
 .title {font-family: 'homemade-apple';}
 
