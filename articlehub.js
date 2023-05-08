@@ -1,3 +1,26 @@
+/* Adding an event handler: we have a button that says "Dark".
+   How are we going to make it turn the theme dark? */
+
+/* First use a query selector to get the button reference and call it 'switcher' */
+const switcher = document.querySelector('.themebtn');
+
+/* Next add the event handler for the click event */
+switcher.addEventListener('click', function() {
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
+
+    const className = document.body.className;
+    if(className == "light-theme") {
+        this.textContent = "☀️";
+    } else {
+        this.textContent = "🌜";
+    }
+
+    /* Add the following message to be shown in Developer View, ya big nerd: */
+    console.log('current class name: ' + className);
+});
+
+
 // If we save our current state somewhere, we can easily filter the divs.
 var checkedCategories = ["cars", "animals", "fruits", "colors"];
 // We need a function that detects the click on a checkbox and adds/removes that category.
@@ -75,57 +98,3 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
-
-// ============ WORD CLOUD:
-
-
-const divs = document.querySelectorAll('.jarticlebox');
-      let textContent = '';
-      divs.forEach(div => {
-        textContent += div.textContent;
-      });
-      
-      const words = textContent.toLowerCase().split(/[^\w\d]+/).filter(word => word.length > 3 && !/\w*'\w*/.test(word));
-
-      const commonWords = ['about', 'also', 'because', 'into', 'like', 'long', 'many', 'more', 'must', 'only', 'other', 'some', 'than', 'that', 'their', 'them', 'there', 'these', 'they', 'this', 'thus', 'were', 'what', 'when', 'which', 'will', 'with', 'would', 'your', 'have', 'just', 'from', 'people', 'been', 'even', 'something', 'thing', 'such', 'much', 'things', 'over'];
-      const filteredWords = words.filter(word => {
-        return !commonWords.includes(word) && isNaN(word);
-      });
-      const wordFrequencies = {};
-      filteredWords.forEach(word => {
-        if (word in wordFrequencies) {
-          wordFrequencies[word]++;
-        } else {
-          wordFrequencies[word] = 1;
-        }
-      });
-      
-      const layout = d3.layout.cloud()
-        .size([800, 600])
-        .words(Object.keys(wordFrequencies).map(word => ({text: word, size: wordFrequencies[word] * 2})))
-        .padding(5)
-        .rotate(() => Math.round(Math.random()) * 90)
-        .font('Impact')
-        .fontSize(d => d.size)
-        .on('end', draw);
-      layout.start();
-      
-      function draw(words) {
-        d3.select('#word-cloud')
-          .append('svg')
-          .attr('width', 800)
-          .attr('height', 600)
-          .append('g')
-          .attr('transform', `translate(400, 300)`)
-          .selectAll('text')
-          .data(words)
-          .enter()
-          .append('text')
-          .style('font-size', d => `${d.size}px`)
-          .style('font-family', 'Impact')
-          .style('fill', () => `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`)
-          .attr('text-anchor', 'middle')
-          .attr('transform', d => `translate(${d.x}, ${d.y}) rotate(${d.rotate})`)
-          .text(d => d.text);
-      }

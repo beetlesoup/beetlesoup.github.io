@@ -1,6 +1,22 @@
 
 .headerimage {width: 100%; height: auto; float: none; bottom: auto;}
 
+.categorybutton, {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.categorybutton:hover {
+    opacity: 0.8;
+  }
+  
+.categorybutton.active {
+    opacity: 1;
+    border-color: white;
+  }
+
+.filterDiv {display: block;}
+
 article {
     border: solid 4px white;
     border-radius: 5px;
@@ -19,10 +35,85 @@ article {
     display: flex; margin-bottom: 10px;
 }
 
-.title {font-family: 'homemade-apple';}
+.title, .collapsible {font-family: 'satisfy'; font-size: larger;}
 
 .subtitle {font-style: italic;}
 
 .hr2 {margin: 8px;}
 
 
+.filterbox1 {
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px 5px 5px;
+    background-color: #333;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .filterbox2 {
+    border: dashed 1px #f1f1f1;
+  }
+
+  .filterbox3 {
+    border: dashed 1px #f1f1f1;
+  }
+  /* .show {
+    display: block;
+  } */
+
+  .hidden {
+    display:none
+  }
+  
+.fh {
+    margin: 0px;
+    text-align: right;
+}
+  /* Style the buttons */
+  .btn1 {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 6px 6px 3px;
+    background-color: #f1f1f1;
+  }
+  
+  /* .btn1:hover {
+    background-color: #ddd;
+  } */
+  
+  /* .btn1.active {
+    background-color: #666;
+    color: white;
+  } */
+
+  .btn2 {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 6px 6px 3px;
+    background-color: #f1f1f1;
+  }
+
+  .btn3 {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 1px 5px 1px 1px;
+    background-color: #f1f1f1;
+  }
+
+  .story {
+    border: none;
+    text-decoration: underline 2px dotted #7030A0;
+  }
+  
+  details {
+    display: inline;
+  }
+
+  .ar {font-family: 'arslanwb'; font-size: larger;}

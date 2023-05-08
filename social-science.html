@@ -40,10 +40,39 @@
     <img class="headerimage" src="00/images/homepage-and-headers/econ1-croppeder.jpeg">
 <div class="margins">
 
-    <div id="catContainer">
-        <!-- <button class="categorybutton redtag" onclick="filterSelection('red')">Red</button>
-        <button class="categorybutton redtag" onclick="filterSelection('blue')">Blue</button>
-    </div> -->
+    <div id="categoryBoxes">
+    <span class="fh">Areas</span><br>
+          <!-- F -->
+          <button class="filterbox1"><input type="checkbox" data-category="fiscal" name="category" unchecked> Fiscal Issues</button>
+            
+          <!-- H -->
+          <button class="filterbox1"><input type="checkbox" data-category="health" name="category" unchecked> Health Economics</button>
+        <br>
+        <span class="fh">Locations</span><br>
+              <button class="btn3"><input type="checkbox" data-category="brazil" name="category" unchecked>Brazil</button> <button class="btn3"><input type="checkbox" data-category="euro" name="category" unchecked>European Union</button> <button class="btn3"><input type="checkbox" data-category="gcc" name="category" unchecked>GCC ▸</button> <span class="special"><input type="checkbox" data-category="saudi" name="category" unchecked>Saudi Arabia&nbsp;</span> <input type="checkbox" data-category="uae" name="category" unchecked>UAE&nbsp; <button class="btn3"><input type="checkbox" data-category="usa" name="category" unchecked>USA</button>
+          <br>
+<table>
+  <tr>
+    <td>
+      <span class="fh">Stories</span><br>
+        <!-- E -->
+        <input type="checkbox" data-category="env" name="category" unchecked><span class="story">Environmental Woes</span>
+        <!-- G -->
+        <input type="checkbox" data-category="growthdegrowth" name="category" unchecked><span class="story">Growth vs Degrowth</span>
+        <!-- M -->
+        <input type="checkbox" data-category="minwage" name="category" unchecked><span class="story">The Minimum Wage</span>
+        <!-- O -->
+        <input type="checkbox" data-category="oksocialist" name="category" unchecked><span class="story">OK, Socialist</span>
+        <!-- P -->
+        <input type="checkbox" data-category="freetrade" name="category" unchecked><span class="story">Free Trade (or not)</span>
+        <!-- 7 -->
+        <!-- <input type="checkbox" data-category="7ash" name="category" unchecked><span class="story ar">الحش و الانتقاد</span> -->
+          <br>         
+                
+    </td>
+    <td><img height="70" src="00/images/logos/scihub_raven.png"></td>
+  </tr>
+</table></div><br>
 
     <!-- 
     <div class="filterDiv ">
@@ -66,15 +95,15 @@
     <button class="collapsible">Click to show/hide something</button>
     <div class="content"></div>
     blah de bloo
-    </article>
+    </article><hr>
     </div>
 
       -->
 
-    <div class="filterDivcontainer">
+    <div class="container">
 
     <!-- 2022 dec 8 the effect of health financing systems -->
-    <div class="filterDiv health">
+    <div class="filterDiv" data-category="healthecon">
     <article class="jarticle">
     <div class="jfirst"><img class="journal" src="00/images/publications/journals/health-economics-2023.jpg"></div>
     <div><span class="title"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hec.4635">The effect of health financing systems (HFS) on health system outcomes: A cross-country panel analysis</a></span> <span class="subtitle">Jacopo Gabani, Sumit Mazumdar, & Marc Suhrcke on Health Economics (Wiley) - Dec 8, 2022</span></div>
@@ -92,11 +121,11 @@
             <li>Pre-paid pooled expenditures in principle allow the government to deliver cost-effective, preventative health services such as vaccinations, community health, and others, as well as to pool the risks of different individuals together (Moreno-Serra & Smith, 2015). Health equity may also be positively impacted.</li>
         </ul>
     </div>
-    </article>
-    </div><hr>
+    </article><hr>
+    </div>
 
     <!-- 2022 nov 28 resource booms low apgar scores -->
-    <div class="filterDiv health">
+    <div class="filterDiv" data-category="healthecon">
         <article class="jarticle">
         <div class="jfirst"><img class="journal" src="00/images/publications/journals/health-economics-2023.jpg"></div>
         <div><span class="title"><a href="https://onlinelibrary.wiley.com/doi/10.1002/hec.4629">The local health impacts of natural resource booms</a></span> <span class="subtitle">Elisa M Maffioli on Health Economics (Wiley) - Nov 28, 2022</span></div>
@@ -104,20 +133,20 @@
         <p>This paper uses novel micro-data on natural resources and administrative health data in Brazil to study how economic booms in minerals affect health at birth. 1: Overall, mining activities generate more economic opportunities, but only following economic booms in metallic minerals.</p>
         <p>2: municipalities with higher historical endowments of mineral resources experience an <mark>increase in premature births and births with low APGAR scores after an increase in international prices of minerals</mark>.</p>
         </article>
-    </div><hr>
+    <hr></div>
 
     <!-- 2022 nov 24 general equilibrium -->
-    <div class="filterDiv health">
+    <div class="filterDiv" data-category="healthecon">
     <article class="jarticle">
     <div class="jfirst"><img class="journal" src="00/images/publications/journals/health-economics-2023.jpg"></div>
     <div><span class="title"><a href="https://onlinelibrary.wiley.com/doi/10.1002/hec.4638">Partially different? The importance of general equilibrium in health economic evaluations: An application to nocturia</a></span> <span class="subtitle">Marco Hafner, Erez Yerushalmi, Fredrik L. Andersson, & Teodor Burtea on Health Economics (Wiley) - Nov 24, 2022</span></div>
     <hr class="hr2">
     <p><mark>Both the human capital approach and the friction cost approach underestimate the true potential productivity costs associated with nocturia by around 16%.</mark> We propose a generalized GE/partial equilibrium multiplier to approximate the GE effect for other health conditions.</p>
     </article>
-    </div><hr>
+    <hr></div>
 
     <!-- 2022 jan 1 need financial rules in oil countries -->
-    <div class="filterDiv saudi">
+    <div class="filterDiv saudi" data-category="saudi">
     <article class="jarticle">
     <div class="headbox">
         <div class="jfirst"><img class="logo" src="00/images/logos/entities/mep.png"></div>
@@ -135,10 +164,10 @@
     <p><mark>Medium-term budgets should be built for 3 years at the sectoral level, according to medium-term development plans</mark>, thus helps to know the trends of government spending, not only for one year, but for 3 years. It will contribute to the ability of the private sector for investment planning with better certainty and lower risk; it is one of the most important drivers of private investment. In order to achieve the desired benefits from fiscal rules, they must be clear and institutionalized, raising investor confidence and contributing to the stability of the economy.</p>
     <p><span class="saudi header">Current Picture:</span><br>One of the most reliable recent initiatives is what the Minister of Finance announced during the Financial Stability Conference in November 2021, organized by the Capital Market Authority (CMA), that the government will adopt fiscal rules to manage the state's fiscal policy and deal with financial surpluses; its details may be announced later. These initiatives may be an important step that contributes to economic diversification.</p>
     </article>
-    </div><hr>
+    <hr></div>
 
     <!-- march 2004 stability pact -->
-    <div class="filterDiv ">
+    <div class="filterDiv" data-category="euro">
         <article>
         <div class="jfirst"><img class="journal" src="00/images/publications/journals/ieep-15-12.jpg"></div>
         <div><span class="title"><a href="https://link.springer.com/article/10.1007/s10368-003-0006-1">With what should the present rules of the Stability Pact be replaced?</a></span> <span class="subtitle">Patrick Artus on International Economics and Economic Policy (Springer) - March 2004</span></div>
@@ -163,7 +192,7 @@
             <p>It would have been far more efficient to force countries to balance their budgets or post a budget surplus in 2000 (top of the cycle), and leave them free with respect to the level of their deficit in 2002-2003, with a new constraint stipulating they were to balance their budgets in the next period of high capacity utilisation rates.</p>
         </div>
         </article>
-        </div><hr>
+        <hr></div>
 
 
 
@@ -171,6 +200,7 @@
 
 
 
-</div></main><script src="00/app.js"></script>
+</div></main>
+<script src="articlehub.js"></script>
   <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo! Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
 </body>
