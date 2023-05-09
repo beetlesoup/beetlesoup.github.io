@@ -1,5 +1,25 @@
 body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
+.categorybutton { opacity: 0.5; border-radius: 25px; padding: 5px 10px 5px 10px; cursor: pointer;}
+
+.cat2 {padding: 5px 2px 5px 2px; font-size: small;}
+
+/* .microbiologytag {background-color: rgb(101, 214, 116);}
+.physicstag {background-color: rgb(254, 254, 120);}
+.spacetag {background-color: rgb(11, 8, 134); color: white;} */
+
+.catlogo {color: black; text-align: center; border: none; height: 20px; padding: 5px 5px 5px 5px; width: auto; margin: auto;}
+
+.categorybutton:hover, .catlogo:hover {
+    opacity: 0.8;
+}
+  
+.categorybutton.active, .catlogo.active {
+    opacity: 1;
+    border-color: white;
+}
+
+
 article {
     background-color: transparent;
     font-size: medium;
