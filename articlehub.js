@@ -9,7 +9,7 @@ function changeHeaderImage() {
       if (filterValue === "Animal Intelligence") {
         headerImage.src = "00/images/homepage-and-headers/articlehub/animalintel-crop.png";
         console.log("Setting header image for category 1");
-      } else if (filterValue === "Cognitive Science") {
+      } else if (filterValue === "Cognitive Science" || filterValue === "Human" || filterValue === "Other Animal") {
         headerImage.src = "00/images/homepage-and-headers/articlehub/cogsci-crop.jpeg";
         console.log("Setting header image for category 2");
       } else if (filterValue === "Microbiology") {
