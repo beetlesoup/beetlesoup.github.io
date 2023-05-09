@@ -1,0 +1,35 @@
+body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+article {
+    background-color: transparent;
+    font-size: medium;
+}
+
+table {
+    width: 100%;
+    vertical-align: top; 
+  }
+  .first {
+    width: 70px;
+    vertical-align: top;    
+  }
+
+  .journal {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.date {
+    color: #8E8F92;
+    font-family: 'satisfy';
+    float: right;
+    margin-right: 5px;
+  }
+
+.jarticlebox {
+    background-color: #f2f2f2;
+    /* border: 3px solid; */
+    border-radius: 5px;
+    font-size: small;
+    padding: 5px 5px 5px 10px;
+}
