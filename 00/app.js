@@ -84,6 +84,7 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+  changeHeaderImage();
 }
 
 
@@ -175,58 +176,3 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-
-
-
-// =========================== WORD CLOUD:
-
-
-const divs = document.querySelectorAll('article');
-      let textContent = '';
-      divs.forEach(div => {
-        textContent += div.textContent;
-      });
-      
-      const words = textContent.toLowerCase().split(/[^\w\d]+/).filter(word => word.length > 3 && !/\w*'\w*/.test(word));
-
-      const commonWords = ['about', 'after', 'also', 'been', 'because', 'each', 'else', 'even', 'from', 'have', 'into', 'just', 'like', 'long', 'many', 'more', 'most', 'much', 'must', 'only', 'other', 'over', 'people', 'something', 'some', 'such', 'than', 'that', 'their', 'them', 'then', 'there', 'these', 'they', 'thing', 'things', 'this', 'thus', 'were', 'what', 'when', 'which', 'will', 'with', 'would', 'your'];
-      const filteredWords = words.filter(word => {
-        return !commonWords.includes(word) && isNaN(word);
-      });
-      const wordFrequencies = {};
-      filteredWords.forEach(word => {
-        if (word in wordFrequencies) {
-          wordFrequencies[word]++;
-        } else {
-          wordFrequencies[word] = 1;
-        }
-      });
-      
-      const layout = d3.layout.cloud()
-        .size([800, 600])
-        .words(Object.keys(wordFrequencies).map(word => ({text: word, size: wordFrequencies[word] * 2})))
-        .padding(5)
-        .rotate(() => Math.round(Math.random()) * 90)
-        .font('Impact')
-        .fontSize(d => d.size)
-        .on('end', draw);
-      layout.start();
-      
-      function draw(words) {
-        d3.select('#word-cloud')
-          .append('svg')
-          .attr('width', 800)
-          .attr('height', 600)
-          .append('g')
-          .attr('transform', `translate(400, 300)`)
-          .selectAll('text')
-          .data(words)
-          .enter()
-          .append('text')
-          .style('font-size', d => `${d.size}px`)
-          .style('font-family', 'Impact')
-          .style('fill', () => `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`)
-          .attr('text-anchor', 'middle')
-          .attr('transform', d => `translate(${d.x}, ${d.y}) rotate(${d.rotate})`)
-          .text(d => d.text);
-      }
