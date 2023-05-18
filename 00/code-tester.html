@@ -1,29 +1,35 @@
 <head>
     
   <style>
-    .book-box {
-  border: 1px solid lightgray;
-  width: 110px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-style: preserve-3d;
-  perspective: 400px;
-}
 
 .book {
-  width: 200px;
-  height: 300px;
-  transform: rotateY(-30deg);
+  position: relative;
+  display: inline-block;
+  height: 170px;
 }
 
-.book > :first-child {
-  background: #0d47a1aa;
-  width: 100px;
-  height: 150px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+.book::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 2%,
+    rgba(255, 255, 255, 0.3) 3%,
+    rgba(247, 254, 255, 0.3) 5%,
+    rgba(0, 0, 0, 0.5) 7%,
+    rgba(255, 255, 255, 0) 13%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.book img {
+  display: block;
+  height: 170px;
 }
 
 
@@ -32,9 +38,4 @@
 <br><br>
 <br><br>
 
-<div class="book-box">
-  <div class="book">
-    <img src="images/books/fish-dont-exist.jpg">
-    </div>
-  </div>
-</div>
+<div class="book"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1565526670i/50887097.jpg" /></div> <div class="book"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1565526670i/50887097.jpg" /></div>
