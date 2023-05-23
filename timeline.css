@@ -10,15 +10,10 @@ hr {margin: 10px 0;}
 
 .images {width: 50%;}
 
-.book, .tv, .good, .neutral, .bad {height: 170px;}
+.book, .good, .neutral, .bad {height: 170px;}
 
 .tv {
-  border-top: solid 3px black;
-  border-right: solid 3px black;
-  border-bottom: solid 3px black;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  height: 165px;
+  padding: 4px 7px 19px;
+  background: url(00/images/image-editors/tv.png) 0/100% 100%;
 }
-
-.bad {border: solid 2px gray;}
-    
