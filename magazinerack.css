@@ -95,12 +95,14 @@
 
   blockquote {border-image: none}
 
-  .red > article, .red > blockquote {border-color: var(--red);}
-  .orange > article, .orange > blockquote {border-color: var(--orange);}
-  .yellow > article, .yellow > blockquote {border-color: var(--yellow);}
-  .green > article, .green > blockquote {border-color: var(--green);}
-  .blue > article, .blue > blockquote {border-color: var(--blue);}
-  .purple > article, .purple > blockquote {border-color: var(--purple);}
+  .red article, .red blockquote {border-color: var(--red);}
+  .orange article, .orange blockquote {border-color: var(--orange);}
+  .yellow article, .yellow blockquote {border-color: var(--yellow);}
+  .green article, .green blockquote {border-color: var(--green);}
+  .blue article, .blue blockquote {border-color: var(--blue);}
+  .purple article, .purple blockquote {border-color: var(--purple);}
+
+  blockquote > blockquote {border-image:linear-gradient(to top,#c4e17f, #f7fdca,#fad071,#f0766b,#db9dbe,#c49cdf, #6599e2,#61c2e4) 10;}
 
   /* .red > .titlebox {background-color: var(--red);}
   .orange > .titlebox {background-color: var(--orange);}
