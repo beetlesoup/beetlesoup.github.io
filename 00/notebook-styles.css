@@ -5,15 +5,14 @@
 }
 
 .dark-theme {
-  --paper: #b0b0b0;
+  --paper: #656565;
   --purple: rgb(185, 81, 255);
 }
 
 /* ========================================== */
 
 .paper {
-  width: 95%;
-  max-width: 550px;
+  width: 400px;
   position: relative;
   margin: 20px auto;
   padding: 20px 0px 20px 0px;
@@ -49,6 +48,38 @@
   border-radius: 5px;
   padding: 2px 6px;
   margin: auto;
+}
+
+.gray-shaded {
+  background: repeating-linear-gradient(
+  150deg,
+  rgba(208, 208, 208, 0.5),
+  rgba(246, 245, 245, 0.5) 3px,
+  rgba(170, 169, 169, 0.5) 4px,
+  rgba(133, 133, 133, 0.5) 3px
+);
+}
+
+.blue-shaded {
+  background: repeating-linear-gradient(
+  150deg,
+  rgba(78, 208, 255, 0.5),
+  rgba(204, 241, 255, 0.5) 6px,
+  rgba(128, 219, 251, 0.5) 6px,
+  rgba(102, 204, 255, 0.5) 6px
+);
+}
+
+.purple-shaded {
+  background: repeating-linear-gradient(
+  135deg,
+  rgba(133, 96, 188, 0.5),
+  rgba(235, 174, 228, 0.5) 2px,
+  transparent 3px,
+  rgba(255, 144, 222, 0.5) 2px,
+  transparent 2px,
+  rgba(70,82,152, 0.5) 3px
+);
 }
 
 /* ============================================= */
