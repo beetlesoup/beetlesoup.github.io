@@ -237,8 +237,8 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     margin: 1px;
     /* border-radius: 0px 3px 3px 0px; */
     height: 150px;
-    border-right: 9px solid transparent;
-    border-image: url(images/image-editors/book-pages.png) 35 round;
+    border-right: 8px solid transparent;
+    border-image: url(images/image-editors/book-pages.png) 30 round;
    
   }
 
