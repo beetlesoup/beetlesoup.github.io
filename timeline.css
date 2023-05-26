@@ -3,12 +3,12 @@
 
 h2 {text-align: right;}
 
-.text-feed {width: 50%;}
+.text-feed {margin-left: 2px;}
 
 hr {margin: 10px 0;}
 
 
-.images {width: 50%;}
+.images {float:left ;width: 50%;}
 
 .book, .good, .neutral, .bad {height: 170px;}
 
