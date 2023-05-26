@@ -293,8 +293,17 @@ can't read the word TV */
   font-weight: normal;
   font-style: normal;
 }
-
 .homemade-apple {font-family: 'homemade-apple';}
+
+
+@font-face {
+    font-family: 'indieflower';
+    src: url('fonts/indieflower-regular-webfont.woff2') format('woff2'),
+         url('fonts/indieflower-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.indieflower {font-family: 'indieflower';}
 
 @font-face {
     font-family: 'la-belle-aurore';
@@ -435,6 +444,16 @@ can't read the word TV */
 
 .rubik-pixels {font-family: 'rubik-pixels';}
 
+@font-face {
+    font-family: 'sacramento';
+    src: url('fonts/sacramento-regular-webfont.woff2') format('woff2'),
+         url('fonts/sacramento-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sacramento {font-family: 'sacramento'; font-size: large;}
+
 /* satisfy: cursive, header */
 @font-face {
     font-family: 'satisfy';
@@ -443,7 +462,6 @@ can't read the word TV */
     font-weight: normal;
     font-style: normal;
 }
-
 .satisfy {font-family: 'satisfy';}
 
 /* tajawal: arabic, ar-en */
