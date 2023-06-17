@@ -238,9 +238,15 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     /* border-radius: 0px 3px 3px 0px; */
     height: 150px;
     border-right: 8px solid transparent;
-    border-image: url(images/image-editors/book-pages.png) 30 round;
-   
+    border-image: url(images/image-editors/small-pages.png) 30 round;
   }
+
+  .small {
+    border-right: 5px solid transparent;
+    border-image: url(images/image-editors/small-pages.png) 30 stretch;
+  }
+
+  .incomplete {mask-image: linear-gradient(to left, transparent 50%, white);}
 
   .inarticle {width: 100%; display: block;
     margin-left: auto;
