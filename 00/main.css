@@ -246,7 +246,9 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     border-image: url(images/image-editors/small-pages.png) 30 stretch;
   }
 
-  .incomplete {mask-image: linear-gradient(to left, transparent 50%, white);}
+  .incomplete {
+    -webkit-mask-image: linear-gradient(to left, transparent 20%, white);
+  }
 
   .inarticle {width: 100%; display: block;
     margin-left: auto;
