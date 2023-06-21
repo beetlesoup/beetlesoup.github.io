@@ -303,7 +303,8 @@ blockquote {
 /* #E2EFDA */
 
 mark {
-    background-color: var(--highlightColor);
+    background: linear-gradient(to right, var(--highlightColor) 100%, transparent 0%);
+    background-repeat: repeat-y;
     color: var(--highlightTextColor);
     padding-left: 2px;
     padding-right: 2px;

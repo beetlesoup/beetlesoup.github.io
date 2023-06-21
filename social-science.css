@@ -1,4 +1,15 @@
 
+.light-theme {
+  --purplenote: #7030A0;
+  --articleborder: white;
+}
+
+.dark-theme {
+  --purplenote: #eed8ff;
+  --articleborder: #333;
+}
+
+/* =================================== */
 .headerimage {width: 100%; height: auto; float: none; bottom: auto;}
 
 .categorybutton, {
@@ -19,12 +30,12 @@
 
 article {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: solid 4px white;
+    border: solid 4px var(--articleborder);
     border-radius: 5px;
 }
 
 .journal {
-    width: 100px; float: left; margin-right: 10px;
+    width: 100px; float: right; margin: 0px 0px 0px 10px;
 }
 
 .logo {
@@ -138,8 +149,14 @@ article {
     }
     
     .header {margin-bottom: 4px;}
+    
+
     .purplecharmonman {
       font-family: 'charmonman';
-      color: #7030A0;
+      color: var(--purplenote);
       line-height: 1.5;
+    }
+
+    .purplecharmonman mark {
+      background-co
     }
