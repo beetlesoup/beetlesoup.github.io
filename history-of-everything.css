@@ -1,8 +1,15 @@
 
 .filterDiv {display: block;}
 .hidden {display:none}
-  
 
+.translated {display: none;}
+  
+table {width: 100%;}
+
+th {
+    background-color: #333;
+    color: white;
+}
 
 .catbox {
 
@@ -10,6 +17,21 @@
 
 .itembox {
 
+}
+
+.light-theme {
+    --imgborder: white;
+  }
+  
+  .dark-theme {
+    --purplenote: #eed8ff;
+    --imgborder: #333;
+  }
+
+img {
+    display: inline-block;
+    border: solid 3px var(--imgborder);
+    margin: 5px;
 }
 
 .source {text-align: right;}

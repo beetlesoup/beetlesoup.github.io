@@ -103,3 +103,29 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+// ----------------------------------- translator
+
+function translator(button) { //idk why it says (button)
+  var btnText = button.innerHTML;
+  var translated = []; // creates the variable "translated" that is an array
+  var siblings = button.nextElementSibling;
+  // the next part looks at the next element and if its of the class "translated" it will add it to the translated array
+  while (siblings != null && siblings.classList.contains('translated')) {
+    translated.push(siblings);
+    siblings = siblings.nextElementSibling;
+  }
+  // i was not able to add the original button text to the array
+
+  var currentIndex = translated.findIndex(function(element) {
+    return element.innerHTML === btnText;
+  });
+
+  // Get the next index in the translated array (or wrap around to 0 if at the end)
+  var nextIndex = (currentIndex + 1) % translated.length;
+
+  // Set the button text to the next item in the translated array
+  button.innerHTML = translated[nextIndex].innerHTML;
+}
+
+// 
