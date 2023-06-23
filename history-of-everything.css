@@ -29,7 +29,6 @@ th {
   }
 
 img {
-    display: inline-block;
     border: solid 3px var(--imgborder);
     margin: 5px;
 }
