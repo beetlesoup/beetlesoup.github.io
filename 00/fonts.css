@@ -141,6 +141,33 @@ arabic fonts:
 .cedarville {font-family: 'cedarville';}
 
 @font-face {
+    font-family: 'cherry-swash';
+    src: url('fonts/CherrySwash-Regular.eot');
+    src: url('fonts/CherrySwash-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CherrySwash-Regular.woff2') format('woff2'),
+        url('fonts/CherrySwash-Regular.woff') format('woff'),
+        url('fonts/CherrySwash-Regular.ttf') format('truetype'),
+        url('fonts/CherrySwash-Regular.svg#CherrySwash-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'cherry-swash';
+    src: url('fonts/CherrySwash-Bold.eot');
+    src: url('fonts/CherrySwash-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CherrySwash-Bold.woff2') format('woff2'),
+        url('fonts/CherrySwash-Bold.woff') format('woff'),
+        url('fonts/CherrySwash-Bold.ttf') format('truetype'),
+        url('fonts/CherrySwash-Bold.svg#CherrySwash-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+.cherry-swash {font-family: 'cherry-swash';}
+
+@font-face {
     font-family: 'cookie';
     src: url('fonts/cookie-regular-webfont.woff2') format('woff2'),
          url('fonts/cookie-regular-webfont.woff') format('woff');
