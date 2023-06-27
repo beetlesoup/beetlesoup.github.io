@@ -35,6 +35,21 @@ arabic fonts:
 
 .aref-ruqaa {font-family: 'aref-ruqaa';}
 
+@font-face {
+    font-family: 'arinttikasignature';
+    src: url('fonts/ArinttikaSignatureRegular.eot');
+    src: url('fonts/ArinttikaSignatureRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ArinttikaSignatureRegular.woff2') format('woff2'),
+        url('fonts/ArinttikaSignatureRegular.woff') format('woff'),
+        url('fonts/ArinttikaSignatureRegular.ttf') format('truetype'),
+        url('fonts/ArinttikaSignatureRegular.svg#ArinttikaSignatureRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.arinttikasignature {font-family: 'arinttikasignature';}
+
 
 /* arslanwa: arabic, ar-en, ru83a */
 @font-face {
@@ -428,6 +443,21 @@ can't read the word TV */
 .rakkas {font-family: 'rakkas';}
 
 @font-face {
+    font-family: 'queenserif';
+    src: url('fonts/QueenSerifFREE.eot');
+    src: url('fonts/QueenSerifFREE.eot?#iefix') format('embedded-opentype'),
+        url('fonts/QueenSerifFREE.woff2') format('woff2'),
+        url('fonts/QueenSerifFREE.woff') format('woff'),
+        url('fonts/QueenSerifFREE.ttf') format('truetype'),
+        url('fonts/QueenSerifFREE.svg#QueenSerifFREE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.queenserif {font-family: 'queenserif';}
+
+@font-face {
     font-family: 'reenie-beanie';
     src: url('fonts/reeniebeanie-regular-webfont.woff2') format('woff2'),
          url('fonts/reeniebeanie-regular-webfont.woff') format('woff');
@@ -468,6 +498,21 @@ can't read the word TV */
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'rottran-demo';
+    src: url('fonts/Rottran-Demo-Regular.eot');
+    src: url('fonts/Rottran-Demo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Rottran-Demo-Regular.woff2') format('woff2'),
+        url('fonts/Rottran-Demo-Regular.woff') format('woff'),
+        url('fonts/Rottran-Demo-Regular.ttf') format('truetype'),
+        url('fonts/Rottran-Demo-Regular.svg#Rottran-Demo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.rottran-demo {font-family: 'rottran-demo';}
 
 .rubik-pixels {font-family: 'rubik-pixels';}
 
