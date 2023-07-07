@@ -1,11 +1,11 @@
 
 .light-theme {
-  --purplenote: #7030A0;
+  
   --articleborder: white;
 }
 
 .dark-theme {
-  --purplenote: #eed8ff;
+  
   --articleborder: #333;
 }
 
@@ -150,13 +150,3 @@ article {
     
     .header {margin-bottom: 4px;}
     
-
-    .purplecharmonman {
-      font-family: 'charmonman';
-      color: var(--purplenote);
-      line-height: 1.5;
-    }
-
-    .purplecharmonman mark {
-      background-co
-    }

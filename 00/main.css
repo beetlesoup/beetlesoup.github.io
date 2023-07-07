@@ -17,6 +17,9 @@
     --headerimagelabelbg: #F2F2F2;
     /* theme button background color: */
     --btnBg: #87CEEB;
+
+    /* dskflrkgjoe */
+    --purplenote: #7030A0;
 }
 
 .dark-theme {
@@ -36,6 +39,8 @@
     --headerimagelabelbg: #3B3838;
     /* theme button background color: */
     --btnBg: #000080;
+
+    --purplenote: #eed8ff;
 }
 
 .themebtn {
@@ -241,10 +246,22 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     border-image: url(images/image-editors/small-pages.png) 30 round;
   }
 
+
   .small {
     border-right: 5px solid transparent;
     border-image: url(images/image-editors/small-pages.png) 30 stretch;
   }
+
+  .tv {
+    height: 165px;
+    padding: 4px 7px 19px;
+    background: url(00/images/image-editors/tv-black.png) 0/100% 100%;
+  }
+
+  .videogame {
+    height: 170px;
+  }
+
 
   .incomplete {
     -webkit-mask-image: linear-gradient(to left, transparent 20%, white);
@@ -369,3 +386,16 @@ hr {margin: 30px 0;}
     border-right: 1px dashed #005149;
     border-left: 1px dashed #005149;
   }
+
+
+/* mynote */
+  .purplecharmonman {
+    font-family: 'charmonman';
+    color: var(--purplenote);
+    line-height: 1.5;
+  }
+
+  .purple {
+    color: var(--purplenote);
+  }
+
