@@ -19,7 +19,7 @@ hr {margin: 10px 0;}
 }
 
 .videogame {
-  height: 165px;
-  padding: 4px 7px 19px;
-  background: url(00/images/image-editors/tv-black.png) 0/100% 100%;
+  height: 160px;
+  padding: 4px 35px 19px 24px;
+  background: url(00/images/image-editors/videogame.png) 0/100% 100%;
 }
