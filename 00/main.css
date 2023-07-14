@@ -131,6 +131,7 @@ nav a {color: white; text-decoration: none; margin-left: 15px;}
 .container {position: relative;}
 .filterDivcontainer {margin-top: 20px; overflow: hidden;}
 .filterDiv {display: none;}
+.hidden {display:none}
 .show {display: block;}
 /* ------------------------------------------------ */
 .flex {display: flex;}
@@ -138,6 +139,7 @@ nav a {color: white; text-decoration: none; margin-left: 15px;}
 .flex-wrap {display: flex; flex-wrap: wrap;}
 
 .translator {text-decoration: underline dashed #43464B;}
+/* .translator, .translated {overflow-wrap: normal; word-break: normal; word-wrap: normal;} jfc none of these worked */
 
 @media screen and (max-width: 900px) {
   body {
@@ -399,3 +401,4 @@ hr {margin: 30px 0;}
     color: var(--purplenote);
   }
 
+  .purple .translator {text-decoration: underline dashed var(--purplenote);}
