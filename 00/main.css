@@ -276,10 +276,16 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   .podcast {
     height: 118px;
     /* top right bottom left??? */
-    padding: 4px 25px 70px 4px;
+    padding: 4px 25px 69px 5px;
     background: url(images/image-editors/mp3player2.png) 0/100% 100%;
   }
 
+  .podcasticon {
+    height: 44px;
+    /* top right bottom left??? */
+    padding: 2px 9px 27px 2px;
+    background: url(images/image-editors/mp3player2.png) 0/100% 100%;
+  }
 
   .incomplete {
     -webkit-mask-image: linear-gradient(to left, transparent 20%, white);

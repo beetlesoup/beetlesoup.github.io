@@ -11,7 +11,7 @@ hr {margin: 10px 0;}
 .images {float:left ;width: 50%;}
 
 .image {
-
+  margin-right: 10px;
 }
 
 .caption {}
