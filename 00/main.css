@@ -257,11 +257,27 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   .tv {
     height: 165px;
     padding: 4px 7px 19px;
-    background: url(00/images/image-editors/tv-black.png) 0/100% 100%;
+    background: url(images/image-editors/tv-black.png) 0/100% 100%;
   }
 
   .videogame {
-    height: 170px;
+    height: 160px;
+    padding: 4px 35px 19px 24px;
+    background: url(images/image-editors/videogame.png) 0/100% 100%;
+  }
+
+  /* .podcast {
+    height: 115px;
+    top right bottom left???
+    padding: 3px 41px 69px 4px;
+    background: url(images/image-editors/mp3player2.png) 0/100% 100%;
+  } */
+
+  .podcast {
+    height: 118px;
+    /* top right bottom left??? */
+    padding: 4px 25px 70px 4px;
+    background: url(images/image-editors/mp3player2.png) 0/100% 100%;
   }
 
 

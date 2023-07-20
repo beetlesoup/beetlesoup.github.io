@@ -11,15 +11,3 @@ hr {margin: 10px 0;}
 .images {float:left ;width: 50%;}
 
 .book, .good, .neutral, .bad {height: 170px;}
-
-.tv {
-  height: 165px;
-  padding: 4px 7px 19px;
-  background: url(00/images/image-editors/tv-black.png) 0/100% 100%;
-}
-
-.videogame {
-  height: 160px;
-  padding: 4px 35px 19px 24px;
-  background: url(00/images/image-editors/videogame.png) 0/100% 100%;
-}
