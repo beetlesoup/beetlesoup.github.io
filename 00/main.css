@@ -325,6 +325,8 @@ article {
   }
 
 .ar {font-family: 'arslanwa'; font-size: large;}
+/* top right bottom left? */
+li {margin: 10px 0;}
 
 blockquote {
     margin-left: 15px;
