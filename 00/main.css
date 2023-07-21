@@ -258,12 +258,14 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     height: 165px;
     padding: 4px 7px 19px;
     background: url(images/image-editors/tv-black.png) 0/100% 100%;
+    margin: 1px;
   }
 
   .videogame {
     height: 160px;
     padding: 4px 35px 19px 24px;
     background: url(images/image-editors/videogame.png) 0/100% 100%;
+    margin: 1px;
   }
 
   /* .podcast {
@@ -278,6 +280,7 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     /* top right bottom left??? */
     padding: 4px 25px 69px 5px;
     background: url(images/image-editors/mp3player2.png) 0/100% 100%;
+    margin: 1px;
   }
 
   .podcasticon {
