@@ -3,17 +3,7 @@
 
 h2 {text-align: right;}
 
-.text-feed {margin-left: 2px;}
 
 hr {margin: 10px 0;}
 
-
-.images {float:left ;width: 50%;}
-
-.image {
-  margin-right: 10px;
-}
-
-.caption {}
-
-.book, .good, .neutral, .bad {height: 170px;}
+.book {height: 186px;}

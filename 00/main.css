@@ -290,6 +290,14 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     background: url(images/image-editors/mp3player2.png) 0/100% 100%;
   }
 
+  .music {
+    height: 125px;
+    /* top right bottom left??? */
+    padding: 0px 36px 62px 0px;
+    background: url(images/image-editors/music.png) 0/100% 100%;
+    margin: 1px;
+  }
+
   .incomplete {
     -webkit-mask-image: linear-gradient(to left, transparent 20%, white);
   }
