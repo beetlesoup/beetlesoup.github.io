@@ -113,11 +113,11 @@
 
   .light-theme {
     --redhighlight: #ffadad; --redhighlighttext: ;
-    --orangehighlight: #ffd79b; --orangehighlighttext: ;
+    --orangehighlight: #ffe8c7; --orangehighlighttext: ;
     --yellowhighlight: ; --yellowhighlighttext: ;
-    --greenhighlight: #c6e5ae; --greenhighlighttext: ;
-    --bluehighlight: #a5d6fa; --bluehighlighttext: ;
-    --purplehighlight: #e6c6ff; --purplehighlighttext: ;
+    --greenhighlight: #cbe3b8; --greenhighlighttext: ;
+    --bluehighlight: #c7def0; --bluehighlighttext: ;
+    --purplehighlight: #efd9ff; --purplehighlighttext: ;
   }
   
   .dark-theme {
@@ -129,8 +129,8 @@
     --purplehighlight: #7030A0; --purplehighlighttext: ;
   }
 
-  .red mark {background-color: var(--redhighlight);}
-  .orange mark {background-color: var(--orangehighlight);}
-  .green mark {background-color: var(--greenhighlight);}
-  .blue mark {background-color: var(--bluehighlight);}
-  .purple mark {background-color: var(--purplehighlight);}
+  .red mark {background: linear-gradient(to right, var(--redhighlight) 100%, transparent 0%);}
+  .orange mark {background: linear-gradient(to right, var(--orangehighlight) 100%, transparent 0%);}
+  .green mark {background: linear-gradient(to right, var(--greenhighlight) 100%, transparent 0%);}
+  .blue mark {background: linear-gradient(to right, var(--bluehighlight) 100%, transparent 0%);}
+  .purple mark {background: linear-gradient(to right, var(--purplehighlight) 100%, transparent 0%);}
