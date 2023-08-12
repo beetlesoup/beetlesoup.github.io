@@ -127,7 +127,7 @@ nav a {color: white; text-decoration: none; margin-left: 15px;}
   
 /* ============================= NAVBAR END ======= */
 
-.margins {margin: 0px 10px 10px 10px;}
+.margins {margin: auto; padding: 0px 10px 10px 10px; max-width: 600px;}
 .container {position: relative;}
 .filterDivcontainer {margin-top: 20px; overflow: hidden;}
 .filterDiv {display: none;}
