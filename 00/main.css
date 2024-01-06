@@ -262,8 +262,8 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   }
 
   .videogame {
-    height: 160px;
-    padding: 4px 35px 19px 24px;
+    height: 162px;
+    padding: 4px 35px 21px 16px;
     background: url(images/image-editors/videogame.png) 0/100% 100%;
     margin: 1px;
   }
