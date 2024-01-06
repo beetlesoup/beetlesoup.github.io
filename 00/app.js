@@ -123,6 +123,31 @@ function expand(button) {
 
 // <span class="readmoremessage">regular magfool</span> reg reg reg <span class="poof readmorecontent">more more more more more more more more</span><button onclick="readMoreFunction(this)" class="readmorebutton">▸</button>
 
+// see more
+
+window.onload = function() {
+  var poofs = document.getElementsByClassName("poof");
+  for (var i = 0; i < poofs.length; i++) {
+    poofs[i].style.display = "none";
+  }
+  };
+
+  function readMoreFunction(button) {
+    var btnText = button.innerHTML;
+    var contentText = button.previousElementSibling;
+    var message = contentText.previousElementSibling;
+
+    if (contentText.style.display === "none") {
+      contentText.style.display = "inline";
+      message.style.display = "none"
+      button.innerHTML = 'x';
+    } else {
+      contentText.style.display = "none";
+      message.style.display = "inline";
+      button.innerHTML = 'see older ▸';
+    }
+  }
+
 // ----------------------------------- translator
 
 function translator(button) { //idk why it says (button)
