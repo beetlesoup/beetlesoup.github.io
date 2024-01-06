@@ -298,6 +298,13 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     margin: 1px;
   }
 
+  .music-art {
+    height: 125px;
+    /* top right bottom left??? */
+  }
+
+  .music-embed {width: 50%;}
+
   .incomplete {
     -webkit-mask-image: linear-gradient(to left, transparent 20%, white);
   }
