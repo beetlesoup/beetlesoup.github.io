@@ -303,7 +303,8 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
     /* top right bottom left??? */
   }
 
-  .music-embed {width: 50%;}
+  .music-card {width: 33%;}
+  .alt-link {text-align: right;}
 
   .incomplete {
     -webkit-mask-image: linear-gradient(to left, transparent 20%, white);
