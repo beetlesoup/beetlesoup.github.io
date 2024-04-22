@@ -241,11 +241,19 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
 
   .music-card {
     margin: auto;
+    max-width: 100%;
   }
 
   @media(max-width: 650px){
     .music-card {
       min-width: 50%;
+      max-width: 100%;
+    }
+  }
+
+  @media(max-width: 414px){
+    .music-card {
+      min-width: 100%;
       max-width: 100%;
     }
   }
