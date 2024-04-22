@@ -239,10 +239,14 @@ based on screen size (eg <img src="" class="desktop OR mobile">)*/
   }
   /* -----------------end words on images */
 
+  .music-card {
+    margin: auto;
+  }
 
   @media(max-width: 650px){
     .music-card {
       min-width: 50%;
+      max-width: 100%;
     }
   }
 
