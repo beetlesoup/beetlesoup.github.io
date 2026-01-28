@@ -74,7 +74,8 @@
     .titlebox > div {padding: 5px;}
 
     .titlebox > a {
-      font-family: 'homemade-apple';
+      font-family: 'la-belle-aurore';
+      font-size: larger;
       text-decoration: underline var(--fontColor);
     }
     .titlebox > a:hover {color: var(--linkhovercolor); text-decoration: underline var(--linkunderlinehovercolor);}
