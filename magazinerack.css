@@ -113,7 +113,7 @@
   .purple > .titlebox {background-color: var(--purple);} */
 
   .light-theme {
-    --redhighlight: #ffadad; --redhighlighttext: ;
+    --redhighlight: #fee0e0; --redhighlighttext: ;
     --orangehighlight: #ffe8c7; --orangehighlighttext: ;
     --yellowhighlight: ; --yellowhighlighttext: ;
     --greenhighlight: #cbe3b8; --greenhighlighttext: ;
