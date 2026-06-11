@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" href="../00/images/homepage-and-headers/.png">
     <link rel="stylesheet" href="../00/fonts.css">
     <link rel="stylesheet" href="../00/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
 </head>
 <body class="light-theme">
     <nav>
@@ -37,23 +39,40 @@
     </nav>
 <main>
 <div class="margins">
-<br><br>
-    <div class="flex-wrap">
-        <a href="letterboxd.html">Letterboxd Analyzer</a>
-    </div>
 
-    <!-- <div class="flex-wrap" dir="rtl">
-        <div>
-            <h1>نقل أحاديث</h1>
-            <a href="backstage-pass.html">ترجمة مقالات عجبتني</a>
-        </div>
+<section class="lb-upload">
+  <h2>Upload your Letterboxd export</h2>
+  <p>Download your Letterboxd data export (ZIP), then drop it here.</p>
 
-        <div>
-            <h1>فرش من عندي</h1>
-            <a href="backstage-pass.html">ترجمة مقالات عجبتني</a>
-        </div>
-    </div> -->
+  <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload Letterboxd export zip">
+    <div class="dz-title">Drag & drop your <b>letterboxd-export.zip</b> here</div>
+    <div class="dz-sub">or</div>
+    <button id="pickBtn" class="btn" type="button">Choose ZIP file</button>
+    <input id="fileInput" type="file" accept=".zip,application/zip" hidden />
+  </div>
+
+  <div id="status" class="status" aria-live="polite"></div>
+
+  <details class="help">
+    <summary>Where do I get the ZIP?</summary>
+    <ol>
+      <li>Letterboxd → Settings</li>
+      <li>Data → Export your data</li>
+      <li>Download the ZIP, then upload it here</li>
+    </ol>
+  </details>
+</section>
+
+<section id="year-stats">
+  <h2>Best & Worst Films by Release Year</h2>
+  <div id="yearResults"></div>
+</section>
+
 
 </div></main><script src="../00/app.js"></script>
+<script src="letterboxd-analyzer.js"></script>
   <noscript>Oh, no... You don't have JavaScript enabled. Oh noooooo! Help me out here. Enable JavaScript. See my masterpiece in its entirety.</noscript>
+
+
+
 </body>
